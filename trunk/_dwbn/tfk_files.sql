@@ -12,3 +12,6 @@ INDEX ( `parent_id` )
 ALTER TABLE `tfk_files` DROP INDEX `parent_id` ,
 ADD INDEX `id_type_index` ( `parent_id` , `parent_type` ) 
 ALTER TABLE `tfk_files` ADD `realname` VARCHAR( 255 ) NOT NULL AFTER `path` ;
+
+ADD INDEX `bucket_id_index` ( `bucket_id` )
+ALTER TABLE `tfk_files` CHANGE `bucket_id` `bucket_id` INT( 11 ) NULL 

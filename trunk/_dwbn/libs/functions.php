@@ -3,7 +3,8 @@
  * This file contains copies of Boonex function which I had to "adjust"
  * and "semi-overwrite" this way. ;-)
  */
-function tfk_genUploadForm( $groupID, $back_home = false, $set_def = false, $action = 'upload' )
+function tfk_genUploadForm( $groupID, $back_home = false, $set_def = false,
+    $action = 'upload', $html = '' )
 {
     global $site;
 
@@ -30,6 +31,7 @@ function tfk_genUploadForm( $groupID, $back_home = false, $set_def = false, $act
     ?>
                 <?=_t( '_Select file' )?><br />
                 <input type="file" name="file" />
+        <?php echo $html; ?>
                 <input type="submit" name="do_submit" value="<?=_t('_Submit')?>" />
             </form>
         </div>

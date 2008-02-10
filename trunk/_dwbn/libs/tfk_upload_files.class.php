@@ -57,6 +57,8 @@ final class tfk_upload_files
             throw new Exception($cls->db->getDebugInfo(),
                 $cls->db->getCode());
         }
+        $cls->db->setFetchMode(MDB2_FETCHMODE_ASSOC);
+
         return $cls;
     }
 
@@ -108,6 +110,91 @@ final class tfk_upload_files
 
             throw new Exception('We could not save the file: ' . $msg, 500);
         }
+    }
+
+    /**
+     * Return all buckets.
+     *
+     * @param string $type
+     *
+     * @return array
+     * @throws Exception
+     */
+    public function getBuckets($type)
+    {
+        $this->_setType($type);
+
+        $db = $this->_store['db'];
+
+        $query  = "SELECT * FROM `tfk_files_buckets`";
+        $query .= " WHERE `parent_id` = "  . $db->quote((int)$this->_store['groupID']);
+        $query .= " AND `parent_type` = " . $db->quote($this->_store['type']);
+
+        $buckets = $db->queryAll($query);
+        if (MDB2::isError($buckets)) {
+            throw new Exception($buckets->getMessage(), $buckets->getCode());
+        }
+        return $buckets;
+    }
+
+    /**
+     * Save a bucket and attach a reference to the uploaded file.
+     *
+     * @param array $data From $_POST.
+     *
+     * @return boolean
+     * @throws Exception
+     */
+    public function saveBucket($data)
+    {
+        if (!empty($data['bucket_new'])) {
+            $data['bucket'] = $this->_addBucket($data['bucket_new']);
+            unset($data['bucket_new']);
+        }
+        if (empty($data['bucket'])) {
+            return true;
+        }
+        $query  = "UPDATE `tfk_files` SET `bucket_id` = " . (int) $data['bucket'];
+        $query .= " WHERE `id` = " . $this->_store['imageID'];
+        $status = $this->_store['db']->query($query);
+        if (!MDB2::isError($status)) {
+            return true;
+        }
+        throw new Exception($status->getMessage(), $status->getCode());
+    }
+
+    private function _addBucket($name)
+    {
+        $db = $this->_store['db'];
+        $id = $db->nextId('tfk_files_buckets');
+        if (MDB2::isError($id)) {
+            throw new Exception($id->getMessage(), $id->getCode());
+        }
+
+        $query  = "INSERT INTO `tfk_files_buckets`";
+        $query .= " (`id`, `name`, `parent_id`, `parent_type`, rec_dateadd)";
+        $query .= " VALUES(%d, %s, %d, %s, NOW())";
+
+        $query = sprintf($query, $id, $db->quote($name),
+            $db->quote($this->_store['groupID']),
+            $db->quote($this->_store['type']));
+
+        $result = $db->query($query);
+        if (!MDB2::isError($result)) {
+            return $id;
+        }
+
+        // error -> duplicate key
+        $query  = "SELECT id FROM `tfk_files_buckets`";
+        $query .= " WHERE `name` = " . $db->quote($name);
+        $query .= " AND `parent_id` = " . $db->quote($this->_store['groupID']);
+        $query .= " AND `parent_type` = " . $db->quote($this->_store['type']);
+
+        $id = $db->queryOne($query);
+        if (!MDB2::isError($id)) {
+            return (int) $id;
+        }
+        throw new Exception($id->getMessage(), $id->getCode());
     }
 
     private function _createName()

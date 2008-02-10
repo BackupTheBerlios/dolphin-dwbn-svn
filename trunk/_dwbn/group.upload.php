@@ -32,14 +32,38 @@ if (isGroupMember($memberID, $groupID)) {
         $_page['header_text'] = _t( "Upload a file to group" );
 
         $_page_cont[$_ni]['page_main_code']  =  _t('This form allows you to attach files to this group.');
-        $_page_cont[$_ni]['page_main_code'] .= tfk_genUploadForm($groupID, false, false, 'uploadFile');
+
+        $content  = '<br /><br />';
+        $content .= _t('Add to folder') . ':';
+
+        $upload  = tfk_upload_files::factory($fileVault, $groupID, $memberID);
+        $buckets = $upload->getBuckets('group');
+
+        $content .= '<select name="bucket">';
+        $content .= '<option value="">&hellip;</option>';
+        for ($x=0; $x<count($buckets); $x++) {
+            $content .= '<option value="' . $buckets[$x]['id'] . '">';
+            $content .= $buckets[$x]['name'];
+            $content .= '</option>';
+        }
+        $content .= '</select>';
+        $content .= '&nbsp;or new&hellip;<input type="text" name="bucket_new" />';
+
+        $_page_cont[$_ni]['page_main_code'] .= tfk_genUploadForm($groupID, false,
+            false, 'uploadFile', $content);
+
+        //$_page_cont[$_ni]['page_main_code'] .= $content;
 
     } else {
 
         try {
 
             $upload = tfk_upload_files::factory($fileVault, $groupID, $memberID);
-            $upload->handle('group');
+            $status = $upload->handle('group');
+
+            if ($status === true) {
+                $upload->saveBucket($_POST);
+            }
 
             $_page['header']      = _t("Your file was uploaded");
             $_page['header_text'] = _t("Your file was uploaded");
