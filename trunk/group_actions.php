@@ -55,6 +55,18 @@ if ( $arrGroup = getGroupInfo( $groupID ) )
 
 	switch( $action )
 	{
+        // uploadFile
+        // 2008-02-10
+		case 'uploadFile':
+			include dirname(__FILE__) . '/_dwbn/group.upload.php';
+		break;
+
+        // delFile
+        // 2008-02-11
+        case 'delFile':
+            include dirname(__FILE__) . '/_dwbn/group.deletefile.php';
+        break;
+
 		case 'upload':
 			if( isGroupMember( $memberID, $groupID ) )
 			{

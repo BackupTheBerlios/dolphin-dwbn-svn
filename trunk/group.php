@@ -128,7 +128,8 @@ EOJ;
 															<img src=\"{$sSpacerName}\" style=\"width:110px;height:110px; background-image: url({$groupImageUrl});\" class=\"photo1\"/>
 														</a>";
 			$_page_cont[$_ni]['group_gallery_link']  = "<a href=\"{$site['url']}group_gallery.php?ID={$groupID}\">" . _t( "_Group gallery" ) . "</a>";
-			
+            $_page_cont[$_ni]['group_gallery_link'] .= "<br /><a href=\"{$site['url']}group_files.php?ID={$groupID}\">Uploaded files</a>";
+
 			$_page_cont[$_ni]['group_creator_thumb'] = get_member_thumbnail( $arrGroup['creatorID'], 'none' );
 			$_page_cont[$_ni]['group_creator_link']  = "<a href=\"{$site['url']}$creatorNick\">".htmlspecialchars_adv($creatorNick)."</a>";
 			
@@ -278,7 +279,10 @@ function PageCompGroupActions()
 					genGroupActionBtn( 'Invite others', "group_actions.php?a=invite&amp;ID=$groupID" );
 				
 				if( (int)$arrGroup['members_post_images'] or $arrGroup['creatorID'] == $memberID )
+                {
 					genGroupActionBtn( 'Upload image', "group_actions.php?a=upload&amp;ID=$groupID" );
+                    genGroupActionBtn( 'Upload files', "group_actions.php?a=uploadFile&amp;ID=$groupID" );
+                }
 				
 				genGroupActionBtn( 'Post topic', "{$dirGroups}orca/?action=goto&amp;forum_id=$groupID#action=goto&amp;new_topic=$groupID" );
 			}
