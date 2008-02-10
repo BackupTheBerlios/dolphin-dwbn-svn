@@ -1,0 +1,1 @@
+<items><item type="select" key="updateInterval" default="20" range="10:30 5"><caption><![CDATA[Update interval(sec)]]></caption><comment><![CDATA[White Board update interval (Lite version only).]]></comment></item></items>

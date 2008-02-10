@@ -1,0 +1,21 @@
+TRUNCATE TABLE `ProfileCompose`;
+
+INSERT INTO `ProfileCompose` VALUES (1, 'Profile Photos', 'Member photos block', '_PROFILE Photos', 'non,memb', 'Photo', '', 1, 0);
+INSERT INTO `ProfileCompose` VALUES (2, 'Looking For', 'Details of the person the member is looking for', '_LookingFor', 'non,memb', 'LookingForDetails', '', 0, 0);
+INSERT INTO `ProfileCompose` VALUES (3, 'Member Polls', 'Member polls block', '_Polls', 'non,memb', 'ProfilePolls', '', 1, 5);
+INSERT INTO `ProfileCompose` VALUES (4, 'Actions Menu', 'Actions that other members can do', '_Actions', 'non,memb', 'ActionsMenu', '', 1, 1);
+INSERT INTO `ProfileCompose` VALUES (5, 'Rate Profile', 'Profile rating form', '_rate profile', 'non,memb', 'RateProfile', '', 2, 1);
+INSERT INTO `ProfileCompose` VALUES (6, 'Profile Details', 'Profile Details', '_PROFILE Info', 'non,memb', 'ProfileDetails', '', 2, 0);
+INSERT INTO `ProfileCompose` VALUES (7, 'Descriptions', 'Member description and ideal match description', '_Description', 'non,memb', 'Descriptions', '', 2, 2);
+INSERT INTO `ProfileCompose` VALUES (8, 'Friends', 'Member friends list', '_Friends', 'non,memb', 'Friends', '', 2, 4);
+INSERT INTO `ProfileCompose` VALUES (9, 'Comments', 'Comments on member profile', '_profile_comments', 'non,memb', 'Comments', '', 2, 7);
+INSERT INTO `ProfileCompose` VALUES (10, 'Member Blog', 'Member blog block', '_Blog', 'non,memb', 'ProfileBlog', '', 2, 3);
+INSERT INTO `ProfileCompose` VALUES (11, 'Profile Music', 'Profile Mp3 Player', '_ProfileMp3', 'non,memb', 'Mp3', '', 2, 5);
+INSERT INTO `ProfileCompose` VALUES (12, 'Member Forum Posts', '', '_Forum Posts', 'non,memb', 'RSS', '{SiteUrl}orca/?action=rss_user&user={NickName}#4', 2, 6);
+INSERT INTO `ProfileCompose` VALUES (15, 'RSS Feed', '', '_BoonEx News', 'non,memb', 'RSS', 'http://www.boonex.org/author/admin/feed#4', 0, 0);
+INSERT INTO `ProfileCompose` VALUES (16, 'Member Classifieds', 'Classifieds', '_Classifieds', 'non,memb', 'Classifieds', '', 1, 2);
+INSERT INTO `ProfileCompose` VALUES (17, 'Member Events', 'Events', '_Events', 'non,memb', 'Events', '', 1, 3);
+INSERT INTO `ProfileCompose` VALUES (18, 'Member Groups', 'Groups', '_Groups', 'non,memb', 'Groups', '', 1, 4);
+INSERT INTO `ProfileCompose` VALUES (19, 'Member Music Gallery', 'Music Shared By The Member', '_Music Gallery', 'non,memb', 'ShareMusic', '', 1, 6);
+INSERT INTO `ProfileCompose` VALUES (20, 'Member Photo Gallery', 'Photos Shared By The Member', '_Photo Gallery', 'non,memb', 'SharePhotos', '', 1, 7);
+INSERT INTO `ProfileCompose` VALUES (21, 'Member Video Gallery', 'Videos Shared By The Member', '_Video Gallery', 'non,memb', 'ShareVideos', '', 1, 8);
