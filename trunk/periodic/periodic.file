@@ -1,0 +1,4 @@
+MAILTO=virtsangha@bdd.dwbn.org<br />
+0 0 * * *  /usr/bin/php -q /proj/www/dolphin.mahamudra.de/home/htdocs/periodic/cmd.php
+*/10 * * * *  /usr/bin/php -q /proj/www/dolphin.mahamudra.de/home/htdocs/periodic/notifies.php
+*/10 * * * *  /usr/bin/php -q /proj/www/dolphin.mahamudra.de/home/htdocs/periodic/tags.php
