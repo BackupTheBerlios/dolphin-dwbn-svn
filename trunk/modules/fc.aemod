@@ -1,0 +1,1 @@
+INSERT INTO `Modules` VALUES ('', 'fchat', 'global $mods;\r\n\r\n/**\r\n*  ''ModuleDirectory''\r\n*	Specifies name of directory, where chat is located\r\n*	(string)\r\n*/\r\n\r\n$mods[''fchat''][''ModuleDirectory''] = ''chat/'';', '', '', '', '', '', '', 'global $site;\r\nheader("Location: {$site[''url'']}chat/flashchat.php");', 'chat', 'Flash Chat');
