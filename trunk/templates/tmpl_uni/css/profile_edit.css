@@ -1,0 +1,55 @@
+/* 
+
+* (C) BoonEx Ltd., 2007
+* IMPORTANT: This is a commercial product made by BoonEx Ltd. and cannot be modified for other than personal usage.
+* This product cannot be redistributed for free or a fee without written permission from BoonEx Ltd. 
+* This notice may not be removed from the source code. 
+
+*/
+@charset "iso-8859-1";
+@import url(../../base/css/profile_edit.css);
+
+
+td.join_header_first,
+td.join_header
+{
+	text-align:center;
+	background-color:#ccc;
+}
+
+table.profile_edit_table
+{
+	border-collapse:collapse;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+}
+
+table.profile_edit_table td
+{
+	padding:5px;
+}
+
+table.profile_edit_table td.join_td_1,
+table.profile_edit_table td.join_td_1_first
+{
+	text-align:right;
+	vertical-align:top;
+	padding-top:6px;
+}
+
+select.select_prof,
+input.input_text_edit
+{
+	width:225px;
+}
+
+table.profile_edit_table table
+{
+	border-collapse:collapse;
+}
+
+table.profile_edit_table table td
+{
+	padding:0px;
+}

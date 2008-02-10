@@ -1,0 +1,115 @@
+	div#my_photos
+	{
+		position:relative;
+		/* float:left; */
+	}
+	div#search
+	{
+		position:relative;
+		/* float:left; */
+	}
+	div#member_info
+	{
+		position:relative;
+		/* float:left; */
+	}
+	div#contacts
+	{
+		position:relative;
+		/* float:left; */
+	}
+	div#member_stat
+	{
+		position:relative;
+		/* float:left; */
+	}
+	div.membes_statistic_block
+	{
+		position:relative;
+		float:left;
+		text-align:center;
+		padding-left:25px;
+	}
+	div.member_stat_block
+	{
+		position:relative;
+		display:block;
+		height:auto;
+		overflow:hidden;
+		text-align:left;
+	}
+	div.member_stat_block div
+	{
+		margin:2px 0px;
+	}
+	div.member_stat_block div select
+	{
+		background-color:#FFFFFF;
+		vertical-align:middle;
+		font-size:11px;
+		font-family:Arial, Helvetica, sans-serif;
+		margin:0px;
+		padding:0px;
+
+	}
+	div#latest_news
+	{
+		position:relative;
+		/* float:left; */
+	}
+	div.news_head
+	{
+		position:relative;
+		height:20px;
+		line-height:20px;
+		vertical-align:middle;
+	}
+	div.news_head img
+	{
+		position:relative;
+		top:4px;
+	}
+	div.news_head span
+	{
+		position:relative;
+		margin-left:7px;
+		font-weight:bold;
+	}
+	div.news_text
+	{
+		position:relative;
+		padding:6px;
+		text-align:left;
+	}
+	div.header
+	{
+		position:relative;
+		margin:2px 2px 5px 2px;
+		padding:0px 0px 0px 7px;
+		background-repeat:repeat-x;
+		background-color:#E4E4E4;
+		height:25px;
+		line-height:25px;
+		vertical-align:middle;
+		font-weight:bold;
+		text-transform:uppercase;
+	}
+	div.keeper
+	{
+		position:relative;
+		padding:5px;
+	}
+	div.thumbnail_block
+	{
+		margin-left:auto;
+		margin-right:auto;
+	}
+	div.block_menu
+	{
+		position: absolute;
+		top:0px;
+		right: 5px;
+		font-weight: bold;
+		cursor: pointer;
+		text-transform: uppercase;
+	}

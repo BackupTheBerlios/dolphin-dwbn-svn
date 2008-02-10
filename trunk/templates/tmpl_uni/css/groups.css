@@ -1,0 +1,25 @@
+@charset "iso-8859-1";
+@import url(../../base/css/groups.css);
+
+
+.group_edit_table tr td.group_edit_td_label
+{
+	text-align:right;
+	font-weight:normal;
+	vertical-align:top;
+	padding-top:7px;
+}
+
+.group_info_row
+{
+	left:10px;
+	position: relative;
+	width:470px;
+	overflow:hidden;
+}
+
+a.actions
+{
+	font-weight:bold;
+	font-size:16px;
+}

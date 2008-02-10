@@ -1,0 +1,348 @@
+/*
+
+	[ * html ]  -- only for IE
+
+
+*/
+/*   Show list */
+
+
+	div.categoryBlock
+	{
+		position:relative;
+		border:1px solid #d8d8d8;
+		margin-bottom:5px;
+		padding:5px;
+		background-color:#f4f3f3;
+		overflow:hidden;
+	}
+	div.categoryCaption
+	{
+		font-size:14px;
+		font-weight:bold;
+		margin-bottom:3px;
+		width:430px;
+		border:0px solid red;
+	}
+	div.categoryCaption div.editBlock
+	{
+		position:absolute;
+		top:5px;
+		right:15px;
+	}
+	div.categoryDesc
+	{
+		font-style:italic;
+	}
+	div.categoryDate
+	{
+		/*clear:both;*/
+		text-align:right;
+		font-style:italic;
+		font-size:10px;
+	}
+	div.categoryDate span
+	{
+		margin-right:10px;
+	}
+	div.categoryDate span.approval
+	{
+		color:green;
+	}
+	div.categoryDate span.disapproval
+	{
+		color:red;
+	}
+
+	div.blogCaption
+	{
+		position:relative;
+		border:0px solid red;
+		font-size:16px;
+		font-weight:bold;
+		margin-bottom:15px;
+		text-align:center;
+	}
+	div.blogText
+	{
+		position:relative;
+		border:0px solid blue;
+		font-size:12px;
+		padding:7px;
+		line-height:17px;
+	}
+	input.categoryCaption
+	{
+		width:255px;
+		border:1px solid silver;
+		background-color:#fff;
+	}
+	textarea.categoryDesc
+	{
+		width:500px;
+		height:100px;
+		border:1px solid silver;
+		background-color:#fff;
+	}
+
+	div.blogTextAeraKeeper
+	{
+		position:relative;
+		border:0px solid red;
+		margin-bottom:15px;
+	}
+	textarea.blogText
+	{
+		width:527px;
+		height:350px;
+	}
+
+	div.categoryPhoto
+	{
+		position:relative;
+		border:0px solid red;
+		/*width:50px;*/
+		/*height:50px;*/
+		float:left;
+		margin:0px 5px 5px 0px;
+
+	}
+	div.blogPhoto
+	{
+		position:relative;
+		border:0px solid silver;
+		/*width:150px;*/
+		text-align:center;
+		float:left;
+		margin:0px 10px 5px 0px;
+	}
+
+	div.editBlock
+	{
+		position:absolute;
+		top:5px;
+		right:5px;
+	}
+	* html div.editBlock
+	{
+		right:25px;
+	}
+	div.editBlock span
+	{
+		position:relative;
+		margin:0px 5px;
+		border:0px solid green;
+		font-size:11px;
+		font-weight:normal;
+	}
+	div.assocImageBlock
+	{
+		position:relative;
+		margin-bottom:10px;
+	}
+
+
+
+	div.listBlock
+	{
+		margin-bottom:10px;
+		border-bottom:1px solid #e4e4e4;
+		padding:3px;
+	}
+	div.listSubject
+	{
+		font-weight:bold;
+		margin-bottom:3px;
+	}
+	div.listDate
+	{
+		text-align:right;
+		font-style:italic;
+		margin-bottom:3px;
+	}
+	div.listLink
+	{
+		text-align:right;
+	}
+	input.formSubject
+	{
+		width:200px;
+	}
+	textarea.formText
+	{
+		width:530px;
+		height:200px;
+	}
+	div.breadCramp
+	{
+		position:relative;
+		border:0px solid red;
+		margin-bottom:15px;
+		width:400px;
+	}
+	div.breadCramp span.divider
+	{
+		margin:0px 0px 0px 4px;
+	}
+	div.commentBlock
+	{
+		position:relative;
+		border:1px solid #999;
+		margin-bottom:5px;
+		text-align:justify;
+
+	}
+	div.commentHead
+	{
+		position:relative;
+		background-color:#f3f3f3;
+		border-bottom:1px solid #ccc;
+		padding:3px 0px 3px 5px;
+		font-weight:bold;
+	}
+	div.commentHead div.editBlock
+	{
+		top:2px;
+	}
+	div.charCounter
+	{
+		color:green;
+		border:0px solid red;
+		text-align:right;
+	}
+	div.charCounter input, div.charCounter span
+	{
+		margin:0px 5px;
+	}
+
+	/*
+	div.commentHead span
+	{
+		position:absolute;
+		top:0px;
+	}
+	*/
+	/*
+	span.reply
+	{
+		right:5px;
+	}
+	span.delete
+	{
+		right:55px;
+	}
+	*/
+	div.commentBody
+	{
+		padding:5px;
+		text-align:left;
+	}
+	div.commentMenu
+	{
+		margin-bottom:10px;
+		text-align:right;
+	}
+	textarea.comment
+	{
+		width:500px;
+		height:60px;
+		padding:5px;
+		border:1px solid silver;
+		background-color:#fff;
+	}
+
+	.profile_disp
+	{
+		position:absolute;
+		top:0px;
+		left:100px;
+		width:200px;
+		margin-left:120px;
+		text-align:left;
+		border:0px solid blue;
+		padding:0px;
+		margin:0px;
+	}
+
+	.profile_details
+	{
+		position:relative;
+		border:0px solid red;
+		padding:0px;
+		margin:0px;
+		overflow:hidden;
+		height:105px;
+	}
+	.profile_thumb
+	{
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:102px;
+		height:102px;
+		border:1px solid #066;
+		text-align:center;
+		line-height:102px;
+		vertical-align:middle;
+		float:left;
+		padding:0px;
+		margin:0px;
+		background-repeat:no-repeat;
+		background-position:center;
+	}
+
+	div.profile_ditails_block
+	{
+		position:relative;
+		height:115px;
+		border:0px solid red;
+		margin:0px;
+		padding:5px;
+		overflow:hidden;
+	}
+
+	div.thumbnail_block
+	{
+		border:1px solid #F8DAA8;
+		background-color:#FFFFFF;
+	}
+	div.prof_ditails_block
+	{
+		position:relative;
+		width:298px;
+		float:left;
+		margin-left:10px;
+		text-align:left;
+		background-color:#F8F8E7;
+		height:105px;
+		border:1px solid #F8DAA8;
+	}
+	div.prof_ditails_block div.li_word
+	{
+		position:relative;
+		float:left;
+		width:80px;
+		text-align:left;
+		border:0px solid red;
+		margin:1px;
+		font-weight:bold;
+		background-color:#F8F8E7;
+		height:20px;
+		line-height:20px;
+		vertical-align:middle;
+		padding-left:5px;
+	}
+	div.prof_ditails_block div.li_value
+	{
+		position:relative;
+		float:left;
+		text-align:left;
+		width:200px;
+		border:0px solid red;
+		margin:1px;
+		height:20px;
+		line-height:20px;
+		vertical-align:middle;
+		padding-left:5px;
+		background-color:#FFFFFF;
+	}

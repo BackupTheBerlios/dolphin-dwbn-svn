@@ -1,0 +1,237 @@
+	div.top_links
+	{
+		text-align: right;
+		padding: 2px;
+		margin: 4px;
+		padding-bottom: 15px;
+	}
+	
+	div.top_links div
+	{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	div.message_block
+	{
+		text-align: center;
+		padding: 2px 10px;
+		margin: 2px 4px;
+	}
+	
+	div.album_block
+	{
+		position:relative;
+		padding: 2px 10px;
+		padding-left:25px;
+		margin: 2px 4px;
+	}
+	
+	div.album_icon
+	{
+		position: absolute;
+		left:10px;
+		top:0px;
+		border:0px solid red;
+	}
+	* html div.album_icon
+	{
+		position: absolute;
+		left:-15px;
+		top:0px;
+		border:0px solid red;
+	}
+	
+	div.album_info
+	{
+		
+		position: relative;
+		float: left;
+		padding: 1px 2px;
+		width: 470px;
+	
+	}
+	
+	div.album_extra_info
+	{
+		position: relative;
+		float: right;
+		padding: 1px;
+		text-align: right;
+	}
+	
+	div.form_block
+	{
+		padding: 2px;
+		margin: 12px;
+	}
+	
+	div.form_row
+	{
+		position: relative;
+		padding: 1px;
+		width: 490px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	div.form_field_caption
+	{
+		position: relative;
+		float: left;
+		width: 100px;
+		top:0px;
+	}
+	
+
+	
+	
+	div.design_box_border
+	{
+		float: left;
+		margin-left: 5px;
+		margin-bottom: 10px;
+		width: 160px;
+	}
+	
+	div.design_box_border div.header
+	{
+		overflow: hidden;
+		text-align: center;
+	}
+	
+	div.design_box_border div.keeper
+	{
+		padding: 0px;
+	}
+	
+	div.object_block
+	{
+		padding: 5px;
+		cursor: pointer;
+		height: 120px;
+		border: 1px solid silver;
+	}
+	div.form_field_input
+	{
+		padding: 2px;
+	}
+	div.object_info
+	{
+		padding: 2px;
+		text-align: center;
+	}
+	
+	div.form_object_icon
+	{
+		cursor: pointer;
+		width: 115px;
+		height: 115px;
+		position: relative;
+		float: left;
+		border: 0px solid silver;
+	}
+	
+	div.form_object_controls
+	{
+		width: 115px;
+		position: relative;
+		float: left;
+		text-align: right;
+	}
+	
+	div.form_object_control_item
+	{
+		margin: 2px;
+		position: relative;
+		float: right;
+	}
+	
+	div.form_object_fields
+	{
+		position: relative;
+		float: left;
+		padding-left: 25px;
+	}
+	
+	div.view_object_block
+	{
+		padding: 5px;
+		text-align: center;
+	}
+	
+	div.paging_block
+	{
+		padding: 2px;
+		margin: 4px;
+		text-align: center;
+	}
+		div.last_chandes	
+	{
+		font-size: 11px; 
+		font-style:italic
+	}
+	div.ed
+	{
+		position:absolute;
+		top:0px;
+		right:5px;
+	}
+	div.del
+	{
+		position: absolute;
+		top:0px;
+		right:45px;
+	}
+	div.BxBreadCramb
+	{
+		position: relative;
+		top:0px;
+	}
+	input.BxUpload
+	{
+		width:67px;
+		height:20px;
+		font-size:11px;
+	}
+	div.BxLastChan
+	{
+		position:relative;
+		text-align: right;
+		padding-top: 50px;
+	}
+	div.BxChange
+	{
+		padding-top: 5px;
+		text-align: center
+	}
+	div.BxModified
+	{
+		padding: 2px;
+		text-align:right;
+		font-style:italic;
+	}
+	div.BxBaner
+	{
+		padding:3px;
+		width:70%;
+		border: 1px solid #B7C4D8;
+		background-color:#ECEBEB;
+	}
+	div.BxPad
+	{
+		padding-bottom:10px;
+	}
+	div.BxBack
+	{
+		background-color:#ECEBEB;
+	}
+	.BxTextar
+	{
+		width:315px;
+		height:100px;
+	}
+	input.BxSize
+	{
+		width:315px;
+	}

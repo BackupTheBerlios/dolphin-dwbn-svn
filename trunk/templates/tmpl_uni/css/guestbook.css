@@ -1,0 +1,108 @@
+@charset "iso-8859-1";
+@import url(../../base/css/guestbook.css);
+	div.main
+	{
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	div.gb_owner_info
+	{
+		position:relative;
+		border:0px solid red;
+		overflow:hidden;
+	}
+	
+	div#newrecord
+	{
+		border:1px solid red;
+	}
+	
+	/**html, 	div.gb_owner_info
+	{
+		padding-bottom:33px;
+	}*/
+	
+	div.db_2_block 
+	{
+		text-align:center;
+		border:1px solid red;
+	}
+	
+	.text
+	{
+		border:0px solid red;
+		text-align:center;
+		padding:0px;
+	}
+	
+	.bgGray
+	{
+		background-color:#F4F3F3;
+		padding-bottom:5px;
+	}
+	
+	.bgSmiles
+	{
+		padding-left:0px;
+	}
+	
+	.no
+	{
+		margin-left:250px;
+	}
+	
+	.right
+	{
+		text-align:right;
+		background-color:#F4F3F3;
+	}
+	
+	.picPosition
+	{
+		/*padding-top:28px;*/
+		background-color:#F4F3F3;
+		text-align:center;
+	}
+	
+
+	.menu_item_block 
+	{
+		text-align:left;
+		padding:0px;
+	}
+	
+	table.gb_msgs_table
+	{
+		border-collapse:collapse;
+		width:100%;
+	}
+	
+	table.gb_msgs_table td,
+	table.gb_msgs_table th
+	{
+		border:1px solid #CCCCCC;
+		padding:4px;
+	}
+	
+	table.gb_msgs_table th
+	{
+		background-color:#888888;
+		color:#ffffff;
+	}
+	
+	tr.gb_msg_row_even
+	{
+		background-color:#dddddd;
+	}
+	
+	tr.gb_msg_row_odd
+	{
+		background-color:#f9f9f9;
+	}
+	
+	.gb_msg_actions
+	{
+		text-align:right;
+		padding:4px;
+	}

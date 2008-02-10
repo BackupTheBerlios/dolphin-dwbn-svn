@@ -1,0 +1,87 @@
+	div.searchrow_block
+	{
+		position:relative;
+		margin-bottom:20px;
+		overflow:hidden;
+		border-bottom:2px solid #EAEAEA;
+	}
+* html div.searchrow_block
+	{
+		float:left;
+	}
+	div.short_desc
+	{
+		position:relative;
+		left:10px;
+		border:0px solid red;
+		float:left;
+	}
+	div.short_desc div
+	{
+		position:relative;
+		text-align:left;
+	}
+	div.short_desc div.nick
+	{
+		color:#000000;
+		font-weight:bold;
+		line-height:20px;
+		vertical-align:middle;
+	}
+	div.short_desc div.age_from
+	{
+		font-weight:bold;
+		border-bottom:1px solid #EAEAEA;
+		margin-bottom:5px;
+	}
+	div.short_desc div.more
+	{
+		position:relative;
+		margin:7px 0px 5px 0px;
+		
+	}
+	div.short_desc div.more div.more_photos
+	{
+		position:absolute;
+		top:3px;
+		left:75px;
+	}
+	div.match_zodiac
+	{
+		position:relative;
+		float:left;
+		
+		text-align:center;
+	}
+	div.searchrow_block div.links
+	{
+		position:relative;
+		border:0px solid red;
+		width:410px;
+		left:123px;
+		margin-bottom:5px;
+	}
+	div.links span
+	{
+		position:relative;
+		margin:0px 5px;
+	}
+	
+	div.search_result_limit
+	{
+		position:relative;
+		margin:10px 0px;
+		border:1px solid red;
+		padding:2px;
+	}
+	
+	div.search_result_limit div
+	{
+		position:relative;
+		text-align:center;
+		background-color:#F9B2AD;
+		height:25px;
+		line-height:25px;
+		vertical-align:middle;
+		font-weight:bold;
+	}

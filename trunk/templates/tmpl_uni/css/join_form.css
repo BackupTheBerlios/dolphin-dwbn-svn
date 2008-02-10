@@ -1,0 +1,146 @@
+@charset "iso-8859-1";
+@import url(../../base/css/join_form.css);
+table
+{
+	cellspacing:0;
+}
+
+td
+{
+	border:0px;	
+}
+
+#first_column
+{
+	position:relative;
+	width:400px;
+	margin-right:10px;
+	float:left;
+}
+
+#second_column
+{
+	position:relative;
+	width:322px;
+	float:left;
+}
+
+#second_column .member_login,
+#second_column .import_boonex_id
+{
+	position:relative;
+	float:right;
+	width:270px;
+	padding-top:10px;
+	padding-left:10px;
+	background-color:#EEE;
+}
+
+#second_column .import_boonex_id
+{
+	margin-top:30px;
+}
+
+.login_form_cont
+{
+	background-color:#EEE;
+	width:260px;
+}
+
+.login_form_row
+{
+	position:relative;
+	float:left;
+	width:250px;
+	padding:0px 0px 5px;
+}
+
+.login_form_row_forgot
+{
+	position:relative;
+	float:left;
+	padding-left:67px;
+	font-size:11px;
+}
+
+.login_form_label
+{
+	width:60px;
+}
+
+.login_form_input
+{
+	width:160px;
+}
+
+.login_form_warning
+{
+	position:relative;
+	float:left;
+	color:#000;
+	font-size:16px;
+	text-align:left;
+	margin-bottom:20px;
+}
+
+.boonex_id
+{
+	position:relative;	
+	float:left;
+	width:180px;
+	font-size:16px;
+}
+
+.id
+{
+	position:relative;	
+	float:left;
+	width:90px;
+	font-size:11px;
+}
+
+
+
+td.join_td_1
+{
+	width:100px;
+}
+
+td.join_td_2
+{
+	border:0px solid red;
+	width:240px;
+}
+
+td.join_td_1_first,
+td.join_td_1
+{
+	text-align:right;
+	padding:2px 5px;
+	vertical-align:top;
+	white-space:nowrap;
+}
+
+td.join_td_2_first,
+td.join_td_2
+{
+	padding:2px 5px;
+	vertical-align:top;
+}
+
+.input_text_edit, .input_type_password
+{
+	width:258px;
+}
+
+#DescriptionMe
+{
+	width:258px;
+}
+
+.security_image_block
+{
+	position:relative;
+	float:right;
+	right:15px
+}
