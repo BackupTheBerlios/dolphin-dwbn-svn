@@ -1,0 +1,501 @@
+/* * * * My Groups * * * */
+
+.mygroup_container
+{
+	width:112px; /* should be dependant on global parameters */
+	/*height:150px;*/
+	float:left;
+	position:relative;
+	margin:5px;
+	overflow:hidden;
+}
+
+.mygroup_name
+{
+	text-align:center;
+	font-weight:bold;
+	white-space:nowrap;
+	margin-bottom:10px;
+}
+
+.mygroup_leader_is
+{
+	text-align:center;
+	/*background-color:#E8E8FF;*/
+	/*color:blue;*/
+	/*font-weight:bold;*/
+	/*padding:2px;*/
+	/*border:1px solid #9B9A9A;*/
+	margin-top:10px;
+}
+
+.mygroups_no
+{
+	line-height:100px;
+	font-weight:bold;
+	text-align:center;
+}
+
+/* * * * Common * * * */
+
+.group_thumb
+{
+	border:1px solid silver;
+	padding:5px;
+	background-color:#EEE;
+	text-align:center;
+}
+
+/* * * * Group Page * * * */
+
+.group_info
+{
+	position:relative;
+	border:1px solid silver;
+	background-color:#E8E8FF;
+	padding:5px;
+	margin:5px;
+}
+
+.group_left_div
+{
+	position:relative;
+	float:left;
+	text-align:center;
+	font-weight:bold;
+}
+
+.group_image
+{
+	padding:5px;
+	margin-right:5px;
+	border:1px solid silver;
+	background-color:#EEE;
+}
+
+.group_actions
+{
+	margin-top:10px;
+}
+
+.group_action
+{
+	width:100px;
+	height:20px;
+	padding-top:5px;
+	background-color:#EEE;
+	margin:3px;
+	border:1px solid silver;
+	font-weight:bold;
+}
+
+.group_action:hover
+{
+	background-color:#fff;
+}
+
+.group_creator_info
+{
+	position:relative;
+	float:right;
+	margin-left:5px;
+	text-align:center;
+}
+
+.group_description
+{
+	margin:5px;
+	border:1px solid silver;
+	padding:5px;
+	overflow:hidden;
+}
+
+.group_members_pre
+{
+	padding-top:10px;
+	border:0px solid green;
+}
+
+.group_member_pre
+{
+	position:relative;
+	float:left;
+	margin:5px;
+	text-align:center;
+	font-weight:bold;
+}
+
+* html .group_members_pre
+{
+	width:528px; /*something strange for IE6*/
+}
+
+* html .group_member_pre
+{
+	margin:8px;
+}
+
+.view_all_link
+{
+	margin-top:10px;
+	text-align:right;
+	font-weight:bold;
+}
+
+/* * * * Group last topics * * * */
+
+.group_topics
+{
+	border:0px solid #69C;
+	width:100%;
+	border-collapse:collapse;
+}
+
+.group_topics th,
+.group_topics td
+{
+	border:1px solid #69C;
+}
+
+.group_topics th
+{
+	padding:5px;
+	background-color:#CCC;
+}
+
+.group_topics td
+{
+	padding:2px;
+}
+
+.group_topic_row_even
+{
+	background-color:#DDD;
+}
+
+.group_topics_col_topics
+{
+	width:230px;
+}
+
+.group_topics_col_posts
+{
+	width:35px;
+	text-align:center;
+}
+
+.group_topics_col_author
+{
+
+}
+
+.group_topics_col_reply
+{
+	
+}
+
+/* * * * Create/Edit Group * * * */
+
+.group_edit_table
+{
+	width:100%;
+	border-collapse:collapse;
+}
+
+.group_edit_table tr td
+{
+	padding:5px;
+}
+
+.group_edit_error
+{
+	background-color:#FFF;
+	border:1px solid red;
+	margin:2px;
+	padding:3px;
+}
+
+.group_edit_td_label
+{
+	width:100px;
+	font-weight:bold;
+}
+
+.group_edit_td_value
+{
+	
+}
+
+.group_edit_td_colspan
+{
+	text-align:center;
+	padding:10px;
+}
+
+.group_edit_text,
+.group_edit_dropdown,
+.group_edit_error
+{
+	width:200px;
+}
+
+.group_edit_html
+{
+	width:410px;
+	height:410px;
+}
+
+.group_edit_simg
+{
+	width:100px;
+}
+
+/* * * * Group Gallery * * * */
+
+.group_gallery_wrapper
+{
+	margin:5px;
+	border:1px solid blue;
+	background-color:#c0dfff;
+}
+
+.group_gallery_pic
+{
+	position:relative;
+	padding:3px;
+	margin:7px;
+	float:left;
+	width:100px;
+	height:120px;
+	text-align:center;
+	border:0px solid green;
+}
+
+.group_help_link
+{
+	font-weight:bold;
+}
+
+/* * * * Group members * * * */
+
+.group_mem_showing
+{
+	text-align:center;
+	margin-top:5px;
+}
+
+.group_mem_pagination
+{
+	font-weight:bold;
+	text-align:center;
+	margin-bottom:5px;
+}
+.group_mem_main_wrapper
+{
+	position:relative;
+}
+.group_member
+{
+	position:relative;
+	float:left;
+	text-align:center;
+	font-weight:bold;
+	margin:10px;
+	height:130px;
+}
+
+.group_member_edit a,
+.group_member_edit a:link,
+.group_member_edit a:hover,
+.group_member_edit a:active
+{
+	color:red;
+}
+
+/* * * * Groups Search Form * * * */
+
+.groups_search_adv
+{
+	position:relative;
+	padding:3px;
+	width:400px;
+	margin:0 auto;
+}
+
+.groups_search_row
+{
+	margin-top:5px;
+}
+
+.groups_search_label
+{
+	padding-top:3px;
+	width:90px;
+	font-weight:bold;
+	float:left;
+}
+
+.groups_search_value
+{
+	float:left;
+	width:295px;
+	border:0px solid green;
+}
+
+.groups_search_text,
+.groups_search_select
+{
+	width:250px;
+}
+
+.groups_search_row_center
+{
+	margin-top:5px;
+	text-align:center;
+}
+
+/* * * * Groups Search Results * * * */
+
+.groups_showing_results
+{
+	text-align:center;
+	margin:3px;
+}
+
+.groups_pagination
+{
+	text-align:center;
+	font-weight:bold;
+	margin:3px;
+}
+
+.groups_result_wrapper
+{
+	position:relative;
+	padding: 3px;
+}
+
+.groups_result_row
+{
+	position:relative;
+	border:0px solid #EEA;
+	/*padding:3px;
+	margin:3px 0;*/
+	width:360px;
+	float:left;
+	margin-bottom:10px;
+}
+
+.group_res_thumb
+{
+	position:relative;
+	float:left;
+}
+
+.group_res_info
+{
+	position:relative;
+	float:left;
+	margin-left:10px;
+	width:220px;
+	border:0px solid gray;
+}
+
+.group_res_info_p
+{
+	
+}
+
+
+/* * * * Groups Home (Categories) * * * */
+
+.groups_categs_wrapper
+{
+	position:relative;
+	/*background-color:#F5F5F5;*/
+	/*padding:5px;*/
+}
+
+.groups_search_simple
+{
+	margin-top:10px;
+	text-align:center;
+	font-weight:bold;
+}
+
+.groups_category
+{
+	position:relative;
+	margin:3px;
+	width:235px;
+	border:0px solid green;
+	float:left;
+}
+
+.groups_categ_name
+{
+	font-weight:bold;
+}
+
+/* * * * Invite * * * */
+
+.group_invite_desc
+{
+	text-align:center;
+	margin-bottom:10px;
+}
+
+.group_invite_table
+{
+	width:470px;
+	margin:0 auto;
+	border-collapse:collapse;
+}
+
+.group_invite_td1,
+.group_invite_td3
+{
+	width:170px;
+	text-align:center;
+}
+
+.group_invite_head
+{
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+.group_invite_td2
+{
+	text-align:center;
+	vertical-align:middle;
+}
+
+.group_invite_td2 div
+{
+	margin:20px 0;
+}
+
+.group_invites_list,
+.group_friends_list
+{
+	width:150px;
+}
+
+.group_invite_tr2 td
+{
+	text-align:center;
+}
+
+.group_invite_tr2 input
+{
+	font-weight:bold;
+	margin-top:10px;
+}
+
+/* * * * Groups Help * * * */
+
+.groups_help_wrapper
+{
+	padding:5px;
+}

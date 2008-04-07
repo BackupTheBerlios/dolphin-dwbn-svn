@@ -1,0 +1,31 @@
+<div class="mailbox_header">
+	__mailbox_header_img__
+</div>
+
+<table class="table_mailbox" align="center">
+	<thead>
+		<tr>
+			<td class="td_mailbox_select">&nbsp;</td>
+			<td class="td_mailbox_flag">&nbsp;</td>
+			<td class="td_mailbox_from" title="__click_to_sort__">__from__</td>
+			<td class="td_mailbox_date" title="__click_to_sort__">__date__</td>
+			<td class="td_mailbox_subject" title="__click_to_sort__">__subject__</td>
+		</tr>
+	</thead>
+	<tbody>
+	{InsertRows}
+		<tr class="tr_mailbox_row_{tr_class}">
+			<td class="td_mailbox_select">{CheckBox}</td>
+			<td class="td_mailbox_flag">{Flag}</td>
+			<td class="td_mailbox_from">{From}</td>
+			<td class="td_mailbox_date{new_add}">{Date}</td>
+			<td class="td_mailbox_subject{new_add}">{Subject}</td>
+		</tr>
+	{/InsertRows}
+	</tbody>
+</table>
+
+<div class="mailbox_actions">
+	__actions_l__
+	__actions__
+</div>

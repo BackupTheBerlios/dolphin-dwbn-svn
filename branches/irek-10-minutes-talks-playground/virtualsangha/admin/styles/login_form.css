@@ -1,0 +1,99 @@
+/* * * * login form * * * */
+
+.login_form_cont
+{
+	position:relative;
+	border:1px solid gray;
+	width:300px;
+	margin:0px auto;
+	padding:2px;
+	margin-top:200px;
+}
+
+.login_form_header
+{
+	background-color:#CCCCCC;
+	padding:5px;
+	font-weight:bold;
+	text-align:center;
+	margin-bottom:2px;
+}
+
+.login_form_warning
+{
+	font-weight:bold;
+	color:#bd320b;
+	text-align:center;
+	padding-bottom:3px;
+}
+
+.login_form_row
+{
+	position:relative;
+	padding:1px;
+}
+
+.login_form_label
+{
+	float:left;
+	width:110px;
+	font-weight:bold;
+	text-align:right;
+	margin-right:5px;
+	padding-top:2px;
+	height:25px;
+	line-height:25px;
+	font-size:18px;
+	color:#333;
+}
+
+.login_form_val
+{
+	float:left;
+	margin-bottom:20px;
+}
+
+.login_form_row_forgot
+{
+	display:none;
+}
+
+.login_form_input
+{
+	width:250px;
+	height:25px;
+	border:1px solid #C3C3C3;
+	font-size:18px;
+	color:#333;
+	padding-left:3px;
+}
+
+.login_form_submit
+{
+	margin-top:2px;
+	width:60px;
+	height:25px;
+	font-weight:bold;
+}
+
+.login_form_not_member
+{
+	display:none;
+}
+
+.login_img
+{
+	position:absolute;
+	top:0px;
+	left:50px;
+}
+
+.login_header
+{
+	position:relative;
+	top:270px;
+	left:90px;
+	color:#4646A0;
+	font-size:18px;
+	font-weight:bold;
+}

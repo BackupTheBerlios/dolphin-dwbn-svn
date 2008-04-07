@@ -1,0 +1,4 @@
+MAILTO=emaho@irekjozwiak.com
+0 0 * * *  /usr/bin/php -q /Library/WebServer/Documents/periodic/cmd.php
+*/10 * * * *  /usr/bin/php -q /Library/WebServer/Documents/periodic/notifies.php
+*/10 * * * *  /usr/bin/php -q /Library/WebServer/Documents/periodic/tags.php

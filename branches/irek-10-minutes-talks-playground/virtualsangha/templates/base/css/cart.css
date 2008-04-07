@@ -1,0 +1,34 @@
+	div.action_box
+	{
+		position:relative;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:4px;
+		padding:4px;
+		text-align:center;
+		font-weight:bold;
+	}
+	
+	div.result_message
+	{
+		position:relative;
+		margin-left:auto;
+		margin-right:auto;
+		padding:4px;
+		text-align:center;
+	}
+	
+	div.cart_content
+	{
+		position:relative;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:4px;
+		padding:4px;
+		text-align:center;
+	}
+	
+	tr.free_profile
+	{
+		background-color:#E3E5EE;
+	}

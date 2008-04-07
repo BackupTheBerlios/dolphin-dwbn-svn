@@ -1,0 +1,125 @@
+@charset "iso-8859-1";
+@import url(../../base/css/search_result.css);
+	div.searchrow_block
+	{
+		position:relative;
+		overflow:hidden;
+		padding-bottom:3px;
+		width:720px;
+		border-bottom:1px solid #E9E8E8;
+	}
+	
+	div.short_desc
+	{
+		position:relative;
+		left:10px;
+		border:0px solid red;
+		float:left;
+		width:598px;
+	}
+	div.short_desc div
+	{
+		position:relative;
+		text-align:justify;
+		width:598px;
+	}
+	div.short_desc div.nick
+	{
+		color:#000000;
+		font-weight:bold;
+		line-height:20px;
+		vertical-align:middle;
+	}
+	div.short_desc div.age_from
+	{
+		font-weight:bold;
+		border-bottom:1px solid #EAEAEA;
+		padding-bottom:2px;
+		margin-bottom:5px;
+	}
+	div.short_desc div.more
+	{
+		position:relative;
+		margin:7px 0px 5px 0px;
+		
+	}
+	div.short_desc div.more div.more_photos
+	{
+		position:absolute;
+		top:3px;
+		left:75px;
+	}
+	div.match_zodiac
+	{
+		position:absolute;
+		width:67px;
+		right:10px;
+		text-align:center;
+		border:0px solid red;
+	}
+	div.searchrow_block div.links
+	{
+		position:relative;
+		border:0px solid red;
+		left:123px;
+		margin-bottom:5px;
+	}
+	
+	.links_span
+	{
+		position:relative;
+		margin:0px 5px;
+	}
+		
+	div.search_result_limit
+	{
+		position:relative;
+		margin:10px 0px;
+		border:1px solid red;
+		padding:2px;
+	}
+	
+	div.search_result_limit div
+	{
+		position:relative;
+		text-align:center;
+		background-color:#F9B2AD;
+		height:25px;
+		line-height:25px;
+		vertical-align:middle;
+		font-weight:bold;
+	}
+
+	.paIcons
+	{
+		vertical-align:middle;
+		margin-right:3px;
+	}
+	
+	.thumbnail_block
+	{
+
+	}
+	
+	.bodyBlock
+	{
+		width:746px;		
+	}
+	
+	.bodyBlock .disignBoxFirst
+	{
+		width:744px;
+	}
+	
+	.box_content
+	{
+		
+	}
+	
+	.links_image
+	{
+		position:relative;
+		top:3px;
+		margin-right:3px;
+		border:0px;
+	}

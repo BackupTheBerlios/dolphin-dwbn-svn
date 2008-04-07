@@ -1,0 +1,9 @@
+<items>
+    <item key="userIn" value="userIn.mp3" />
+    <item key="userOut" value="userOut.mp3" />
+    <item key="newMessage" value="newMessage.mp3" />
+    <item key="userAudioStart" value="startCasting.mp3" />
+    <item key="userAudioStop" value="stopCasting.mp3" />
+    <item key="userVideoStart" value="startCasting.mp3" />
+    <item key="userVideoStop" value="stopCasting.mp3" />
+</items>

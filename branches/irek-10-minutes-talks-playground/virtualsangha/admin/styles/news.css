@@ -1,0 +1,14 @@
+div.news
+{
+	background-color:#ffffff;
+	border:1px solid #E6EBED;
+	overflow:hidden;
+	padding:1px;
+	margin-bottom:5px;
+}
+
+div.news a:link,
+div.news a:visited
+{
+	font-weight:bold;
+}

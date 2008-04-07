@@ -1,0 +1,30 @@
+div.SDInfoBox
+{
+	text-align: center;
+	background-color: #F7F7F7;
+	border: 1px solid silver;
+	padding: 2px;
+	width: 150px;
+}
+
+tr.SDMatchMemberHeadRow
+{
+	background-color: #CCCCCC;
+}
+
+tr.SDMatchMemberMatchRow
+{
+	background-color: #E2E2FF;
+}
+
+tr.SDMatchMemberNotMatchRow
+{
+	background-color: #F7F7F7;
+}
+
+div.SDMatchBox
+{
+	border: 1px solid silver;
+	padding: 2px 2px 2px 20px;
+	background-color: #F7F7F7;
+}

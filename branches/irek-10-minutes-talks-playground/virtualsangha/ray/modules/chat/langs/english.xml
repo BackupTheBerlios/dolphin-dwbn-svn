@@ -1,0 +1,96 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<items>
+    <item key="_name_"><![CDATA[English]]></item>
+    <item key="txtHeader"><![CDATA[A/V Chat]]></item>
+    <item key="txtCurrentTime"><![CDATA[#year#/#month#/#day# - #hours#:#minutes#]]></item>
+    <item key="txtUserMessagePrefix"><![CDATA[#user# (#time#): ]]></item>
+    <item key="txtUserMessagePrefixWT"><![CDATA[#user#: ]]></item>
+    <item key="txtSystemMessagePrefix"><![CDATA[(#time#): ]]></item>
+    <item key="txtSex"><![CDATA[Sex]]></item>
+    <item key="txtAge"><![CDATA[Age]]></item>
+    <item key="txtDescription"><![CDATA[Description]]></item>
+    <item key="txtBanned"><![CDATA[Banned]]></item>
+    <item key="txtType"><![CDATA[Type]]></item>
+	<item key="txtTypemoder"><![CDATA[moderator]]></item>
+    <item key="txtTypefull"><![CDATA[full access]]></item>
+    <item key="txtTypetext"><![CDATA[text only]]></item>
+    <item key="txtTypeview"><![CDATA[view only]]></item>
+
+	<item key="txtProfile"><![CDATA[Profile]]></item>
+    <item key="txtRooms"><![CDATA[Rooms]]></item>
+    <item key="txtUserInfo"><![CDATA[USER INFO]]></item>
+    <item key="txtUserInfo1"><![CDATA[CLICK ON USER PIC ABOVE]]></item>
+    <item key="txtMyVideo"><![CDATA[MY VIDEO]]></item>
+    <item key="txtMyVideoAbout"><![CDATA[CLICK BUTTONS BELOW TO START]]></item>
+    <item key="txtSelectSmileset"><![CDATA[Select smileset from the list]]></item>
+    <item key="txtRoomCaption"><![CDATA[#name# (#usersNumber#)]]></item>
+    <item key="txtUserDetails"><![CDATA[#age# y/o #sex# #type#]]></item>
+    <item key="txtNoUserAudioVideo"><![CDATA[No #user#'s video available]]></item>
+    <item key="txtHowToTransferAudioVideo"><![CDATA[Click the buttons below to transfer audio and video]]></item>
+
+    <item key="msgConnectionError"><![CDATA[CONNECTION ERROR]]></item>
+	<item key="msgConnecting"><![CDATA[CONNECTING]]></item>
+    <item key="msgLoading"><![CDATA[LOADING]]></item>
+    <item key="msgErrorCreatingRoom"><![CDATA[error creating new room]]></item>
+    <item key="msgUserAuthenticationFailure"><![CDATA[user authentication failed]]></item>
+    <item key="msgKicked"><![CDATA[You were disconnected by moderator]]></item>
+    <item key="msgKickedForAll"><![CDATA[#user# is disconnected by moderator]]></item>
+    <item key="msgStatusChangedForAll"><![CDATA[#user#'s access type is changed by administrator to #type#]]></item>
+    <item key="msgStatusChanged"><![CDATA[Your access type is changed by administrator to #type#]]></item>
+    <item key="msgRoomJoining"><![CDATA[#user# joined the room]]></item>
+    <item key="msgRoomLeaving"><![CDATA[#user# left the room]]></item>
+    <item key="msgNoAccess"><![CDATA[You have no access to this feature]]></item>
+    <item key="msgSettingsCaption"><![CDATA[Select skin and language.]]></item>
+    <item key="msgSettingsSkin"><![CDATA[Skin:]]></item>
+    <item key="msgSettingsLanguage"><![CDATA[Language:]]></item>
+    <item key="msgSettingsApplyConfirm"><![CDATA[Changes will be applied after reloading. Reload now?]]></item>
+
+	<item key="btnVideoChat"><![CDATA[Video Chat]]></item>
+    <item key="btnVideoAudioSettings"><![CDATA[Settings]]></item>
+    <item key="btnOk"><![CDATA[OK]]></item>
+    <item key="btnCancel"><![CDATA[Cancel]]></item>
+    <item key="btnClose"><![CDATA[Close]]></item>
+    <item key="btnClear"><![CDATA[Clear]]></item>
+    <item key="btnCopyToClipboard"><![CDATA[Copy to clipboard]]></item>
+    <item key="btnNewRoom"><![CDATA[New Room]]></item>
+    <item key="btnChangeSmileset"><![CDATA[Change Smileset]]></item>
+
+	<item key="dlgEnterRoomName"><![CDATA[Enter new room name]]></item>
+    <item key="dlgHistoryCaption"><![CDATA[#room# room history (#length# messages):]]></item>
+    <item key="dlgHistoryClear"><![CDATA[Are you sure you want to clear history?]]></item>
+    <item key="dlgNumberRoomsIsMax"><![CDATA[The number of rooms is the maximum available]]></item>
+    <item key="dlgRoomExists"><![CDATA[The room with such a name already exists]]></item>
+	<item key="dlgKickUser"><![CDATA[Are you sure you want to kick #user#?]]></item>
+	<item key="dlgBanUser"><![CDATA[Are you sure you want to ban #user#?]]></item>
+    
+	<item key="hintShowSmilesPanel"><![CDATA[Show smiles panel]]></item>
+    <item key="hintHideSmilesPanel"><![CDATA[Hide smiles panel]]></item>
+    <item key="hintFontColor"><![CDATA[Font color]]></item>
+    <item key="hintUnderline"><![CDATA[Underline]]></item>
+    <item key="hintItalic"><![CDATA[Italic]]></item>
+    <item key="hintBold"><![CDATA[Bold]]></item>
+    <item key="hintResize"><![CDATA[Resize]]></item>
+    <item key="hintTurnAudioOn"><![CDATA[Turn audio on]]></item>
+    <item key="hintTurnAudioOff"><![CDATA[Turn audio off]]></item>
+    <item key="hintTurnVideoOn"><![CDATA[Turn video on]]></item>
+    <item key="hintTurnVideoOff"><![CDATA[Turn video off]]></item>
+    <item key="hintRoomRemove"><![CDATA[Remove '#room#' room]]></item>
+    <item key="hintRoomJoin"><![CDATA[Join '#room#' room]]></item>
+    <item key="hintRoomSetActive"><![CDATA[Set '#room#' room active]]></item>
+    <item key="hintRoomOpen"><![CDATA[Open '#room#' room]]></item>
+    <item key="hintRoomClose"><![CDATA[Close '#room#' room]]></item>
+    <item key="hintUserSelect"><![CDATA[Select #user#]]></item>
+    <item key="hintUserProfile"><![CDATA[View #user#'s profile]]></item>
+    <item key="hintUserAudio"><![CDATA[Listen to #user#'s audio]]></item>
+    <item key="hintUserVideo"><![CDATA[View #user#'s video]]></item>
+    <item key="hintUserAudioPlayed"><![CDATA[#user# is playing your audio]]></item>
+    <item key="hintUserVideoPlayed"><![CDATA[#user# is playing your video]]></item>
+    <item key="hintUserIM"><![CDATA[Instant messaging with #user#]]></item>
+	<item key="hintUserKick"><![CDATA[Kick #user#]]></item>
+	<item key="hintUserBan"><![CDATA[Ban #user#]]></item>
+	<item key="hintUserUnban"><![CDATA[Unban #user#]]></item>	 
+    <item key="hintUserZoomIn"><![CDATA[Zoom in]]></item>
+    <item key="hintUserZoomOut"><![CDATA[Zoom out]]></item>
+    <item key="hintHistory"><![CDATA[Show history]]></item>
+    <item key="hintMessagesTime"><![CDATA[Messages time]]></item>
+</items>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<items>
+    <item key="txtHeader"><![CDATA[Whiteboard]]></item>
+    <item key="txtBoardDetailsLite"><![CDATA[(by #user#, #type#)]]></item>
+    <item key="txtBoardDetails"><![CDATA[(by #user#, #type#, #number#/#max#)]]></item>
+	<item key="txtBoardJoin"><![CDATA[JOIN]]></item>
+	<item key="txtBackColor"><![CDATA[Back Color]]></item>
+	<item key="txtFontSize"><![CDATA[Font Size]]></item>
+	<item key="txtVertexNumber"><![CDATA[Vertex Number]]></item>
+	<item key="txtSize"><![CDATA[Size]]></item>
+	<item key="txtStroke"><![CDATA[Stroke]]></item>
+	<item key="txtFill"><![CDATA[Fill]]></item>
+	<item key="txtBack"><![CDATA[Back]]></item>
+	<item key="txtYes"><![CDATA[Yes]]></item>
+	<item key="txtNo"><![CDATA[No]]></item>
+	<item key="txtDefaultText"><![CDATA[some text]]></item>
+	
+	<item key="txtNewBoard"><![CDATA[New board]]></item>
+	<item key="txtTitle"><![CDATA[Title:]]></item>
+	<item key="txtMaxUsers"><![CDATA[Maximum users:]]></item>
+	<item key="txtStatus"><![CDATA[Status:]]></item>
+	<item key="txtEditable"><![CDATA[Editable]]></item>
+	<item key="txtNonEditable"><![CDATA[Non-editable]]></item>
+	
+	<item key="toolPencil"><![CDATA[Pencil]]></item>
+	<item key="toolRectangle"><![CDATA[Rectangle]]></item>
+	<item key="toolPolygon"><![CDATA[Polygon]]></item>
+	<item key="toolLine"><![CDATA[Line]]></item>
+	<item key="toolCircle"><![CDATA[Circle]]></item>
+	<item key="toolStar"><![CDATA[Star]]></item>
+	<item key="toolCurve"><![CDATA[Curve]]></item>
+	<item key="toolNGon"><![CDATA[Regular polygon]]></item>
+	<item key="toolText"><![CDATA[Text]]></item>
+	
+	<item key="hintPencil"><![CDATA[Pencil]]></item>
+	<item key="hintRectangle"><![CDATA[Rectangle]]></item>
+	<item key="hintPolygon"><![CDATA[Polygon]]></item>
+	<item key="hintLine"><![CDATA[Line]]></item>
+	<item key="hintCircle"><![CDATA[Circle]]></item>
+	<item key="hintStar"><![CDATA[Star]]></item>
+	<item key="hintCurve"><![CDATA[Curve]]></item>
+	<item key="hintNGon"><![CDATA[Regular polygon]]></item>
+	<item key="hintText"><![CDATA[Text]]></item>
+	<item key="hintTransmit"><![CDATA[Transfer changes]]></item>
+	<item key="hintUndo"><![CDATA[Undo]]></item>
+	<item key="hintRedo"><![CDATA[Redo]]></item>
+	<item key="hintClear"><![CDATA[Clear board]]></item>
+    
+    <item key="msgConnectionError"><![CDATA[CONNECTION ERROR]]></item>
+    <item key="msgUserAuthenticationFailure"><![CDATA[User Authentication Failed]]></item>
+    <item key="msgConnecting"><![CDATA[CONNECTING]]></item>
+    <item key="msgSettingsCaption"><![CDATA[Select skin and language.]]></item>
+    <item key="msgSettingsSkin"><![CDATA[Skin:]]></item>
+    <item key="msgSettingsLanguage"><![CDATA[Language:]]></item>
+    <item key="msgSettingsApplyConfirm"><![CDATA[Changes will be applied after reloading. Reload now?]]></item>
+    <item key="msgUserAuthenticationFailure"><![CDATA[User authentication failed]]></item>
+	<item key="msgClearBoard"><![CDATA[Are you sure you want to clear this board?]]></item>
+	<item key="msgCloseBoard"><![CDATA[Are you sure you want to close this board?]]></item>
+	<item key="msgFullBoard"><![CDATA[The board is full.]]></item>
+	<item key="msgWrongTitle"><![CDATA[Please enter your board title.]]></item>
+	<item key="msgWrongUsersNumber"><![CDATA[Users number should be equal or greater than 2.]]></item>
+	<item key="msgErrorGD"><![CDATA[Error! GD Library not installed.]]></item>
+	<item key="msgErrorFile"><![CDATA[Error creating file.]]></item>
+	<item key="msgErrorDB"><![CDATA[Database error.]]></item>
+	<item key="msgBoardCreating"><![CDATA[LOADING]]></item>
+	<item key="msgBoardUpdating"><![CDATA[LOADING]]></item>
+
+    <item key="btnCancel"><![CDATA[Cancel]]></item>
+    <item key="btnOk"><![CDATA[OK]]></item>
+	<item key="btnSettings"><![CDATA[Settings]]></item>
+	<item key="btnNewBoard"><![CDATA[NEW BOARD]]></item>
+</items>
