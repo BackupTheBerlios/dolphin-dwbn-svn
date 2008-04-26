@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <constant name="struts.objectFactory" value="spring" />
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.configuration.xml.reload" value="true" />
+
+
+    <package name="registration" extends="struts-default">
+        <interceptors>
+			<interceptor name="emailInterceptor" class="quickstart.interceptor.EmailInterceptor"/>			
+ 		</interceptors>    
+   
+        <action name="register" class="initAction" method="execute">
+            <result>dwbnreg.jsp</result>
+        </action>
+
+		<!-- 
+        <action name="listRegistrationsWaiting" class="registrationWaitingAction" method="execute">
+            <result>pages/list.jsp</result>
+            <result name="input">pages/list.jsp</result>
+        </action>
+
+        <action name="removeRegistrationWaiting" class="registrationWaitingAction" method="remove">
+            <result>pages/list.jsp</result>
+            <result name="input">pages/list.jsp</result>
+        </action>
+ 		-->        
+
+        <action name="saveRegistrationWaiting" class="registrationWaitingAction" method="save">
+  			<interceptor-ref name="defaultStack" />            
+            <interceptor-ref name="emailInterceptor"/>
+            <result>pages/submit.jsp</result>
+            <!-- 
+            <result name="input">pages/list.jsp</result>
+             -->
+        </action>
+        
+        <action name="transfer" class="registrationWaitingAction" method="transfer">
+        </action>  
+    </package>    
+
+</struts>
+

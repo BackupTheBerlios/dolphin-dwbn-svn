@@ -1,0 +1,47 @@
+<!DOCTYPE validators PUBLIC
+"-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+"http://www.opensymphony.com/xwork/xwork-validator-
+1.0.2.dtd">
+<validators>
+	<!-- Mandatory fields -->
+	<field name="registrationWaiting.firstName">
+		<field-validator type="requiredstring">
+			<message><![CDATA[<b>You must enter your fistname.</b>]]></message>
+		</field-validator>
+	</field>
+	
+	<field name="registrationWaiting.lastName">
+		<field-validator type="requiredstring">
+			<message>You must enter your lastName.</message>
+		</field-validator>
+	</field>
+
+	<field name="registrationWaiting.city">
+		<field-validator type="requiredstring">
+			<message>You must enter your city.</message>
+		</field-validator>
+	</field>    
+	
+	<field name="registrationWaiting.email">
+		<field-validator type="requiredstring">
+			<message>You must enter your email.</message>
+		</field-validator>
+	    <field-validator type="email">
+	      <message>Please enter a correct email address.</message>
+	    </field-validator>		
+	</field>  	
+	
+	<field name="registrationWaiting.friendCenter">
+		<field-validator type="requiredstring">
+			<message>Please enter the name of a dharma friend from your local center.</message>
+		</field-validator>
+	</field>	
+
+	<field name="registrationWaiting.friendOther">
+		<field-validator type="requiredstring">
+			<message>Please enter one more name of another dharma friend.</message>
+		</field-validator>
+	</field>	
+	
+	<!-- Optional fields -->	
+</validators>

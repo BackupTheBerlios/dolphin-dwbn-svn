@@ -1,0 +1,232 @@
+
+	// Populates the SessionContext object using dependency injection.
+	@Resource
+	private SessionContext sessionContext;
+	// Obtain a reference to the TimerService object
+	TimerService timerService = sessionContext.getTimerService();
+	// Creates a timer object using the relevant information taken from the StatusInfo object.
+	// The following code creates a interval timer object with the specified startDate and with the duration
+	// as its interval.
+	Calendar startDate = statusInfo.getStartDate();
+	long duration = statusInfo.getNextInterval();
+	Timer timer = timerService.createTimer(startDate.getTime(), duration, null);
+	
+	
+
+	Code snippet …
+	@Timeout
+	public void updateStatus(Timer timer){
+		Manager manager = statusInfo.getManager();
+		List<Employee> employees = statusInfo.getEmployees();
+		for(int i=0; i<employees.size(); i++){
+			System.out.println("Updating the Status Information..");
+			manager.reportStatus(employees.get(i), Employee.getStatusString());
+		}
+	Calendar now = new GregorianCalendar();
+	if(now.after(statusInfo.getEndDate())){
+	manager.printEmpStatusInfo();
+	timer.cancel();
+	}
+	}
+	
+	***********************************************************************************************************************
+
+
+import java.util.List;
+import java.util.Map;
+
+import org.apache.struts2.interceptor.ParameterAware;
+
+import quickstart.model.Registration;
+import quickstart.model.RegistrationWaiting;
+import quickstart.service.RegistrationService;
+
+import com.opensymphony.xwork2.Action;
+import com.opensymphony.xwork2.Preparable;
+
+public class __RegistrationAction implements Preparable, ParameterAware{
+	public final static String STATUS_WAITING = "waiting";
+	
+    private RegistrationService service;
+    private List<Registration> registrations;
+    private Registration registration;
+    private Integer id;
+    private Map parameters;
+
+    public __RegistrationAction(RegistrationService service) {
+        this.service = service;
+    }
+    
+    public void setParameters( Map parameters ){
+    	this.parameters = parameters;
+    }
+    
+    public Map getParameters(){
+    	return this.parameters;
+    }
+
+    public String execute() {
+    	if( getParameters() != null && getParameters().get( "status" ) != null && ((String[]) (getParameters().get( "status" )))[0] != null ){
+	    		System.out.println( ((String[]) (getParameters().get( "status" )))[0] );
+	    	
+	    	if( ((String[]) (getParameters().get( "status" )))[0].equals( STATUS_WAITING ) )
+	    		this.registrations = service.findAll( STATUS_WAITING );
+	    	else
+	    		this.registrations = service.findAll( STATUS_WAITING );
+    	}
+    	else
+    		this.registrations = service.findAll( STATUS_WAITING );
+    		
+        return Action.SUCCESS;
+    }
+
+    public String save() {
+    	/*if( ((String[]) (getParameters().get( "status" )))[0].equals( STATUS_WAITING ) )
+    		this.registration = ((RegistrationWaiting) registration);*/
+    		
+        this.service.save( registration/*, ((String[]) (getParameters().get( "status" )))[0]*/ );
+        this.registration = new RegistrationWaiting();
+        return execute();
+    }
+    
+    public String remove() {
+        service.remove(id);
+        return execute();
+    }
+
+    public List<Registration> getRegistrations() {
+        return registrations;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void prepare() throws Exception {
+        if (id != null)
+        	registration = service.find(id);
+    }
+
+    public Registration getRegistration() {
+        return registration;
+    }
+
+    public void setRegistration(Registration registration) {
+        this.registration = registration;
+    }
+}
+
+package quickstart.service;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
+import org.springframework.transaction.annotation.Transactional;
+
+import quickstart.action.__RegistrationAction;
+import quickstart.model.Registration;
+import quickstart.model.RegistrationActivated;
+import quickstart.model.RegistrationWaiting;
+
+@Transactional
+public class __RegistrationServiceImpl implements RegistrationService {
+    private EntityManager em;
+
+    @PersistenceContext
+    public void setEntityManager(EntityManager em) {
+        this.em = em;
+    }
+
+    @SuppressWarnings("unchecked")
+    public List<Registration> findAll( String status ) {
+    	Query query;
+    	
+    	if( status.equals( __RegistrationAction.STATUS_WAITING ))
+    		query = getEntityManager().createQuery("select r FROM RegistrationWaiting r");
+    	else
+    		query = getEntityManager().createQuery("select r FROM registrationActivated r");
+    	
+        return query.getResultList();
+    }
+
+    public void save(Registration registration) {
+    	if( registration instanceof RegistrationWaiting )
+    		registration = (RegistrationWaiting) registration;
+    	else /*( registration instanceof RegistrationActivated )*/
+    		registration = (RegistrationActivated) registration;
+    	
+        if (registration.getId() == null) {
+            // new
+            em.persist(registration);
+        } else {
+            // update
+            em.merge(registration);
+        }
+    }
+
+    public void remove(int id) {
+    	Registration registration = find(id);
+        if (registration != null) {
+            em.remove(registration);
+        }
+    }
+
+    private EntityManager getEntityManager() {
+        return em;
+    }
+
+    public Registration find(int id) {
+        return em.find(Registration.class, id);
+    }
+
+}    
+    
+    
+    public List<RegistrationActivated> findAllActivated();
+
+    public void saveActivated(RegistrationActivated registration);
+
+    public void removeActivated(int id);
+
+    public RegistrationActivated findActivated(int id);
+    
+    
+        private List<RegistrationActivated> registrationsActivated;
+    private RegistrationActivated registrationActivated;
+    private Integer idActivated;
+    
+    
+
+    @SuppressWarnings("unchecked")
+    public List<RegistrationActivated> findAllActivated() {
+    	Query query = getEntityManager().createQuery("select r FROM RegistrationActivated r");
+        return query.getResultList();
+    }
+
+    public void saveActivated(RegistrationActivated registration) {
+        if (registration.getId() == null) {
+            // new
+            em.persist(registration);
+        } else {
+            // update
+            em.merge(registration);
+        }
+    }
+
+    public void removeActivated(int id) {
+    	Registration registration = findActivated(id);
+        if (registration != null) {
+            em.remove(registration);
+        }
+    }
+
+    public RegistrationActivated findActivated(int id) {
+        return em.find(RegistrationActivated.class, id);
+    }    
