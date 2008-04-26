@@ -1,1 +1,0 @@
-<?php $iLastCronUpdate = 0; ?>
