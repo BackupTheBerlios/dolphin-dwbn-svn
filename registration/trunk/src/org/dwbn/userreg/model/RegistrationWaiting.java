@@ -1,4 +1,4 @@
-package quickstart.model;
+package org.dwbn.userreg.model;
 
 import java.sql.Date;
 

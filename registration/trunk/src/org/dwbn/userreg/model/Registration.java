@@ -1,4 +1,4 @@
-package quickstart.model;
+package org.dwbn.userreg.model;
 
 public abstract class Registration{
     private String firstName;

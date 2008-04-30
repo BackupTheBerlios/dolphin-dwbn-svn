@@ -1,4 +1,4 @@
-package quickstart.interceptor;
+package org.dwbn.userreg.interceptor;
 
 import java.util.Map;
 import java.util.Properties;
@@ -11,10 +11,10 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 import org.apache.struts2.interceptor.ParameterAware;
+import org.dwbn.userreg.action.RegistrationWaitingAction;
+import org.dwbn.userreg.model.Registration;
+import org.dwbn.userreg.model.RegistrationWaiting;
 
-import quickstart.action.RegistrationWaitingAction;
-import quickstart.model.Registration;
-import quickstart.model.RegistrationWaiting;
 
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionInvocation;

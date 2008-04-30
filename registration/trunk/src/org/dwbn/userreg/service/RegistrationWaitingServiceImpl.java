@@ -1,4 +1,4 @@
-package quickstart.service;
+package org.dwbn.userreg.service;
 
 import java.sql.Date;
 import java.util.List;
@@ -7,10 +7,10 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
+import org.dwbn.userreg.model.RegistrationConfirmed;
+import org.dwbn.userreg.model.RegistrationWaiting;
 import org.springframework.transaction.annotation.Transactional;
 
-import quickstart.model.RegistrationConfirmed;
-import quickstart.model.RegistrationWaiting;
 
 @Transactional
 public class RegistrationWaitingServiceImpl implements RegistrationWaitingService{

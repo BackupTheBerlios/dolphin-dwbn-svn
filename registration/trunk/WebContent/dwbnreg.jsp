@@ -24,7 +24,7 @@
 			    name="registrationWaiting.country" 
 			    headerKey="1"
 			    headerValue="-- Please Select --"
-			    list="countriesList" 
+			    list="countryList" 
 		    />				
 			
 			<s:textfield id="phone" label="Phone (*)" name="registrationWaiting.phone"/>
@@ -35,7 +35,7 @@
 			    name="registrationWaiting.preferredLanguage" 
 			    headerKey="1"
 			    headerValue="-- Please Select --"
-			    list="LanguagesList"
+			    list="LanguageList"
 		    />
 			
 		    <s:select label="Age" 
@@ -51,7 +51,7 @@
 			    name="registrationWaiting.homeCenter" 
 			    headerKey="1"
 			    headerValue="-- Please Select --"
-			    list="centersList"
+			    list="centerList"
 		    />
 		    
 			<b><s:label key="Please name two people who already receive DWBN News who can recommend you" /></b>

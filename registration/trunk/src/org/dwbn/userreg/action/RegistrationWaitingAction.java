@@ -1,14 +1,14 @@
-package quickstart.action;
+package org.dwbn.userreg.action;
 
 import java.util.List;
 import java.util.Map;
 
 import org.apache.struts2.interceptor.ParameterAware;
+import org.dwbn.userreg.model.Registration;
+import org.dwbn.userreg.model.RegistrationConfirmed;
+import org.dwbn.userreg.model.RegistrationWaiting;
+import org.dwbn.userreg.service.RegistrationWaitingService;
 
-import quickstart.model.Registration;
-import quickstart.model.RegistrationConfirmed;
-import quickstart.model.RegistrationWaiting;
-import quickstart.service.RegistrationWaitingService;
 
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.Preparable;

@@ -1,8 +1,9 @@
-package quickstart.service;
+package org.dwbn.userreg.service;
 
 import java.util.List;
 
-import quickstart.model.RegistrationWaiting;
+import org.dwbn.userreg.model.RegistrationWaiting;
+
 
 public interface RegistrationWaitingService {
     public List<RegistrationWaiting> findAllWaiting();

@@ -1,4 +1,4 @@
-package quickstart.action;
+package org.dwbn.userreg.action;
 
 import java.util.List;
 
@@ -26,39 +26,39 @@ public class InitAction extends ActionSupport{
     }
     
     public String execute() throws Exception{ 
-    	this.initCountries();
-    	this.initLanguages();
-    	this.initCenters();    	
+    	this.initCountryList();
+    	this.initLanguageList();
+    	this.initCenterList();    	
         return SUCCESS; 
     } 
     
     @SuppressWarnings("unchecked")
-    public void initCountries() {
-    	Query query = getEntityManager().createNativeQuery( "SELECT c.country FROM countries c" );
+    public void initCountryList() {
+    	Query query = getEntityManager().createQuery("SELECT c FROM Country AS c");
         this.countriesList = query.getResultList();
     }    
  
     @SuppressWarnings("unchecked")
-    public void initLanguages() {
-    	Query query = getEntityManager().createNativeQuery( "SELECT l.language FROM languages l" );
+    public void initLanguageList() {
+    	Query query = getEntityManager().createQuery( "SELECT l FROM Language AS l" );
         this.languagesList = query.getResultList();
     } 
     
     @SuppressWarnings("unchecked")
-    public void initCenters() {
-    	Query query = getEntityManager().createNativeQuery( "SELECT c.center FROM centers c" );
+    public void initCenterList() {
+    	Query query = getEntityManager().createQuery( "SELECT c FROM Center AS c" );
         this.centersList = query.getResultList();
     } 
     
-    public List<String> getCountriesList(){
+    public List<String> getCountryList(){
         return this.countriesList;
     }  
     
-    public List<String> getLanguagesList(){
+    public List<String> getLanguageList(){
         return this.languagesList;
     }
     
-    public List<String> getCentersList(){
+    public List<String> getCenterList(){
         return this.centersList;
     }     
 }

@@ -7,10 +7,9 @@
     <constant name="struts.devMode" value="true" />
     <constant name="struts.configuration.xml.reload" value="true" />
 
-
     <package name="registration" extends="struts-default">
         <interceptors>
-			<interceptor name="emailInterceptor" class="quickstart.interceptor.EmailInterceptor"/>			
+			<interceptor name="emailInterceptor" class="org.dwbn.userreg.interceptor.EmailInterceptor"/>			
  		</interceptors>    
    
         <action name="register" class="initAction" method="execute">
