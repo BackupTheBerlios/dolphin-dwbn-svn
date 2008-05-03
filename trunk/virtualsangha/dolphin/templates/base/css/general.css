@@ -1,0 +1,871 @@
+	@import url(login_form.css);
+	
+	body
+	{
+		margin:0px;
+		padding:0px;
+		margin-bottom:20px;
+		background-color:#FFFFFF;
+	}
+
+	a img, form, p
+	{
+		border:0px;
+		border-style:none;
+		margin:0px;
+		padding:0px;
+	}
+/*------------------*/
+	div#main
+	{
+		position:relative;
+		width:770px;
+		margin-left:auto;
+		margin-right:auto;
+
+	}
+
+	div#left_column_menu
+	{
+		position:relative;
+		width:215px;
+		float:left;
+	}
+	div#left_column_content
+	{
+		position:relative;
+		width:215px;
+		float:right;
+	}
+	div#right_column_menu
+	{
+		position:relative;
+		width:546px;
+		float:right;
+		left:-9px;
+	}
+
+	div#right_column_content
+	{
+		position:relative;
+		width:546px;
+		float:left;
+		left:9px;
+	}
+/*------------------*/
+	div#footer
+	{
+		position:relative;
+		height:37px;
+
+		background-repeat:repeat-x;
+		margin-bottom:10px;
+		border:0px solid red;
+	}
+	div#bottom_text, div#bottom_menu_block, div#boonex_banners
+	{
+		position:relative;
+		width:770px;
+		margin-top:5px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		border:0px solid red;
+	}
+	
+	
+	
+	
+	.paginate
+	{
+		text-align:center;
+		margin: 2px;
+	}
+	
+	.paginate a,
+	.paginate a:link,
+	.paginate a:visited
+	{
+		background-color:#FFFFFF;
+		color:#2E6AB1;
+	}
+	
+	.paginate i,
+	.paginate a:active,
+	.paginate a:hover
+	{
+		color:#FFFFFF;
+		background-color:#2E6AB1;
+	}
+	
+	.paginate i,
+	.paginate a,
+	.paginate a:link,
+	.paginate a:active,
+	.paginate a:visited,
+	.paginate a:hover
+	{
+		border:1px solid #2E6AB1;
+		font-style:normal;
+		text-decoration:none;
+		padding-left:3px;
+		padding-right:3px;
+		/*margin-left:1px;*/
+		margin-right:1px;
+		font-weight:bold;
+	}
+	
+	/*.paginate a,
+	.paginate i
+	{	
+		border:1px solid #9AAFE5;
+		text-decoration:none;
+		padding-left:3px;
+		padding-right:3px;    
+		color:#2E6AB1;
+		margin-left:1px;
+	}*/
+	
+
+	/*.paginate a:hover,
+	.paginate i
+	{
+		color:#FFFFFF;
+		border:1px solid #2E6AB1;
+		background-color:#2E6AB1;
+		color:#AA9999;
+		font-style:normal;
+	}*/
+	
+
+	.searchResPerPage {
+		text-align: center;
+		margin: 2px;
+	}
+	
+	.searchResPerPage select {
+		border: 1px solid #ccc;
+		width: 45px;
+	}
+	
+	.showingResults {
+		text-align: center;
+		margin: 2px;
+	}
+	
+	
+	div.thumbnail_block
+	{
+		position:relative;
+		text-align:center;
+		padding:0px;
+		margin-right:auto;
+		background-color:#FFFFFF;
+	}
+	div.thumbnail_block img
+	{
+		border:1px solid #9B9A9A;
+		background-position:center;
+		background-repeat:no-repeat;
+	}
+	div.thumbnail_block .online_offline_bulb
+	{
+		border:0px;
+	}
+	div.clear_both
+	{
+		clear:both;
+		font-size:1px;
+	}
+
+	div.rate_block /* ### in design.inc.php function DesignProgress() ### */
+	{
+		position:relative;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:2px;
+	}
+	div.rate_text /* ### in design.inc.php function DesignProgress() ### */
+	{
+		position:relative;
+		text-align:left;
+	}
+	div.rate_scale /* ### in design.inc.php function DesignProgress() ### */
+	{
+		position:relative;
+		height:10px;
+		font-size:1px;
+		line-height:10px;
+		border:1px solid #9DA0A1;
+
+		margin:0px;
+		padding:0px;
+		text-align:left;
+	}
+
+/*------------------*/
+	div.im_invite_container
+	{
+		position: absolute;
+		z-index: 90;
+		width: 288px;
+		height: 188px;
+		border: 6px solid silver;
+		background-color: #FFFFFF;
+	}
+	div.im_invite_image
+	{
+		position: absolute;
+		width: 110px;
+		height: 110px;
+		border: 1px solid black;
+		left: 10px;
+		top: 10px;
+		text-align: center;
+	}
+	div.im_invite_image img
+	{
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	div.im_invite_caption
+	{
+		position: absolute;
+		left: 134px;
+		top: 16px;
+		width: 140px;
+		font-family: Verdana;
+		font-size: 12px;
+		font-weight: normal;
+	}
+	div.im_invite_nickname
+	{
+		position: absolute;
+		left: 134px;
+		top: 40px;
+		width: 140px;
+		font-family: Verdana;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	div.im_invite_message
+	{
+		position: absolute;
+		left: 134px;
+		top: 64px;
+		width: 140px;
+		height: 80px;
+		font-family: Verdana;
+		font-size: 11px;
+		font-weight: normal;
+		font-style: italic;
+	}
+	div.im_invite_accept_button
+	{
+		position: absolute;
+		left: 186px;
+		top: 156px;
+		width: 86px;
+	}
+	div.im_invite_decline_button
+	{
+		position: absolute;
+		left: 80px;
+		top: 156px;
+		width: 86px;
+	}
+	input.im_invite_button
+	{
+		background-color: #7EAAD7;
+		color: #FFFFFF;
+		font-size: 12px;
+		font-family: Arial;
+		border: 1px solid silver;
+		height: 22px;
+	}
+/*------------------*/
+	input, textarea, select
+	{
+		font-family:Georgia, Verdana, "Times New Roman", Times, serif;
+		font-size:12px;
+		font-weight:normal;
+		color:#3F3F3F;
+		vertical-align:middle;
+	}
+	input.no, textarea.no, select.no
+	{
+		font-family:Georgia, Verdana, "Times New Roman", Times, serif;
+		font-size:12px;
+		font-weight:normal;
+		color:#3F3F3F;
+		vertical-align:middle;
+	}
+
+	select.select_years
+	{
+	}
+	input.input_years_readonly
+	{
+	}
+	select.select_num
+	{
+	}
+	input.select_input_num_readonly
+	{
+	}
+	input.input_text_edit
+	{
+	}
+	input.input_textarea_counter
+	{
+		text-align:center;
+	}
+	textarea.textarea_edit
+	{
+	}
+	input.input_type_password
+	{
+	}
+	select.select_prof
+	{
+		width:200px;
+	}
+	input.input_select_prof_readonly
+	{
+	}
+	select.select_set_membership
+	{
+		white-space:nowrap
+	}
+	select.select_multiple
+	{
+	}
+/*------------------*/
+	div.no_result,
+	div.action
+	{
+		position:relative;
+		border:1px solid #CCC;
+		padding:1px;
+		margin:10px 0px;
+		width:80%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	div.no_result div,
+	div.action div
+	{
+		position:relative;
+		background-color:#CCC;
+		vertical-align:middle;
+		font-weight:bold;
+		color:#fff;
+		text-align:center;
+		margin:0px;
+		padding:0px;
+		line-height:20px;
+	}
+	div.err
+	{
+		position:relative;
+		border:1px solid #FF412D;
+		padding:1px;
+		margin:10px 0px;
+		width:80%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	div.err div
+	{
+		position:relative;
+		background-color:#FF412D;
+		vertical-align:middle;
+		font-weight:bold;
+		color:#fff;
+		text-align:center;
+		line-height:20px;
+	}
+	
+/* Do  not delete
+	div.action
+	{
+		position:relative;
+		border:1px solid #A0C238;
+		padding:1px;
+		margin:10px 0px;
+		width:80%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	div.action div
+	{
+		position:relative;
+		background-color:#709812;
+		vertical-align:middle;
+		font-weight:bold;
+		color:#fff;
+		text-align:center;
+	}
+*/
+* html div.no_result div, * html div.action div, * html div.err div
+	{
+		line-height:normal;
+		padding:3px 0px;
+	}
+/*------------------*/
+/*------------------*/
+	div#boonex_banners
+	{
+		position:relative;
+		border:0px solid red;
+		height:77px;
+		width:783px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	div#boonex_image_link
+	{
+		position:absolute;
+		top:0px;
+		right:0px;
+		height:77px;
+		width:488px;
+		background-color:#FFFFFF;
+		border:1px solid #999999;
+
+		background-repeat:no-repeat;
+		background-position:center;
+	}
+	div#boonex_image_link table td
+	{
+		width:488px;
+		height:77px;
+	}
+/*------------------*/
+	div#switch_lang
+	{
+		position:absolute;
+		top:4px;
+		right:10px;
+	}
+	div#switch_skin
+	{
+		position:absolute;
+		top:18px;
+		right:10px;
+	}
+	div.err ul
+	{
+		text-align:left;
+		margin:0px;
+	}
+/*------------------*/
+	div.pollBlock
+	{
+		position:relative;
+		overflow:hidden;
+		height:154px;
+		width:100%;
+		border:1px solid #979797;
+		text-align:left;
+		float:left;
+	}
+	div.pollCaption
+	{
+		position:relative;
+		margin:2px;
+		padding:0px 5px;
+		overflow:hidden;
+		height:20px;
+		line-height:20px;
+		vertical-align:middle;
+
+		font-weight:bold;
+
+
+		background-repeat:repeat-x;
+		background-position:center;
+
+	}
+	div.pollAnswerBlock
+	{
+		position:relative;
+		margin:2px;
+		overflow:hidden;
+		height:100px;
+		border:solid 0px #cc0000;
+		text-align:left;
+	}
+	div.pollUp
+	{
+		position:absolute;
+		right:5px;
+		top:5px;
+	}
+	div.pollDown
+	{
+		position:absolute;
+		right:5px;
+		bottom:5px;
+	}
+	div.pollQuestionBlock
+	{
+		position:absolute;
+		/*width:230px;*/
+		padding:2px;
+		overflow:hidden;
+		border:solid 0px green;
+		width:80%;
+	}
+	div.pollSubmitBlock
+	{
+		position:relative;
+		margin:2px;
+		overflow:hidden;
+		height:20px;
+		border:solid 0px #0000cc;
+		text-align:center;
+	}
+		.pollContainer
+	{
+		position:relative;
+		margin-top:2px;
+		padding:10px;
+		background-color:#f6f6ff;
+		border:0px solid red;
+	}
+
+	.createPollSection
+	{
+		position:relative;
+		padding:10px;
+		background-color:#F0F0FF;
+		border:0px solid red;
+	}
+
+	.controlsDiv
+	{
+		position:relative;
+		clear:both;
+		margin:10px;
+		background-color:#ffffff;
+	}
+
+	.innerControlBlock
+	{
+		position:relative;
+		float:right;
+		width:200px;
+		border:0px solid red;
+	}
+
+	.controlsHeader
+	{
+		padding: 0px 2px;
+		font-weight:bold;
+	}
+
+	.deleteDiv
+	{
+		padding: 2px 0px 0px 2px;
+
+	}
+/*------------------*/
+	div.playerAdminLink
+	{
+		position:relative;
+		text-align:left;
+		margin-bottom:15px;
+	}
+
+	.logInRegistrationText
+	{
+		margin:5px;
+	}
+
+	div.member_submenu
+	{
+	    position:relative;
+	    overflow:hidden;
+	    margin-left:35px;
+	    line-height:18px;
+	    vertical-align:middle;
+	    font-weight:bold;
+	}
+/*---------------------*/
+	p
+	{
+		margin:0px;
+		padding:0px;
+	}
+/*---------------------*/
+	
+	div.profile_ditails_block
+	{
+		position:relative;
+		height:115px;
+		border:0px solid red;
+		margin:0px;
+		padding:5px;
+		overflow:hidden;
+	}
+
+	div.prof_details_wrapper
+	{
+		width:580px;
+		margin-left:auto;
+		margin-right:auto;
+		padding-left:120px;
+	}
+		
+	div.prof_ditails_block
+	{
+		position:relative;
+		width:298px;
+		float:left;
+		margin-left:10px;
+		text-align:left;
+		background-color:#F8F8E7;
+		height:105px;
+		border:1px solid #F8DAA8;
+	}
+	div.prof_ditails_block div.li_word
+	{
+		position:relative;
+		float:left;
+		width:80px;
+		text-align:left;
+		border:0px solid red;
+		margin:1px;
+		font-weight:bold;
+		background-color:#F8F8E7;
+		height:20px;
+		line-height:20px;
+		vertical-align:middle;
+		padding-left:5px;
+	}
+	div.prof_ditails_block div.li_value
+	{
+		position:relative;
+		float:left;
+		text-align:left;
+		width:200px;
+		border:0px solid red;
+		margin:1px;
+		height:20px;
+		line-height:20px;
+		vertical-align:middle;
+		padding-left:5px;
+		background-color:#FFFFFF;
+	}
+
+	input.input_textarea_counter
+	{
+		width:50px;
+	}
+/*----------------------*/
+	div.menuBlock
+	{
+		position: relative;
+	}
+	div.menuLine, div.menuLineHover
+	{
+	/*
+		height:20px;
+		line-height:20px;
+	*/
+	}
+	div.menuLine
+	{
+
+	}
+	div.menuLineHover
+	{
+
+	}
+	div.menuLineDivider
+	{
+		clear:both;
+		height:0px;
+		font-size:0px;
+	}
+	div.menuIcon
+	{
+
+	}
+	div.menuLinkBlock
+	{
+		font-weight:bold;
+		margin-left:15px;
+	}
+/*----------------------*/
+	ul#topMenuBlock
+	{
+		position:relative;
+		margin:0px;
+		padding:0px;
+	}
+	ul#topMenuBlock li
+	{
+		position:relative;
+		list-style:none;
+		float:left;
+	}
+	ul#topMenuBlock li div
+	{
+	}
+	ul#topMenuBlock li.activeTopMenuItem
+	{
+
+	}
+	ul#topMenuBlock li.activeTopMenuItem div
+	{
+
+	}
+	ul#topMenuBlock li.inactiveTopMenuItem
+	{
+
+	}
+	ul#topMenuBlock li.inactiveTopMenuItem div
+	{
+	}
+	ul#topMenuBlock li.hoverTopMenuItem
+	{
+
+	}
+	ul#topMenuBlock li.hoverTopMenuItem div
+	{
+
+	}
+
+/*------------------*/
+
+	.photoTitle
+	{
+		float:left;
+		width:60%;
+	}
+	
+	.boxContent .votes_small
+	{
+		position: relative;
+		float:right;
+		width:40%;
+	}
+	
+	.votes_big, .votes_small
+	{
+	}
+	
+	.votes_big
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 280px;
+	}
+
+	.votes_gray_big, .votes_gray_small
+	{
+		position:relative;
+		float:left;
+	}
+	.votes_gray_big
+	{
+		height:32px; 
+		background-image:url(../images/vote_star_gray_32.gif)
+	}
+	.votes_gray_small
+	{
+		height:16px; 
+		background-image:url(../images/vote_star_gray_16.gif)
+	}
+
+	.votes_active_big, .votes_active_small
+	{
+		position:absolute; 
+		top:0; 
+		left:0; 
+		z-index:1;
+	}
+	.votes_active_big
+	{
+		height:32px; 
+		background-image:url(../images/vote_star_active_32.gif); 
+	}
+	.votes_active_small
+	{
+		height:16px; 
+		background-image:url(../images/vote_star_active_16.gif); 
+	}
+	
+	.votes_buttons
+	{
+		position:absolute; 
+		top:0; 
+		left:0; 
+		z-index:2;
+	}
+
+	.votes_button_big, .votes_button_small
+	{
+		margin:0; 
+		padding:0;
+		border:none;
+	}
+	.votes_button_big
+	{
+		width:32px;
+		height:32px;
+	}
+	.votes_button_small
+	{
+		width:16px;
+		height:16px;
+	}
+
+	.votes_big b, .votes_small b
+	{
+		color:#666666;
+		font-weight:bold;
+		display:block;
+		float:left;
+		position: relative;
+	}
+	
+	.votes_big b
+	{
+		font-size:18px;
+		line-height:32px;
+		margin-left:30px;
+	}
+	
+	.votes_small b
+	{
+		font-size:13px;
+		line-height:16px;
+		margin-left:6px;
+	}
+	.galleryRate
+	{
+	}
+	.galleryRate span
+	{
+		float:left;
+	}
+	.galleryRate .votes_small
+	{		
+		float:left;
+		margin: 0px;
+		padding: 0px;
+		width:180px;
+	}
+	.galleryRate .votes_active_small
+	{				
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	img.dolphinLogo {
+		float: left;
+	}
+	

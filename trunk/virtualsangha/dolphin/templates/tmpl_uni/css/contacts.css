@@ -1,0 +1,55 @@
+.no_results
+{
+	line-height:50px;
+	vertical-align:middle;
+	text-align:center;
+	font-weight:bold;
+}
+
+table.results_table
+{
+	border:0px solid gray;
+	width:100%;
+	margin:0px auto;
+	border-collapse:collapse;
+}
+
+table.results_table td
+{
+	padding:2px;
+	border:0px solid red;
+	white-space:nowrap;
+}
+
+tr.result_row_even
+{
+	background-color:#EEEEEE;
+}
+
+td.res_checkbox
+{
+	width:20px;
+}
+
+td.res_thumb
+{
+	width:46px;
+}
+
+td.res_nick
+{
+	font-weight:bold;
+	width:100px;
+}
+
+
+td.res_kiss
+{
+	width:60px;
+}
+
+table.results_table td.row_actions
+{
+	font-weight:bold;
+	padding:4px;
+}

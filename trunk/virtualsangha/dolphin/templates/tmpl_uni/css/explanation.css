@@ -1,0 +1,103 @@
+@charset "iso-8859-1";
+@import url(../../base/css/explanation.css);
+	body
+	{
+		margin:0px;
+		padding:0px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:11px;
+		color:#666;
+		background-color:#FFF;
+		width:500px;
+		height:150px;
+		overflow:visible;
+	}
+	
+	div#main
+	{
+		position:relative;
+		width:450px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:25px;
+	}
+	
+	div.disignBoxFirst
+	{
+		background-color:#fff;
+		border:1px solid #ccc;
+	}
+	
+	.boxFirstHeader
+	{
+		position:relative;
+		
+		background-image:url('../images/head_cutting.gif');
+	    background-repeat:repeat-x;
+		height:26px;
+		padding:4px 0px 0px 6px;
+		font-size:10px;
+		font-weight:bold;
+		color:#666;
+		font-family:Verdana;
+		text-transform:uppercase;
+	}
+
+	.boxContent
+	{
+		position:relative;
+		overflow:hidden;
+		font-size:10px;
+		color:#666;
+		border:0px solid blue;
+		font-family:Verdana;
+		padding:10px 3px 10px 3px;
+	}
+
+	.clear_both
+	{
+		position:relative;
+		clear:both;
+		height:1px;
+		margin:0px;
+		padding:0px;
+		font-size:1px;
+		border:0px solid red;
+	}
+
+	.box_head_left
+	{
+		position:absolute;
+		top:0px;
+		left:0px;
+	}
+
+	.box_head_right
+	{
+		position:absolute;
+		top:0px;
+		right:0px;
+	}
+
+/*##############################################################*/
+	div.soundPop
+	{
+		text-align:center;
+	}
+/*##############################################################*/
+
+.shareLink
+{
+	position: relative;
+	float: left;
+	margin-left: 2px;
+	width: 18px;
+	height: 18px;
+	border: 1px solid navy;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.mediaInfo
+{
+	font-size: 13px;
+}

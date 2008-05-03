@@ -1,0 +1,6 @@
+@import url(profile_fields.css);
+
+tr.odd_row
+{
+	background-color:#cccccc;
+}

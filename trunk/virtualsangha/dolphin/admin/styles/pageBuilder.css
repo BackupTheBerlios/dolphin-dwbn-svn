@@ -1,0 +1,397 @@
+.block_cont {
+	background-color: #ffffff;
+	background-image: none;
+	width: auto;
+	padding: 0px;
+	border: 1px solid #808080;
+}
+
+.block_cont,
+.block_cont_nd {
+	margin-bottom: 10px;
+}
+
+.block_cont#activeAreaWrapper {
+	margin-bottom: 0px;
+	border-bottom: none
+}
+
+.block_cont#activeAreaWrapper .buildArea {
+	border-bottom: none;
+}
+
+#buildZoneWrapper {
+	border: 1px solid #9c9c9c;
+	background-color: #e8e8e8;
+	width: 782px;
+}
+
+
+#buildAreasWrapper {
+	margin: 15px;
+}
+
+#pageWidthValue,
+#pageWidthValue1 {
+	font-weight: bold;
+	vertical-align: middle;
+	float: left;
+	position: relative;
+	padding-top: 2px;
+}
+
+#pageWidthSlider,
+#pageWidthSlider1 {
+	float: right;
+	position: relative;
+	width: 708px;
+	height: 16px;
+	background-image: url(../images/width_slider.png);
+}
+
+#pageWidthSlider div,
+#pageWidthSlider1 div {
+	position: absolute;
+	top: -2px;
+	width: 12px;
+	height: 20px;
+	background-image: url(../images/slider-handle1.gif);
+	cursor: pointer;
+}
+
+.buildArea {
+	border: 1px solid #e8e8e8;
+	padding: 8px;
+}
+
+
+
+
+.buildColumn {
+	float:left;
+	/*position: relative;*/
+}
+
+.buildColumnCont {
+	border: 1px solid #ccc;
+	background-color: #fff;
+	padding: 3px;
+	margin: 3px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.buildColumnHeader {
+	background-color: #ccc;
+	padding: 3px;
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	cursor: move;
+	white-space: nowrap;
+	overflow: hidden;
+	position: relative;
+}
+
+.buildColumnHeader a {
+	cursor: pointer; /*for macs*/
+}
+
+.buildBlock {
+	margin: 0px auto 2px auto;
+	width: 142px;
+	height: 22px;
+	/*border: 1px solid #999;*/
+	text-align: center;
+	cursor: move;
+	padding-top: 6px;*/
+	background-repeat: no-repeat;
+	background-image: url( ../images/block_header.gif );
+	text-transform: capitalize;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.buildBlock a {
+	cursor: pointer; /*for macs*/
+}
+
+.buildBlock .blockAlert {
+	cursor:help;
+	height:16px;
+	width:16px;
+	vertical-align: middle;
+	margin-left: 3px;
+}
+
+#samplesBlocksArea .buildBlock,
+#inactiveBlocksArea .buildBlock {
+	margin: 2px;
+	float: left;
+}
+
+.buildHover {
+	/*background-color: #f5f5f5;*/
+	border: 1px dashed #999999;
+}
+
+.buildBlockFake {
+	height: 2px;
+	font-size: 1px;
+}
+
+#columnsSlider {
+	height: 14px;
+	position: relative;
+	background-image: url(../images/col_slider_bg.gif);
+	border-left: 1px solid #808080;
+	border-right: 1px solid #808080;
+	border-bottom: 1px solid #808080;
+	margin-bottom: 10px;
+}
+
+#columnsSlider div {
+	background-image: url(../images/slider-handle.gif);
+	height: 23px;
+	left: 0px;
+	position: absolute;
+	top: -5px;
+	width: 12px;
+	z-index: 1;
+	cursor: pointer;
+}
+
+#pageControls {
+	position: absolute;
+	top: -20px;
+	right: 0px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#pageControls a {
+	margin-left: 6px;
+}
+
+#pageControls a,
+#pageControls a:link,
+#pageControls a:visited {
+	text-decoration: none;
+}
+
+#pageControls a:hover,
+#pageControls a:active {
+	text-decoration: underline;
+}
+
+#linkDelete {
+	display: block;
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	display: block;
+	text-decoration: none;
+}
+
+#linkDelete:link,
+#linkDelete:visited,
+#linkDelete:active,
+#linkDelete:hover {
+	text-decoration: none;
+}
+
+
+#newPageLink {
+	float: right;
+	display: block;
+	margin-top: 6px;
+	margin-right: 10px;
+	position: relative;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+
+
+ul#pageSelector {
+	background-image:url(../images/tab_bg.gif);
+	background-repeat:repeat-x;
+	height:25px;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	display: block;
+	border-bottom: 1px solid #9c9c9c;
+}
+
+ul#pageSelector li {
+	display:inline;
+	float:left;
+	height:25px;
+	margin:0px;
+	white-space:nowrap;
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+
+ul#pageSelector li.current {
+	background-image:url(../images/tab_active_bg.gif);
+}
+
+ul#pageSelector li.current a {
+	background-image:url(../images/tab_active_bg_r.gif);
+}
+
+ul#pageSelector li a {
+	display:block;
+	font-size:10px;
+	font-weight:bold;
+	height:14px;
+	padding:7px 10px 4px 10px;
+	position:relative;
+	/*width:50px;*/
+	background-position:right top;
+	background-repeat:no-repeat;
+}
+
+ul#pageSelector li a,
+ul#pageSelector li a:link,
+ul#pageSelector li a:hover,
+ul#pageSelector li a:active,
+ul#pageSelector li a:visited {
+	color: #000;
+	text-decoration: none;
+	float: left;
+}
+
+
+
+
+
+
+
+#editFormWrapper {
+	position:absolute;
+	z-index:15000;
+	background-image:url( ../images/sp_op.png );
+}
+
+* html #editFormWrapper
+{
+	background-image:url( ../images/spacer.gif );
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/sp_op.png', sizingMethod='scale');
+}
+
+#editFormCont
+{
+	margin-top:100px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	width:482px;
+}
+
+
+.popup_form_wrapper
+{
+	border-collapse:collapse;
+	margin:0px;
+	padding:0px;
+	width:482px;
+}
+
+.popup_form_wrapper td
+{
+	padding:0px;
+	margin:0px;
+}
+
+.popup_form_wrapper td.corner
+{
+	width:16px;
+	height:16px;
+}
+
+.popup_form_wrapper td.side
+{
+	width:16px;
+}
+
+.popup_form_wrapper td.side_ver
+{
+	height:16px;
+}
+
+.popup_form_wrapper td.side_ver,
+.popup_form_wrapper td.side
+{
+	background-image:url(../images/sp_op_gr.png);
+	font-size:1px;
+}
+
+* html .popup_form_wrapper td.side_ver,
+* html .popup_form_wrapper td.side
+{
+	background-image:url( ../images/spacer.gif );
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/sp_op_gr.png', sizingMethod='scale');
+}
+
+
+.popup_form_wrapper td.container
+{
+	background-color:white;
+	width:450px;
+}
+
+.edit_item_table_cont
+{
+	position:relative;
+	border:1px solid #666666;
+	padding-top:25px;
+	padding-bottom:25px;
+}
+
+.edit_item_table
+{
+	border-collapse:collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.edit_item_table td
+{
+	padding:3px;
+}
+
+.form_label
+{
+	width:125px;
+	font-weight:bold;
+	font-size:13px;
+	text-align:right;
+}
+
+.form_input_text
+{
+	width:250px;
+}
+
+.form_colspan
+{
+	text-align:center;
+}
+
+.form_colspan input
+{
+	margin-left:15px;
+}
+
+.form_input_html
+{
+	width:450px;
+	height:450px;
+}
+

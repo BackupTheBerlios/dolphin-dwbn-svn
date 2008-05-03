@@ -1,0 +1,43 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<items>
+ <item key="txtHeader"><![CDATA[Web Presence]]></item>
+ <item key="txtApplyFilter"><![CDATA[Apply Filter]]></item>
+ <item key="txtGetDesktop"><![CDATA[Get Desktop]]></item>
+ <item key="txtStatus"><![CDATA[Status: #status#]]></item>
+ <item key="txtVisible"><![CDATA[Visible]]></item>
+ <item key="txtInvisible"><![CDATA[Invisible]]></item>
+ <item key="txtDetails"><![CDATA[#age# y/o, #sex#]]></item>
+
+ <item key="msgConnecting"><![CDATA[Connecting]]></item>
+ <item key="msgConnectionError"><![CDATA[Connection Error]]></item>
+ <item key="msgSettingsCaption"><![CDATA[Select skin and language.]]></item>
+ <item key="msgSettingsSkin"><![CDATA[Skin:]]></item>
+ <item key="msgSettingsLanguage"><![CDATA[Language:]]></item>
+ <item key="msgSettingsApplyConfirm"><![CDATA[Changes will be applied after reloading. Reload now?]]></item>
+
+ <item key="btnCancel"><![CDATA[Cancel]]></item>
+ <item key="btnOk"><![CDATA[OK]]></item>
+ <item key="btnSettings"><![CDATA[Settings]]></item> 
+
+ <item key="dlgConfirm"><![CDATA[Confirmation]]></item>
+ <item key="dlgAlert"><![CDATA[Alert]]></item>
+	
+ <item key="txtOnline"><![CDATA[Online]]></item>
+ <item key="txtOffline"><![CDATA[Offline]]></item>
+ <item key="tabOnline"><![CDATA[Online]]></item>
+ <item key="tabFriends"><![CDATA[Friends]]></item>
+
+ <item key="chbFilter"><![CDATA[filter]]></item>
+ <item key="chbSex"><![CDATA[filter by sex]]></item>
+ <item key="chbAgeFrom"><![CDATA[Age from:]]></item>
+ <item key="chbAgeTo"><![CDATA[to:]]></item>
+ <item key="chbOnlineOnly"><![CDATA[online only]]></item>
+ 
+ <item key="btnOk"><![CDATA[OK]]></item>
+ <item key="btnCancel"><![CDATA[Cancel]]></item>
+ <item key="btnApply"><![CDATA[Apply]]></item> 
+ 
+ <item key="hintUserProfile"><![CDATA[View #user#'s profile]]></item>
+ <item key="hintUserIM"><![CDATA[IM #user#]]></item>
+ <item key="hintUserMail"><![CDATA[Write a message to #user#]]></item>
+</items>

@@ -1,0 +1,59 @@
+@charset "iso-8859-1";
+@import url(../../base/css/rate.css);
+	div.rate_sex_form
+	{
+		position:relative;
+		/*text-align:center;*/
+		margin-bottom:15px;
+		text-align:center;
+	}
+	div.rate_photo
+	{
+		position:relative;
+		margin-bottom:15px;
+		text-align:center;
+		padding-left:0px;
+		border:0px solid red;
+	}
+	div.rate_vote_form
+	{
+		position:relative;
+		width:250px;
+		margin-left:auto;
+		margin-right:auto;	
+		margin-bottom:25px;	
+		border:0px solid red;
+	}
+	div.rate_results
+	{
+		position:relative;
+		border:0px solid red;
+		text-align:center;
+	}
+	
+	.photoTumb
+	{
+		text-align:center;
+		border:0px solid red;
+	}
+	
+	.header
+	{
+		position:relative;
+		text-align:center;
+	}
+	
+	.rate_block
+	{
+		position:relative;
+		border:0px solid red;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:left;
+	}
+	
+	.rate_scale
+	{
+		position:relative;
+		/*border-left:1px solid #56678E;*/
+	}

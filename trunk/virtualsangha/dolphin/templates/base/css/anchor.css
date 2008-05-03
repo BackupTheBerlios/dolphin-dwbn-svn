@@ -1,0 +1,10 @@
+	a:link, a:visited
+	{
+		color:#3366CC;
+		text-decoration:underline;
+	}
+	a:hover, a:active
+	{
+		color:#CC333A;
+		text-decoration:none;
+	}

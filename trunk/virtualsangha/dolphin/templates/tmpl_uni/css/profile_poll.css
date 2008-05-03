@@ -1,0 +1,28 @@
+table#questions
+{
+	border-collapse:collapse;
+}
+
+table#questions td,
+table#questions th
+{
+	padding:5px;
+}
+
+table#questions td.form_label
+{
+	vertical-align:top;
+	padding-top:6px;
+	text-align:right;
+}
+
+table#questions td.form_colspan
+{
+	text-align:center;
+}
+
+div.pollBlock
+{
+	float:none;
+}
+

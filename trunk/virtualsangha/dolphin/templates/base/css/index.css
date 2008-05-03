@@ -1,0 +1,560 @@
+	div#MemberStat, div#Featured, div#index_login_section
+	{
+		position:relative;
+		margin:0px;
+		padding:0px;
+		display:block;
+	}
+	div#index_promo_block
+	{
+		position:relative;
+		margin:0px;
+		padding:0px;
+		font-size:12px;
+	}
+	div#index_promo_caption
+	{
+		position:absolute;
+		top:17px;
+		left:8px;
+	}
+	div#index_promo_caption h2
+	{
+		margin:0px;
+		padding:0px;
+		font-size:25px;
+		text-transform:capitalize;
+		font-weight:bold;
+	}
+	div#index_promo_join
+	{
+		position:absolute;
+		top:80px;
+		left:8px;
+	}
+	div#index_promo_join a
+	{
+		font-weight:bold;
+	}
+	div#index_promo_list
+	{
+		position:absolute;
+		top:130px;
+		left:8px;
+	}
+	div#index_promo_list ul
+	{
+		margin:0px;
+		padding:0px 0px 0px 20px;
+	}
+	div#index_promo_list ul li
+	{
+		list-style-image:url(../images/promo_list_image.gif);
+		list-style-position:outside;
+		vertical-align:middle;
+		margin-bottom:10px;
+	}
+	div#index_promo_dolphin
+	{
+		position:absolute;
+		top:10px;
+		right:8px;
+	}
+	div#index_login_section div.db_1_block div.container
+	{
+		padding-left:15px;
+		padding-right:15px;
+	}
+	div#index_login_section div.db_1_block div.container div
+	{
+		position:relative;
+	}
+	div#index_login_question
+	{
+		margin-bottom:10px;
+		font-size:12px;
+	}
+	div#index_login_form
+	{
+		margin-bottom:20px;
+	}
+	div#index_login_join
+	{
+		font-size:16px;
+		text-align:center;
+	}
+	div#login_section_block div.username
+	{
+		font-weight:bold;
+		text-align:left;
+		text-transform:capitalize;		
+	}
+	div#login_section_block div.input
+	{
+		margin-bottom:10px;
+	}
+	input.login_form_input
+	{
+		/*font-family:Georgia, Verdana, "Times New Roman", Times, serif;
+		font-size:11px;
+		background-color:#FFFFFF;
+		border:1px solid #ccc;
+		font-weight:bold;
+		color:#666666;
+		padding:2px 0px;
+		margin:0px;*/
+	}
+/*------------------*/
+	div#Featured div.db_1_block div.container
+	{
+		overflow:hidden;
+		min-height:10px;
+	}
+	div.featured_info
+	{
+		position:relative;
+		top:24px;
+		/*left:15px;*/
+		border:0px solid red;
+		/*width:130px;*/
+		width:80%;
+		float:left;
+		font-weight:bold;
+	}
+	div.featured_nickname
+	{
+		color:#000000;
+		line-height:20px;
+		text-align:left;
+	}
+/*------------------*/
+/*------------------*/
+	 div#MemberStat
+	{
+		position:relative;
+		display:block;
+	}
+	div.membes_statistic_block
+	{
+		position:relative;
+	}
+	div.member_stat_block_1, div.member_stat_block_2
+	{
+		width:135px;
+		height:100px;
+		overflow:hidden;
+		text-align:left;
+		position: relative;
+		float:left;
+		padding-left:25px;
+		margin-bottom:5px;
+	}
+	
+	div.member_stat_block_1 div, div.member_stat_block_2 div
+	{
+		margin:2px 0px;
+	}
+/*------------------*/
+/*------------------*/
+	div#QuickSearchIndex
+	{
+		position:relative;
+		display:block;
+	}
+	
+	
+/*------------------*/
+/*------------------*/
+	div#Survey
+	{
+		position:relative;
+		display:block;
+
+	}
+	div.survey_block
+	{
+		position:relative;
+		border:0px solid red;
+	}
+	div.survey_question
+	{
+		position:relative;
+		text-align:left;
+		color:#000000;
+		font-weight:bold;
+		margin-bottom:10px;
+		margin-left:50px;
+	}
+	div.survey_answer_block
+	{
+		border:0px solid red;
+		margin:0px 12px auto 50px;
+	}
+	div.survey_answer
+	{
+		margin:4px 0px;
+	}
+	div.survey_answer input
+	{
+		border:none;
+	}
+/*------------------*/
+	div#News
+	{
+		position:relative;
+		display:block;
+	}
+	div.news_title
+	{
+		position:relative;
+		margin-left:20px;
+		margin-bottom:5px;
+		color:#0168B9;
+		font-weight:bold;
+		vertical-align:middle;
+	}
+	/*div.news_title img
+	{
+		position:absolute;
+		top:0px;
+		left:-18px;
+	}*/
+	
+	div.news_text
+	{
+		position:relative;
+		line-height:18px;
+	}
+	div.news_date
+	{
+		position:relative;
+		text-align:right;
+		font-style:italic;
+		padding-right:5px;
+		margin:3px 0px;
+	}
+	div.news_divider
+	{
+		position:relative;
+		margin:10px 0px;
+		border-bottom:1px solid silver;
+	}
+	
+/*------------------*/
+	div#TopRated
+	{
+		position:relative;
+		display:block;
+	}
+	div#prof_of_week
+	{
+		position:relative;
+		float:left;
+		width:261px;
+		margin:0px;
+		padding:0px;
+	}
+	div.top_rated_divider
+	{
+		position:relative;
+		width:2px;
+		float:left;
+		background-color:#DEDEDE;
+		height:150px;
+	}
+	div#prof_of_month
+	{
+		position:relative;
+		float:left;
+		width:260px;
+		left:20px;
+		margin:0px;
+		padding:0px;
+
+	}
+	
+	div.top_rated_head
+	{
+		position:relative;
+		color:#3B3B3B;
+		font-weight:bold;
+		text-align:left;
+		margin-bottom:10px;
+	}
+	div.top_prof_not_avail
+	{
+		position:relative;
+		text-align:center;
+		font-weight:bold;
+		margin-top:20px;
+	}
+	div.rate_block_position
+	{
+		position:relative;
+		float:left;
+		width:112px;
+		height:auto;
+		top:12px;     
+        padding:0;
+	}
+    div.rate_block_position .votes_small
+    {
+        float:none;
+        width:112px;
+        margin:0;           
+    }
+    div.rate_block_position .votes_small .votes_gray_small
+    {
+        margin-left:16px;
+        float:none;
+    }
+    div.rate_block_position .votes_small b
+    {
+        float:none;
+        text-align:center;
+    }    
+/*------------------*/
+	div#TopMembers
+	{
+		position:relative;
+		display:block;
+		
+	}
+	div#top_members_menu
+	{
+		position:relative;
+		border:0px solid red;
+		text-transform:capitalize;
+		text-align:center;
+		margin-bottom:10px;
+	}
+	div.top_members_select
+	{
+		position:relative;
+		text-align:center;
+		margin:4px 0px 8px 0px;
+	}
+	div.top_members_select select
+	{
+		background-color:#FFFFFF;
+		vertical-align:middle;
+		font-size:11px;
+		font-family:Arial, Helvetica, sans-serif;
+		margin:0px;
+		padding:0px;
+		border:1px solid silver;		
+	}
+
+	div.topmembers_desc_block
+	{
+		position:relative;
+		float:left;
+		border:0px solid red;
+		left:14px;
+		width:416px;
+
+	}
+	div.topmembers_nickname
+	{
+		position:relative;
+		height:20px;
+		line-height:20px;
+		vertical-align:middle;
+		text-align:left;
+		color:#000000;
+		font-weight:bold;
+	}
+	div.topmembers_age_sex_country
+	{
+		position:relative;
+		line-height:20px;
+		vertical-align:middle;
+		font-weight:bold;
+		border-bottom:2px solid #EAEAEA;
+	}
+	div.topmembers_self_desc
+	{
+		position:relative;
+	}
+	div.topmembers_more
+	{
+		position:relative;
+		margin-top:7px;
+	}
+	div.top_member_divider
+	{
+		
+	} 
+/*------------------*/
+/*------------------*/
+	div#NewsLetters
+	{
+		position:relative;
+		display:block;
+	}
+	div#NewsLetters .text
+	{
+		position:relative;
+		text-align:left;
+	}
+	div#NewsLetters .email_here
+	{
+		position:relative;
+		text-align:center;
+		margin-top:10px;
+	}
+	div#NewsLetters .input
+	{
+		position:relative;
+		margin-top:4px;
+		text-align:center;
+	}
+/*------------------*/
+	div#SuccessStory
+	{
+		position:relative;
+		display:block;
+	}
+	div#SuccessStory .subject
+	{
+		position:relative;
+		color:#0168B9;
+		font-weight:bold;
+		text-align:left;
+		margin-bottom:5px;
+	}
+	div#SuccessStory .text
+	{
+		position:relative;
+		text-align:left;
+		line-height:16px;
+	}
+	div#SuccessStory .author
+	{
+		position:relative;
+		text-align:right;
+		font-style:italic;
+	}
+/*------------------*/
+	div.logged_section_block
+	{
+		position:relative;
+		height:35px;
+		border:0px solid red;
+		/*border-bottom:2px solid #E1E1E1;*/
+		text-align:center;
+		padding-left:20px;
+	}
+	div.logged_section_block div
+	{
+		position:relative;
+		float:left;
+		height:20px;
+		line-height:20px;
+		vertical-align:middle;
+		border:0px solid red;
+		margin-top:9px;
+		margin-right:5px;
+
+	}
+/*------------------*/
+/*------------------*/
+	
+	div#ppoll_menu
+	{
+		text-align:center;
+		margin-bottom:10px;
+		text-transform:capitalize;
+	}
+	
+	div.pollBody
+	{
+		position:relative;
+		float:left;
+	}
+	div.pollInfo
+	{
+		/*position:relative;*/
+		float:left;
+		left:30px;
+	}
+/*------------------*/
+/*------------------*/
+
+
+	div.loggedSectionBlock
+	{
+		position:relative;
+		height:35px;
+		border:0px solid red;
+		text-align:center;
+		padding-left:20px;
+	}
+	div#loginHeaderText
+	{
+		margin-bottom:10px;
+		font-size:12px;
+	}
+	div.loginJoin
+	{
+		font-size:16px;
+		text-align:center;
+	}
+	div#indexLoginForm
+	{
+		margin-bottom:20px;
+	}
+	div#loginSectionBlock div.username
+	{
+		font-weight:bold;
+		text-align:left;
+		text-transform:capitalize;		
+	}
+	div#loginSectionBlock div.input
+	{
+		margin-bottom:10px;
+	}
+	div.loginForgot, div.loginSubmit
+	{
+		margin-bottom:7px;
+		text-align:center;
+	}
+	
+	input.loginFormInput
+	{
+		width:179px;
+		font-family:Georgia, Verdana, "Times New Roman", Times, serif;
+		font-size:11px;
+		background-color:#FFFFFF;
+		border:1px solid #ccc;
+		font-weight:bold;
+		color:#666666;
+		padding:2px 0px;
+		margin:0px;
+	}
+/*------------------*/
+	div.indexNewsBlock
+	{
+		position:relative;
+		margin-bottom:10px;
+	}
+	div.indexNewsHeader
+	{
+		margin-bottom:3px;
+		font-weight:bold;
+	}
+	div.indexNewsText
+	{
+		
+	}
+	div.indexNewsDate
+	{
+		text-align:right;
+		font-style:italic;
+	}
+	div.indexNewsArchive
+	{
+		text-align:center;
+	}
+/*------------------*/
+/*------------------*/
