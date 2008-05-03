@@ -8,7 +8,7 @@ import javax.persistence.Query;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-//@Transactional
+//@Transactional test svn
 public class InitAction extends ActionSupport{
 	
     private EntityManager em;
