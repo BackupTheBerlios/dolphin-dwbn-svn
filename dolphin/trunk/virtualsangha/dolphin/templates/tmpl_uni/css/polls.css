@@ -1,0 +1,24 @@
+.tableVote_wrapper
+{
+	float:left;
+	position:relative;
+}
+
+.tableVote
+{
+	border: 1px solid #cccccc;
+	border-collapse:collapse;
+	width:260px;
+	margin:7px;
+}
+
+.tableVote td
+{
+	padding:2px;
+	vertical-align:bottom;
+}
+
+.tableVote th
+{
+	padding:5px;
+}

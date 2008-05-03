@@ -1,0 +1,13 @@
+@import url("../../base/css/main.css");
+
+#orca_main
+{
+    width:771px;
+    margin:0 auto;
+}
+
+.lp_img
+{
+    width:auto; 
+    height:auto; 
+}

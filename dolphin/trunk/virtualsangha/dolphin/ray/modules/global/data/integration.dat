@@ -1,0 +1,25 @@
+var aRayApps = new Array();
+
+//global begin
+aRayApps["global"] = new Array();
+aRayApps["global"]["admin"] = {"params": new Array('nick', 'password'), "top": 0, "left": 0, "width": 800, "height": 600, "resizable": 0};
+//global end
+//im begin
+aRayApps["im"] = new Array();
+aRayApps["im"]["user"] = {"params": new Array('sender', 'password', 'recipient'), "top": 0, "left": 0, "width": 550, "height": 500, "resizable": 1};
+//im end
+//mp3 begin
+aRayApps["mp3"] = new Array();
+aRayApps["mp3"]["player"] = {"params": new Array('id', 'password', 'vId', 'song'), "top": 0, "left": 0, "width": 350, "height": 380, "resizable": 0};
+aRayApps["mp3"]["editor"] = {"params": new Array('id', 'password'), "top": 0, "left": 0, "width": 480, "height": 640, "resizable": 1};
+//mp3 end
+//presence begin
+aRayApps["presence"] = new Array();
+aRayApps["presence"]["user"] = {"params": new Array('id', 'password'), "top": 0, "left": 0, "width": 220, "height": 600, "resizable": 1};
+//presence end
+//video begin
+aRayApps["video"] = new Array();
+aRayApps["video"]["recorder"] = {"params": new Array('id', 'password'), "top": 0, "left": 0, "width": 350, "height": 435, "resizable": 0};
+aRayApps["video"]["player"] = {"params": new Array('id'), "top": 0, "left": 0, "width": 350, "height": 435, "resizable": 1};
+aRayApps["video"]["admin"] = {"params": new Array('nick', 'password'), "top": 0, "left": 0, "width": 700, "height": 330, "resizable": 0};
+//video end

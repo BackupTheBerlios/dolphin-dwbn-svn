@@ -1,0 +1,57 @@
+.news_cont
+{
+	margin-bottom:15px;
+}
+
+.no_news
+{
+	text-align:center;font-weight:bold;
+}
+
+.news_header,
+.news_snippet
+{
+	margin-left:12px;
+	margin-right:12px;
+	margin-bottom:5px;
+}
+
+.news_snippet
+{
+	text-align:justify;
+	font-size:13px;
+}
+
+.news_header
+{
+	font-size:17px;
+	font-weight:bold;
+	padding-left:35px;
+	padding-bottom:5px;
+	background-position:left top;
+	background-repeat:no-repeat;
+	background-image:url(../images/icons/news.gif);
+}
+
+.news_date
+{
+	font-size:11px;
+	color:#666666;
+	margin-left:12px;
+	padding-bottom:5px;
+}
+
+.news_pic
+{
+	vertical-align:text-top;
+	margin-right:5px;
+}
+
+.news_text
+{
+	text-align:justify;
+	font-size:13px;
+	margin-left:12px;
+	margin-right:12px;
+	margin-bottom:5px;
+}

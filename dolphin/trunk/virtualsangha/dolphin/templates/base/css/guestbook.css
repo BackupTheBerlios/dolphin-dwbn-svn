@@ -1,0 +1,25 @@
+	div.gb_owner_info
+	{
+		position:relative;
+		border:0px solid red;
+		overflow:hidden;		
+	}
+	/*
+	div.gb_owner_info div.info
+	{
+		position:relative;
+		float:left;
+		left:15px;
+		border:0px solid red;
+	}
+	*/
+	div.db_2_block div.content
+	{
+		text-align:center;
+	}
+	
+	.add_link
+	{
+		text-align:center;
+		font-weight:bold;
+	}

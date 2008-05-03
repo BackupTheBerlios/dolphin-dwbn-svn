@@ -1,0 +1,69 @@
+.by_nick_by_id .design_box_border {
+	float: left;
+	width: 229px;
+	margin: 5px;
+}
+
+
+.search_by_id,
+.search_by_nick,
+.search_by_tag {
+	margin: 5px;
+
+}
+
+.input_by_id,
+.input_by_nick,
+.input_by_tag {
+	border: 1px solid #ccc;
+	width: 150px;
+	margin: 5px;
+	text-align:center;
+}
+
+
+
+
+.search_form {
+	width: 100%;
+	border: 1px solid #ccc;
+	
+}
+
+.search_form td,
+.search_form th {
+	padding:4px;
+}
+
+.search_form th {
+	background-color: #eee;
+}
+
+td.search_form_caption {
+	font-weight: bold;
+}
+
+.search_form_submit_row {
+	text-align: center;
+	border-top: 1px solid #ccc;
+}
+
+.input_text {
+	width: 180px;
+	border: 1px solid #ccc;
+}
+
+.search_form_caption {
+	width: 200px;
+}
+
+.input_date {
+	width: 30px;
+	border: 1px solid #ccc;
+}
+
+.input_select {
+	border: 1px solid #ccc;
+	width: 180px;
+	height: 100px;
+}

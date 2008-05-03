@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<base href="__site_url__" />
+		<title>__page_header__</title>
+		<link href="__css_dir__profile_photo_gallery.css" rel="stylesheet" type="text/css" />
+		<link href="__css_dir__anchor.css" rel="stylesheet" type="text/css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=__page_charset__" />
+		
+		<script language="JavaScript" type="text/javascript">
+			<!--
+			var message="__na_image__";
+			///////////////////////////////////
+			function clickIE4(){
+			if (event.button==2){
+			alert(message);
+			return false;
+			}
+			}
+			function clickNS4(e){
+			if (document.layers||document.getElementById&&!document.all){
+			if (e.which==2||e.which==3){
+			alert(message);
+			return false;
+			}
+			}
+			}
+			if (document.layers){
+			document.captureEvents(Event.MOUSEDOWN);
+			document.onmousedown=clickNS4;
+			}
+			else if (document.all&&!document.getElementById){
+			document.onmousedown=clickIE4;
+			}
+			document.oncontextmenu=new Function("alert(message);return false")
+			-->
+		</script>
+		
+	</head>
+<body>
+<div class="main">
+	
+		<div class="bodyBlock">
+			<div class="leftColumn">
+				<div class="disignBoxFirst">
+					<div class="boxFirstHeader">__page_header__</div>
+					<div class="boxContent">
+						<div class="clear_both"></div>
+						<div class="photos_menu">
+							__photos_menu__
+						</div>
+						<div class="votes">
+							__votes__
+						</div>
+						<div class="image">
+							__image__
+						</div>
+						<div class="close">
+							<a href="javascript:window.close();">__close__</a>		
+						</div>
+						<div class="clear_both"></div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	
+	
+	<div class="clear_both"></div>
+
+	
+</div>
+</body>
+</html>
