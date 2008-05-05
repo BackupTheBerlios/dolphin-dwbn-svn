@@ -11,9 +11,9 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 import org.apache.struts2.interceptor.ParameterAware;
-import org.dwbn.userreg.action.RegistrationWaitingAction;
+import org.dwbn.userreg.action.RegistrationAction;
 import org.dwbn.userreg.model.Registration;
-import org.dwbn.userreg.model.RegistrationWaiting;
+import org.dwbn.userreg.model.Registration;
 
 
 import com.opensymphony.xwork2.Action;
@@ -22,7 +22,7 @@ import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 
 public class EmailInterceptor extends AbstractInterceptor /*implements ParameterAware*/{
     private Map parameters;   
-    private RegistrationWaiting registrationWaiting;  
+    private Registration registrationWaiting;  
     
     /*public void setParameters( Map parameters ){
     	this.parameters = parameters;
@@ -38,7 +38,7 @@ public class EmailInterceptor extends AbstractInterceptor /*implements Parameter
     	//After the action is called all interceptors on the call stack are called again, but in reverse order.
     	//To understand recursion, you must understand recursion!
     	if( !invocation.isExecuted() ){
-    		registrationWaiting = ((RegistrationWaitingAction) invocation.getAction()).getRegistrationWaiting();
+    		registrationWaiting = ((RegistrationAction) invocation.getAction()).getRegistration();
     		invocation.invoke();
     	}
 
@@ -51,7 +51,7 @@ public class EmailInterceptor extends AbstractInterceptor /*implements Parameter
     }
     
     
-    protected void sendEmail( RegistrationWaiting rW, String host, String port, String sender, String user, String password ){
+    protected void sendEmail( Registration rW, String host, String port, String sender, String user, String password ){
     	try{
     		Properties props = new Properties();
     		props.put("mail.smtp.host", "smtp.web.de");
@@ -68,10 +68,10 @@ public class EmailInterceptor extends AbstractInterceptor /*implements Parameter
     		
     		message.setSubject("Test from new & fresh DWBN Registration.");
         	//message.setText( "Dear "+ rW.getFirstName() + " " + rW.getLastName() + "\n http://127.0.0.1:8080/dwbnservlet/confirm?email="+ rW.getEmail() );
-        	message.setText( "http://localhost:8080/QuickstartMI/transfer.action?id="+rW.getId() );
+        	message.setText( "http://localhost:8080/Registration/changeStatusWaitingToConfirmed.action?id="+rW.getId() );
         	
         	System.out.println("*************************************************");
-        	System.out.println( "http://localhost:8080/QuickstartMI/transfer.action?id="+rW.getId() );
+        	System.out.println( "http://localhost:8080/Registration/changeStatusWaitingToConfirmed.action?id="+rW.getId() );
         	System.out.println("*************************************************");
     		 
     		Transport tr = mailSession.getTransport("smtp");

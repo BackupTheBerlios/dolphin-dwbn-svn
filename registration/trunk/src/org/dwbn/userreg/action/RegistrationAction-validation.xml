@@ -16,12 +16,6 @@
 		</field-validator>
 	</field>
 
-	<field name="registrationWaiting.city">
-		<field-validator type="requiredstring">
-			<message>You must enter your city.</message>
-		</field-validator>
-	</field>    
-	
 	<field name="registrationWaiting.email">
 		<field-validator type="requiredstring">
 			<message>You must enter your email.</message>
@@ -29,8 +23,15 @@
 	    <field-validator type="email">
 	      <message>Please enter a correct email address.</message>
 	    </field-validator>		
-	</field>  	
+	</field> 
 	
+	<!-- 
+	<field name="registrationWaiting.city">
+		<field-validator type="requiredstring">
+			<message>You must enter your city.</message>
+		</field-validator>
+	</field>    
+
 	<field name="registrationWaiting.friendCenter">
 		<field-validator type="requiredstring">
 			<message>Please enter the name of a dharma friend from your local center.</message>
@@ -42,6 +43,8 @@
 			<message>Please enter one more name of another dharma friend.</message>
 		</field-validator>
 	</field>	
+	
+	 -->
 	
 	<!-- Optional fields -->	
 </validators>

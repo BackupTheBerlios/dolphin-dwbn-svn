@@ -28,7 +28,7 @@
         </action>
  		-->        
 
-        <action name="saveRegistrationWaiting" class="registrationWaitingAction" method="save">
+        <action name="saveRegistration" class="registrationAction" method="save">
   			<interceptor-ref name="defaultStack" />            
             <interceptor-ref name="emailInterceptor"/>
             <result>pages/submit.jsp</result>
@@ -37,8 +37,8 @@
              -->
         </action>
         
-        <action name="transfer" class="registrationWaitingAction" method="transfer">
-        </action>  
+        <action name="changeStatusWaitingToConfirmed" class="registrationAction" method="changeStatusWaitingToConfirmed">
+        </action>
     </package>    
 
 </struts>

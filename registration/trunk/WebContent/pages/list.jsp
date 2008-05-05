@@ -54,5 +54,3 @@
 		</s:iterator>
 	</table>
 </s:if>
-
-

@@ -27,9 +27,9 @@
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost/quickstart" />
+		<property name="url" value="jdbc:mysql://localhost/dwbn" />
 		<property name="username" value="root" />
-		<property name="password" value="" />
+		<property name="password" value="blondine" />
 	</bean>
 
 	<bean id="transactionManager"
@@ -40,12 +40,12 @@
 
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
-	<bean id="registrationWaitingService"
-		class="org.dwbn.userreg.service.RegistrationWaitingServiceImpl" />
+	<bean id="registrationService"
+		class="org.dwbn.userreg.service.RegistrationServiceImpl" />
 
-	<bean id="registrationWaitingAction" scope="prototype"
-		class="org.dwbn.userreg.action.RegistrationWaitingAction">
-		<constructor-arg ref="registrationWaitingService" />
+	<bean id="registrationAction" scope="prototype"
+		class="org.dwbn.userreg.action.RegistrationAction">
+		<constructor-arg ref="registrationService" />
 	</bean>
 
 	<bean id="initAction" scope="prototype"
@@ -53,7 +53,7 @@
 	</bean>
 
 	<bean id="dbCleanUp"
-		class="org.dwbn.userreg.service.RegistrationWaitingServiceImpl" />
+		class="org.dwbn.userreg.service.RegistrationServiceImpl" />
 
 	<bean id="jobInvokation"
 		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
