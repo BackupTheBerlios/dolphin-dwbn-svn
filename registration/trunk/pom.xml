@@ -19,14 +19,14 @@
 			<version>1.5.2</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.apache.struts</groupId>
-		    <artifactId>struts2-spring-plugin</artifactId>
-		    <version>2.0.11.1</version>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-spring-plugin</artifactId>
+			<version>2.0.11.1</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.springframework</groupId>
-		    <artifactId>spring</artifactId>
-		    <version>2.5.4</version>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring</artifactId>
+			<version>2.5.4</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.mail</groupId>
@@ -39,24 +39,65 @@
 			<version>2.0.11.1</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.hibernate</groupId>
-		    <artifactId>hibernate</artifactId>
-		    <version>3.2.6.ga</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate</artifactId>
+			<version>3.2.6.ga</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.hibernate</groupId>
-		    <artifactId>ejb3-persistence</artifactId>
-		    <version>3.3.2.Beta1</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>ejb3-persistence</artifactId>
+			<version>3.3.2.Beta1</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.hibernate</groupId>
-		    <artifactId>hibernate-entitymanager</artifactId>
-		    <version>3.3.1.ga</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>3.3.1.ga</version>
 		</dependency>
 		<dependency>
-		    <groupId>concurrent</groupId>
-		    <artifactId>concurrent</artifactId>
-		    <version>1.3.4</version>
+			<groupId>concurrent</groupId>
+			<artifactId>concurrent</artifactId>
+			<version>1.3.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.myfaces.core</groupId>
+			<artifactId>myfaces-api</artifactId>
+			<version>1.2.2</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+
+		<!-- JSF and Facelets support -->
+		<dependency>
+			<groupId>javax.faces</groupId>
+			<artifactId>jsf-impl</artifactId>
+			<version>1.2-b19</version>
+		</dependency>
+		<!--dependency>
+			<groupId>org.apache.myfaces.core</groupId>
+			<artifactId>myfaces-impl</artifactId>
+			<version>1.2.2</version>
+		</dependency-->
+
+		<dependency>
+			<groupId>com.sun.facelets</groupId>
+			<artifactId>jsf-facelets</artifactId>
+			<version>1.1.9</version>
+		</dependency>
+
+		<!-- Richfaces JSF taglib -->
+		<dependency>
+			<groupId>org.richfaces.framework</groupId>
+			<artifactId>richfaces-impl</artifactId>
+			<version>3.2.1.CR3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.richfaces.ui</groupId>
+			<artifactId>richfaces-ui</artifactId>
+			<version>3.2.1.CR3</version>
 		</dependency>
 	</dependencies>
 

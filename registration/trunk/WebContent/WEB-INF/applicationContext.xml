@@ -3,11 +3,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:aop="http://www.springframework.org/schema/aop"
 	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="
     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
     http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
-    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
 
+	<context:annotation-config />
 	<bean
 		class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
 
@@ -28,8 +31,8 @@
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://localhost/dwbn" />
-		<property name="username" value="root" />
-		<property name="password" value="blondine" />
+		<property name="username" value="dwbn" />
+		<property name="password" value="dwbn" />
 	</bean>
 
 	<bean id="transactionManager"
@@ -41,7 +44,12 @@
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
 	<bean id="registrationService"
-		class="org.dwbn.userreg.service.RegistrationServiceImpl" />
+		class="org.dwbn.userreg.service.RegistrationServiceImpl">
+	</bean>
+
+	<bean id="registrationManager"
+		class="org.dwbn.userreg.jsf.RegistrationManager">
+	</bean>
 
 	<bean id="registrationAction" scope="prototype"
 		class="org.dwbn.userreg.action.RegistrationAction">
@@ -52,12 +60,12 @@
 		class="org.dwbn.userreg.action.InitAction">
 	</bean>
 
-	<bean id="dbCleanUp"
-		class="org.dwbn.userreg.service.RegistrationServiceImpl" />
+	<!-- bean id="dbCleanUp"
+		class="org.dwbn.userreg.service.RegistrationServiceImpl" /-->
 
 	<bean id="jobInvokation"
 		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
-		<property name="targetObject" ref="dbCleanUp" />
+		<property name="targetObject" ref="registrationService" />
 		<property name="targetMethod" value="cleanUp" />
 	</bean>
 

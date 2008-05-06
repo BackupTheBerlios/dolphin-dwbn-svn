@@ -1,77 +1,86 @@
 package org.dwbn.userreg.model;
 
+import java.net.URL;
 import java.sql.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
-@Entity		 
-public class Registration{
-	@Id
-	@GeneratedValue
+@Entity
+public class Registration {
 	private Integer id;
-	
+
+	public enum Sex {
+		FEMALE, MALE
+	}
+
 	private Date regdate;
-    private String firstName;
-    private String lastName;
-    private String sex;
-    private String address;
-    private String zip;
-    private String city;
-    private String country;
-    private String phone;
-    private String fax;
-    private String email;
-    private String preferredLanguage;
-    private String age;
-    private String homepage;
-    private String homeCenter;
-    private String friendCenter;
-    private String friendOther;
-    private String didFind;    
-    private String tellUs;
-    private boolean newsletterEnglish;
-    private boolean newsletterGerman;
-    private boolean streamingEnglish;    
-    
-    //Not injected from outside
-    public Registration(){
-    	this.regdate = new Date( (new java.util.Date()).getTime() /*- 2 * 24 * 3600 * 1000*/  );
-    }
-    
-    //Injected from outside (index.jsp --> list.jsp)
+	private String firstName;
+	private String lastName;
+	private Sex sex;
+	private String address;
+	private String zip;
+	private String city;
+	private String country;
+	private String phone;
+	private String fax;
+	private String email;
+	private Language preferredLanguage;
+	private String age;
+	private URL homepage;
+	private Center homeCenter;
+	private String friendCenter;
+	private String friendOther;
+	private String didFind;
+	private String tellUs;
+	private boolean newsletterEnglish;
+	private boolean newsletterGerman;
+	private boolean streamingEnglish;
+
+	// Not injected from outside
+	public Registration() {
+		this.regdate = new Date((new java.util.Date()).getTime() /*- 2 * 24 * 3600 * 1000*/);
+	}
+
+	// Injected from outside (index.jsp --> list.jsp)
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	public Integer getId() {
 		return id;
 	}
-	
+
 	public void setId(Integer id) {
 		this.id = id;
-	}  	
+	}
 
 	public Date getRegdate() {
 		return regdate;
 	}
-	
+
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
-	}	
-	
-    public String getFirstName() {
-        return firstName;
-    }
+	}
 
-    public void setFirstName( String firstName ){
-        this.firstName = firstName;
-    }
-    
-    public String getLastName(){
-        return lastName;
-    }
+	public String getFirstName() {
+		return firstName;
+	}
 
-    public void setLastName( String lastName ){
-        this.lastName = lastName;
-    }
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
 
 	public String getEmail() {
 		return email;
@@ -80,12 +89,13 @@ public class Registration{
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	public String getSex() {
+
+	@Enumerated(EnumType.ORDINAL)
+	public Sex getSex() {
 		return sex;
 	}
 
-	public void setSex(String sex) {
+	public void setSex(Sex sex) {
 		this.sex = sex;
 	}
 
@@ -137,11 +147,12 @@ public class Registration{
 		this.fax = fax;
 	}
 
-	public String getPreferredLanguage() {
+	@OneToOne
+	public Language getPreferredLanguage() {
 		return preferredLanguage;
 	}
 
-	public void setPreferredLanguage(String preferredLanguage) {
+	public void setPreferredLanguage(Language preferredLanguage) {
 		this.preferredLanguage = preferredLanguage;
 	}
 
@@ -153,19 +164,20 @@ public class Registration{
 		this.age = age;
 	}
 
-	public String getHomepage() {
+	public URL getHomepage() {
 		return homepage;
 	}
 
-	public void setHomepage(String homepage) {
+	public void setHomepage(URL homepage) {
 		this.homepage = homepage;
 	}
 
-	public String getHomeCenter() {
+	@OneToOne
+	public Center getHomeCenter() {
 		return homeCenter;
 	}
 
-	public void setHomeCenter(String homeCenter) {
+	public void setHomeCenter(Center homeCenter) {
 		this.homeCenter = homeCenter;
 	}
 
@@ -224,8 +236,9 @@ public class Registration{
 	public void setStreamingEnglish(boolean streamingEnglish) {
 		this.streamingEnglish = streamingEnglish;
 	}
-	
-	public String toString(){
-		return "Firstname: "+firstName+"\nLastname: "+lastName+"\nEmail: "+email;
-	}	
+
+	public String toString() {
+		return "Firstname: " + firstName + "\nLastname: " + lastName
+				+ "\nEmail: " + email;
+	}
 }

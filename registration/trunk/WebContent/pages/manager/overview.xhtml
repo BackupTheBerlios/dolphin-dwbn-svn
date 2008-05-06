@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:h="http://java.sun.com/jsf/html">
+<body>
+
+
+<ui:composition template="template.xhtml">
+
+
+  <ui:define name="title">Registrations</ui:define>
+
+  <ui:define name="body">
+		<h:form id="helloForm">
+			<rich:dataTable rowKeyVar="rkv" id="registrationList" rows="40"
+				columnClasses="col" value="#{registrationManager.list}"
+				var="reg" sortMode="single">
+
+				<rich:column id="id" sortBy="#{reg.id}">
+					<f:facet name="header">
+						<h:outputText styleClass="headerText" value="ID" />
+					</f:facet>
+					<h:outputText value="#{reg.id}" />
+				</rich:column>
+
+				<rich:column id="name" sortBy="#{reg.lastName}" filterBy="#{reg.lastName}" filterEvent="onkeyup">
+					<f:facet name="header">
+						<h:outputText styleClass="headerText" value="Name" />
+					</f:facet>
+					<h:outputText value="#{reg.lastName}" />
+				</rich:column>
+
+				<rich:column id="country">
+					<f:facet name="header">
+						<h:outputText styleClass="headerText" value="Land" />
+					</f:facet>
+					<h:outputText value="#{reg.country}" />
+
+				</rich:column>
+
+				<rich:column id="city">
+					<f:facet name="header">
+						<h:outputText styleClass="headerText" value="Stadt" />
+					</f:facet>
+					<h:outputText value="#{reg.city}" />
+				</rich:column>
+
+				<rich:column id="center">
+					<f:facet name="header">
+						<h:outputText styleClass="headerText" value="Zentrum" />
+					</f:facet>
+					<h:outputText value="#{reg.homeCenter}" />
+				</rich:column>
+
+				<rich:column id="date">
+					<f:facet name="header">
+						<h:outputText styleClass="headerText" value="Datum" />
+					</f:facet>
+					<h:outputText value="#{reg.regdate}" />
+				</rich:column>
+
+			</rich:dataTable>
+		</h:form>
+	</ui:define>
+  
+</ui:composition>
+
+
+</body>
+</html>
