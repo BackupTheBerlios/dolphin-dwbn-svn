@@ -11,61 +11,184 @@
 <ui:composition template="template.xhtml">
 
 
-  <ui:define name="title">Registrations</ui:define>
+	<ui:define name="title">Registrations</ui:define>
 
-  <ui:define name="body">
+	<ui:define name="body">
+
 		<h:form id="helloForm">
-			<rich:dataTable rowKeyVar="rkv" id="registrationList" rows="40"
-				columnClasses="col" value="#{registrationManager.list}"
-				var="reg" sortMode="single">
 
-				<rich:column id="id" sortBy="#{reg.id}">
-					<f:facet name="header">
-						<h:outputText styleClass="headerText" value="ID" />
-					</f:facet>
-					<h:outputText value="#{reg.id}" />
-				</rich:column>
+			<rich:tabPanel>
 
-				<rich:column id="name" sortBy="#{reg.lastName}" filterBy="#{reg.lastName}" filterEvent="onkeyup">
-					<f:facet name="header">
-						<h:outputText styleClass="headerText" value="Name" />
-					</f:facet>
-					<h:outputText value="#{reg.lastName}" />
-				</rich:column>
+				<rich:tab label="Verified">
 
-				<rich:column id="country">
-					<f:facet name="header">
-						<h:outputText styleClass="headerText" value="Land" />
-					</f:facet>
-					<h:outputText value="#{reg.country}" />
 
-				</rich:column>
+					<rich:dataTable rowKeyVar="rkv" rows="40"
+						columnClasses="col" value="#{registrationManager.verified}"
+						var="reg" sortMode="single">
 
-				<rich:column id="city">
-					<f:facet name="header">
-						<h:outputText styleClass="headerText" value="Stadt" />
-					</f:facet>
-					<h:outputText value="#{reg.city}" />
-				</rich:column>
+						<rich:column id="id" sortBy="#{reg.id}">
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="ID" />
+							</f:facet>
+							<a4j:include viewId="regedit.xhtml" />
 
-				<rich:column id="center">
-					<f:facet name="header">
-						<h:outputText styleClass="headerText" value="Zentrum" />
-					</f:facet>
-					<h:outputText value="#{reg.homeCenter}" />
-				</rich:column>
 
-				<rich:column id="date">
-					<f:facet name="header">
-						<h:outputText styleClass="headerText" value="Datum" />
-					</f:facet>
-					<h:outputText value="#{reg.regdate}" />
-				</rich:column>
+						</rich:column>
 
-			</rich:dataTable>
+						<rich:column id="name" sortBy="#{reg.lastName}"
+							filterBy="#{reg.lastName}" filterEvent="onkeyup">
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="Name" />
+							</f:facet>
+							<h:outputText value="#{reg.lastName}" />
+						</rich:column>
+
+						<rich:column id="country">
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="Land" />
+							</f:facet>
+							<h:outputText value="#{reg.country}" />
+						</rich:column>
+
+						<rich:column id="city">
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="Stadt" />
+							</f:facet>
+							<h:outputText value="#{reg.city}" />
+						</rich:column>
+
+						<rich:column id="center">
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="Zentrum" />
+							</f:facet>
+							<h:outputText value="#{reg.homeCenter}" />
+						</rich:column>
+
+						<rich:column id="date">
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="Datum" />
+							</f:facet>
+							<h:outputText value="#{reg.regdate}" />
+						</rich:column>
+
+					</rich:dataTable>
+
+				</rich:tab>
+
+				<rich:tab label="Pending">
+
+
+					<rich:dataTable rowKeyVar="rkv" rows="40"
+						columnClasses="col" value="#{registrationManager.pending}"
+						var="reg" sortMode="single">
+
+						<rich:column id="id" sortBy="#{reg.id}">
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="ID" />
+							</f:facet>
+							<a4j:include viewId="regedit.xhtml" />
+
+
+						</rich:column>
+
+						<rich:column id="name" sortBy="#{reg.lastName}"
+							filterBy="#{reg.lastName}" filterEvent="onkeyup">
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="Name" />
+							</f:facet>
+							<h:outputText value="#{reg.lastName}" />
+						</rich:column>
+
+						<rich:column id="country">
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="Land" />
+							</f:facet>
+							<h:outputText value="#{reg.country}" />
+						</rich:column>
+
+						<rich:column id="city">
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="Stadt" />
+							</f:facet>
+							<h:outputText value="#{reg.city}" />
+						</rich:column>
+
+						<rich:column id="center">
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="Zentrum" />
+							</f:facet>
+							<h:outputText value="#{reg.homeCenter}" />
+						</rich:column>
+
+						<rich:column id="date">
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="Datum" />
+							</f:facet>
+							<h:outputText value="#{reg.regdate}" />
+						</rich:column>
+
+					</rich:dataTable>
+				</rich:tab>
+
+				<rich:tab label="accepted #{registrationManager.numAccepted}">
+
+					<rich:dataTable rowKeyVar="rkv" rows="40"
+						columnClasses="col" value="#{registrationManager.accepted}"
+						var="reg" sortMode="single">
+
+						<rich:column sortBy="#{reg.id}">
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="ID" />
+							</f:facet>
+							<a4j:include viewId="regedit.xhtml" />
+
+
+						</rich:column>
+
+						<rich:column sortBy="#{reg.lastName}"
+							filterBy="#{reg.lastName}" filterEvent="onkeyup">
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="Name" />
+							</f:facet>
+							<h:outputText value="#{reg.lastName}" />
+						</rich:column>
+
+						<rich:column>
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="Land" />
+							</f:facet>
+							<h:outputText value="#{reg.country}" />
+						</rich:column>
+
+						<rich:column>
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="Stadt" />
+							</f:facet>
+							<h:outputText value="#{reg.city}" />
+						</rich:column>
+
+						<rich:column>
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="Zentrum" />
+							</f:facet>
+							<h:outputText value="#{reg.homeCenter}" />
+						</rich:column>
+
+						<rich:column>
+							<f:facet name="header">
+								<h:outputText styleClass="headerText" value="Datum" />
+							</f:facet>
+							<h:outputText value="#{reg.regdate}" />
+						</rich:column>
+
+					</rich:dataTable>
+				</rich:tab>
+
+			</rich:tabPanel>
+
 		</h:form>
 	</ui:define>
-  
+
 </ui:composition>
 
 

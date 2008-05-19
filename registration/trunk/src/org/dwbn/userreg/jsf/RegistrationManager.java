@@ -14,7 +14,7 @@ import org.ajax4jsf.model.DataVisitor;
 import org.ajax4jsf.model.Range;
 import org.ajax4jsf.model.SequenceRange;
 import org.ajax4jsf.model.SerializableDataModel;
-import org.dwbn.userreg.model.Registration;
+import org.dwbn.userreg.model.dwbn.Registration;
 import org.dwbn.userreg.service.RegistrationService;
 import org.dwbn.userreg.service.RegistrationServiceImpl;
 import org.richfaces.model.ScrollableTableDataModel;
@@ -198,7 +198,19 @@ public class RegistrationManager extends ScrollableTableDataModel<Registration> 
 //		}
 //	}
 	
-	public List<Registration> getList() {
+	public List<Registration> getPending() {
+		return service.findAll();
+	}
+	
+	public List<Registration> getVerified() {
+		return service.findAll();
+	}
+
+	public Integer getNumAccepted() {
+		return 3;
+	}
+	
+	public List<Registration> getAccepted() {
 		return service.findAll();
 	}
 	

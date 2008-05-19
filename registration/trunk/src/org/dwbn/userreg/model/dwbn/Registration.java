@@ -1,4 +1,4 @@
-package org.dwbn.userreg.model;
+package org.dwbn.userreg.model.dwbn;
 
 import java.net.URL;
 import java.sql.Date;
@@ -11,12 +11,24 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
+import org.dwbn.userreg.model.dwbn.Center;
+import org.dwbn.userreg.model.dwbn.Country;
+import org.dwbn.userreg.model.dwbn.Language;
+
+
 @Entity
 public class Registration {
 	private Integer id;
 
 	public enum Sex {
 		FEMALE, MALE
+	}
+	
+	public enum State {
+		PENDING, // waiting for email address verification
+		VERIFIED_PARTLY, // email address verified but not all field could be verified
+		VERIFIED, // completely verified
+		ACCEPTED // accepted (DWBN Subcriber)
 	}
 
 	private Date regdate;
@@ -26,7 +38,7 @@ public class Registration {
 	private String address;
 	private String zip;
 	private String city;
-	private String country;
+	private Country country;
 	private String phone;
 	private String fax;
 	private String email;
@@ -122,12 +134,13 @@ public class Registration {
 	public void setCity(String city) {
 		this.city = city;
 	}
-
-	public String getCountry() {
+	
+	@OneToOne
+	public Country getCountry() {
 		return country;
 	}
 
-	public void setCountry(String country) {
+	public void setCountry(Country country) {
 		this.country = country;
 	}
 

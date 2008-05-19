@@ -2,7 +2,7 @@ package org.dwbn.userreg.service;
 
 import java.util.List;
 
-import org.dwbn.userreg.model.Registration;
+import org.dwbn.userreg.model.dwbn.Registration;
 
 public interface RegistrationService {
 	public List<Registration> findAll();

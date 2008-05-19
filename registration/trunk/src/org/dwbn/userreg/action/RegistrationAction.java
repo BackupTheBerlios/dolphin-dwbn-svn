@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.struts2.interceptor.ParameterAware;
-import org.dwbn.userreg.model.Registration;
+import org.dwbn.userreg.model.dwbn.Registration;
 import org.dwbn.userreg.service.RegistrationService;
 
 import com.opensymphony.xwork2.Action;

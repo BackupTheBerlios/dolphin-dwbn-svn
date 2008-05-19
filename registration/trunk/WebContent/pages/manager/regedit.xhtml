@@ -1,0 +1,82 @@
+
+<f:subview xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich"> 
+
+	<rich:modalPanel id="panel" left="50" top="50" width="500" height="500">
+		<f:facet name="header">
+			<h:panelGroup>
+				<h:outputText value="Registration von #{reg.lastName}"></h:outputText>
+			</h:panelGroup>
+		</f:facet>
+		<f:facet name="controls">
+			<h:panelGroup>
+				<h:graphicImage value="/images/close.png" style="cursor:pointer"
+					id="hidelink" />
+				<rich:componentControl for="panel" attachTo="hidelink"
+					operation="hide" event="onclick" />
+			</h:panelGroup>
+		</f:facet>
+		<h:outputText value="#{reg.id}"></h:outputText>
+		<br />
+
+		<h:panelGrid columns="2" border="1" rules="all"
+			title="This is panelGrid demo">
+			<f:verbatim>regdate (Date)</f:verbatim>
+			<h:outputText value="#{reg.regdate}" />
+			<f:verbatim>firstName (String)</f:verbatim>
+			<h:outputText value="#{reg.firstName}" />
+			<f:verbatim>lastName (String)</f:verbatim>
+			<h:outputText value="#{reg.lastName}" />
+			<f:verbatim>sex (Sex)</f:verbatim>
+			<h:outputText value="#{reg.sex}" />
+			<f:verbatim>address (String)</f:verbatim>
+			<h:outputText value="#{reg.address}" />
+			<f:verbatim>zip (String)</f:verbatim>
+			<h:outputText value="#{reg.zip}" />
+			<f:verbatim>city (String)</f:verbatim>
+			<h:outputText value="#{reg.city}" />
+			<f:verbatim>country (String)</f:verbatim>
+			<h:outputText value="#{reg.country}" />
+			<f:verbatim>phone (String)</f:verbatim>
+			<h:outputText value="#{reg.phone}" />
+			<f:verbatim>fax (String)</f:verbatim>
+			<h:outputText value="#{reg.fax}" />
+			<f:verbatim>email (String)</f:verbatim>
+			<h:outputText value="#{reg.email}" />
+			<f:verbatim>preferredLanguage (Language)</f:verbatim>
+			<h:outputText value="#{reg.preferredLanguage}" />
+			<f:verbatim>age (String)</f:verbatim>
+			<h:outputText value="#{reg.age}" />
+			<f:verbatim>homepage (URL)</f:verbatim>
+			<h:outputText value="#{reg.homepage}" />
+			<f:verbatim>homeCenter (Center)</f:verbatim>
+			<h:outputText value="#{reg.homeCenter}" />
+			<f:verbatim>friendCenter (String)</f:verbatim>
+			<h:outputText value="#{reg.friendCenter}" />
+			<f:verbatim>friendOther (String)</f:verbatim>
+			<h:outputText value="#{reg.friendOther}" />
+			<f:verbatim>didFind (String)</f:verbatim>
+			<h:outputText value="#{reg.didFind}" />
+			<f:verbatim>tellUs (String)</f:verbatim>
+			<h:outputText value="#{reg.tellUs}" />
+			<f:verbatim>newsletterEnglish (boolean)</f:verbatim>
+			<h:outputText value="#{reg.newsletterEnglish}" />
+			<f:verbatim>newsletterGerman (boolean)</f:verbatim>
+			<h:outputText value="#{reg.newsletterGerman}" />
+			<f:verbatim>streamingEnglish (boolean)</f:verbatim>
+			<h:outputText value="#{reg.streamingEnglish}" />
+		</h:panelGrid>
+
+	</rich:modalPanel>
+
+	<h:outputLink value="#" id="link">
+		<h:outputText value="#{reg.id}" />
+		<rich:componentControl for="panel" attachTo="link" operation="show"
+			event="onclick" />
+	</h:outputLink>
+
+</f:subview>

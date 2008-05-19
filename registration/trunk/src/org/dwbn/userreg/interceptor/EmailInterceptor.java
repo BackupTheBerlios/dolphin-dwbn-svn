@@ -12,8 +12,7 @@ import javax.mail.internet.MimeMessage;
 
 import org.apache.struts2.interceptor.ParameterAware;
 import org.dwbn.userreg.action.RegistrationAction;
-import org.dwbn.userreg.model.Registration;
-import org.dwbn.userreg.model.Registration;
+import org.dwbn.userreg.model.dwbn.Registration;
 
 
 import com.opensymphony.xwork2.Action;

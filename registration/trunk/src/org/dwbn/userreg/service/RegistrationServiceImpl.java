@@ -7,7 +7,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
-import org.dwbn.userreg.model.Registration;
+import org.dwbn.userreg.model.dwbn.Registration;
 import org.springframework.transaction.annotation.Transactional;
 
 @Transactional

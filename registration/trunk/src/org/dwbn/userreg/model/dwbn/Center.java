@@ -1,4 +1,4 @@
-package org.dwbn.userreg.model;
+package org.dwbn.userreg.model.dwbn;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
