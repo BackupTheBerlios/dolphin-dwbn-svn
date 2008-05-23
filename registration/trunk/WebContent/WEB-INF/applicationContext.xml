@@ -47,7 +47,7 @@
 		class="org.dwbn.userreg.service.RegistrationServiceImpl">
 	</bean>
 
-	<bean id="registrationManager"
+	<bean id="registrationManager" scope="session"
 		class="org.dwbn.userreg.jsf.RegistrationManager">
 	</bean>
 
