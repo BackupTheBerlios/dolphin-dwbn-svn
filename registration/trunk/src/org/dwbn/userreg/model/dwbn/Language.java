@@ -3,8 +3,10 @@ package org.dwbn.userreg.model.dwbn;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(catalog = "dwbn")
 public class Language {
 	@Id
 	@GeneratedValue

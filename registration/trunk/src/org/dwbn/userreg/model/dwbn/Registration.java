@@ -10,6 +10,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.dwbn.userreg.model.dwbn.Center;
 import org.dwbn.userreg.model.dwbn.Country;
@@ -17,6 +19,7 @@ import org.dwbn.userreg.model.dwbn.Language;
 
 
 @Entity
+@Table(catalog = "dwbn")
 public class Registration {
 	private Integer id;
 
@@ -53,6 +56,8 @@ public class Registration {
 	private boolean newsletterEnglish;
 	private boolean newsletterGerman;
 	private boolean streamingEnglish;
+	
+	private State state;
 
 	// Not injected from outside
 	public Registration() {
@@ -248,6 +253,19 @@ public class Registration {
 
 	public void setStreamingEnglish(boolean streamingEnglish) {
 		this.streamingEnglish = streamingEnglish;
+	}
+	
+	@Transient
+	public String getStateAsString() {
+		return state.toString();
+	}
+	
+	public State getState() {
+		return state;
+	}
+
+	public void setState(State state) {
+		this.state = state;
 	}
 
 	public String toString() {

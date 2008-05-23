@@ -3,6 +3,9 @@ package org.dwbn.userreg.model.dwbn;
 import java.net.URL;
 import java.util.Date;
 
+import javax.persistence.Table;
+
+@Table(catalog = "dwbn")
 public class DWBNSubscriber {
 	
 	public enum Sex {
