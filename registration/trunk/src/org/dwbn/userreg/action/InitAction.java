@@ -1,10 +1,13 @@
 package org.dwbn.userreg.action;
 
+import java.util.Arrays;
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+
+import org.dwbn.userreg.model.dwbn.Registration;
 
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -12,6 +15,8 @@ import com.opensymphony.xwork2.ActionSupport;
 public class InitAction extends ActionSupport{
 	
     private EntityManager em;
+    
+    private List sexList;    
     private List<String> countriesList;
     private List<String> languagesList;
     private List<String> centersList;    
@@ -29,6 +34,7 @@ public class InitAction extends ActionSupport{
     	this.initCountryList();
     	this.initLanguageList();
     	this.initCenterList();    	
+    	this.initSexList();    	
         return SUCCESS; 
     } 
     
@@ -50,6 +56,11 @@ public class InitAction extends ActionSupport{
         this.centersList = query.getResultList();
     } 
     
+    @SuppressWarnings("unchecked")
+    public void initSexList() {
+        this.sexList = Arrays.asList( Registration.Sex.values() );
+    }     
+    
     public List<String> getCountryList(){
         return this.countriesList;
     }  
@@ -60,5 +71,9 @@ public class InitAction extends ActionSupport{
     
     public List<String> getCenterList(){
         return this.centersList;
+    }  
+    
+    public List getSexList(){
+        return this.sexList;
     }     
 }

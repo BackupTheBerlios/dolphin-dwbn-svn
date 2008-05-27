@@ -1,50 +1,112 @@
 <!DOCTYPE validators PUBLIC
 "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
-"http://www.opensymphony.com/xwork/xwork-validator-
-1.0.2.dtd">
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
 <validators>
 	<!-- Mandatory fields -->
-	<field name="registrationWaiting.firstName">
-		<field-validator type="requiredstring">
-			<message><![CDATA[<b>You must enter your fistname.</b>]]></message>
-		</field-validator>
+	<field name="registration.firstName">
+		<field-validator type="stringlength">
+			<param name="maxLength">250</param>
+			<param name="minLength">1</param>
+			<param name="trim">true</param>
+			<message>${getText('error.firstname')}</message>
+		</field-validator>		
 	</field>
 	
-	<field name="registrationWaiting.lastName">
-		<field-validator type="requiredstring">
-			<message>You must enter your lastName.</message>
-		</field-validator>
+    <!-- field name="registration.firstName">
+        <field-validator type="fieldexpression">
+            <param name="expression"><![CDATA[ ${false} ]]></param>
+            <message>This is only a test.</message>
+        </field-validator>
+    </field -->	
+	
+	<field name="registration.lastName">
+		<field-validator type="stringlength">
+			<param name="maxLength">250</param>
+			<param name="minLength">1</param>
+			<param name="trim">true</param>
+			<message>${getText('error.lastname')}</message>
+		</field-validator>		
 	</field>
 
-	<field name="registrationWaiting.email">
-		<field-validator type="requiredstring">
-			<message>You must enter your email.</message>
-		</field-validator>
+    <field name="registration.sex">
+        <field-validator type="regex">
+           <param name="expression"><![CDATA[(Male)|(Female)]]></param>
+           <message>${getText('error.sex')}</message>
+        </field-validator>
+    </field>
+	
+	<field name="registration.city">
+		<field-validator type="stringlength">
+			<param name="maxLength">250</param>
+			<param name="minLength">1</param>
+			<param name="trim">true</param>
+			<message>${getText('error.city')}</message>
+		</field-validator>		
+	</field> 
+	
+	<field name="registration.email">
+		<field-validator type="stringlength">
+			<param name="maxLength">250</param>
+			<param name="minLength">1</param>
+			<param name="trim">true</param>
+			<message>${getText('error.emaillenght')}</message>
+		</field-validator>	
+		
 	    <field-validator type="email">
-	      <message>Please enter a correct email address.</message>
+	      <message>${getText('error.emailaddress')}</message>
 	    </field-validator>		
 	</field> 
 	
+	<field name="registration.friendCenter">
+		<field-validator type="requiredstring" short-circuit="true">
+			<message>${getText('error.friendcenter')}</message>
+		</field-validator>
+		
+		<field-validator type="stringlength" short-circuit="true">
+			<param name="maxLength">250</param>
+			<param name="minLength">1</param>
+			<param name="trim">true</param>
+			<message>${getText('error.friendcenterlenght')}</message>
+		</field-validator>			
+	</field> 	
+
+	<field name="registration.friendOther">
+		<field-validator type="requiredstring" short-circuit="true">
+			<message>${getText('error.friendother')}</message>
+		</field-validator>
+		
+		<field-validator type="stringlength" short-circuit="true">
+			<param name="maxLength">250</param>
+			<param name="minLength">1</param>
+			<param name="trim">true</param>
+			<message>${getText('error.friendotherlength')}</message>
+		</field-validator>			
+	</field> 	
+	
 	<!-- 
-	<field name="registrationWaiting.city">
+	<field name="registration.city">
 		<field-validator type="requiredstring">
 			<message>You must enter your city.</message>
 		</field-validator>
 	</field>    
 
-	<field name="registrationWaiting.friendCenter">
+	<field name="registration.friendCenter">
 		<field-validator type="requiredstring">
 			<message>Please enter the name of a dharma friend from your local center.</message>
 		</field-validator>
 	</field>	
 
-	<field name="registrationWaiting.friendOther">
+	<field name="registration.friendOther">
 		<field-validator type="requiredstring">
 			<message>Please enter one more name of another dharma friend.</message>
 		</field-validator>
 	</field>	
-	
 	 -->
 	
 	<!-- Optional fields -->	
+	<field name="registration.homepage">
+		<field-validator type="url">
+			<message>${getText('error.homepage')}</message>
+		</field-validator>
+	</field>
 </validators>

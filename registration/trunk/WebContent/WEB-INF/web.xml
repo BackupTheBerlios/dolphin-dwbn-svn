@@ -28,7 +28,7 @@
 		<param-name>com.sun.faces.validateXml</param-name>
 		<param-value>true</param-value>
 	</context-param>
-	<filter>
+	<!-- filter>
 		<display-name>RichFaces Filter</display-name>
 		<filter-name>richfaces</filter-name>
 		<filter-class>org.ajax4jsf.Filter</filter-class>
@@ -38,7 +38,7 @@
 		<filter-name>richfaces</filter-name>
 		<servlet-name>Faces Servlet</servlet-name>
 		<url-pattern>*.jsf</url-pattern>
-	</filter-mapping>
+	</filter-mapping -->
 
 	<!-- Include this if you are using Hibernate -->
 	<filter>

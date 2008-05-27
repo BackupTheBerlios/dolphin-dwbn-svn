@@ -26,6 +26,7 @@
 				}
 			});
 		</script>
+		<link rel="stylesheet" type="text/css" href="css/registration.css" />
 	</head>
 	<body>
 
