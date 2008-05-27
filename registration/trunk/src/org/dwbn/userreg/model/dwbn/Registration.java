@@ -2,6 +2,8 @@ package org.dwbn.userreg.model.dwbn;
 
 import java.net.URL;
 import java.sql.Date;
+import java.util.Arrays;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -10,38 +12,23 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
-import javax.persistence.Table;
-import javax.persistence.Transient;
-
-import org.dwbn.userreg.model.dwbn.Center;
-import org.dwbn.userreg.model.dwbn.Country;
-import org.dwbn.userreg.model.dwbn.Language;
-
 
 @Entity
-@Table(catalog = "dwbn")
 public class Registration {
 	private Integer id;
 
 	public enum Sex {
-		FEMALE, MALE
-	}
-	
-	public enum State {
-		PENDING, // waiting for email address verification
-		VERIFIED_PARTLY, // email address verified but not all field could be verified
-		VERIFIED, // completely verified
-		ACCEPTED // accepted (DWBN Subcriber)
+		Male, Female 
 	}
 
 	private Date regdate;
 	private String firstName;
 	private String lastName;
-	private Sex sex;
+	private String sex;
 	private String address;
 	private String zip;
 	private String city;
-	private Country country;
+	private String country;
 	private String phone;
 	private String fax;
 	private String email;
@@ -53,11 +40,8 @@ public class Registration {
 	private String friendOther;
 	private String didFind;
 	private String tellUs;
-	private boolean newsletterEnglish;
-	private boolean newsletterGerman;
-	private boolean streamingEnglish;
-	
-	private State state;
+	private boolean newsletter;
+	private boolean streaming;
 
 	// Not injected from outside
 	public Registration() {
@@ -111,11 +95,11 @@ public class Registration {
 	public Sex getSex() {
 		return sex;
 	}
-
+	
 	public void setSex(Sex sex) {
 		this.sex = sex;
 	}
-
+	
 	public String getAddress() {
 		return address;
 	}
@@ -139,13 +123,12 @@ public class Registration {
 	public void setCity(String city) {
 		this.city = city;
 	}
-	
-	@OneToOne
-	public Country getCountry() {
+
+	public String getCountry() {
 		return country;
 	}
 
-	public void setCountry(Country country) {
+	public void setCountry(String country) {
 		this.country = country;
 	}
 
@@ -231,41 +214,20 @@ public class Registration {
 		this.tellUs = tellUs;
 	}
 
-	public boolean isNewsletterEnglish() {
-		return newsletterEnglish;
+	public boolean isNewsletter() {
+		return newsletter;
 	}
 
-	public void setNewsletterEnglish(boolean newsletterEnglish) {
-		this.newsletterEnglish = newsletterEnglish;
+	public void setNewsletter(boolean newsletter) {
+		this.newsletter = newsletter;
 	}
 
-	public boolean isNewsletterGerman() {
-		return newsletterGerman;
+	public boolean isStreaming() {
+		return streaming;
 	}
 
-	public void setNewsletterGerman(boolean newsletterGerman) {
-		this.newsletterGerman = newsletterGerman;
-	}
-
-	public boolean isStreamingEnglish() {
-		return streamingEnglish;
-	}
-
-	public void setStreamingEnglish(boolean streamingEnglish) {
-		this.streamingEnglish = streamingEnglish;
-	}
-	
-	@Transient
-	public String getStateAsString() {
-		return state.toString();
-	}
-	
-	public State getState() {
-		return state;
-	}
-
-	public void setState(State state) {
-		this.state = state;
+	public void setStreaming(boolean streaming) {
+		this.streaming = streaming;
 	}
 
 	public String toString() {
