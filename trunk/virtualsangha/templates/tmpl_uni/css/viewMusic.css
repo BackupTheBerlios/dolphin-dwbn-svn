@@ -1,0 +1,234 @@
+div#col1
+{
+	width: 372px;
+	position: relative;
+	margin-right: 10px;
+	overflow:hidden;
+}
+div#col2
+{
+	width: 372px;
+	position: relative;
+	overflow:hidden;
+}
+
+.userPic
+{
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 0px solid red;
+	position: relative;
+	float: left;
+}
+
+div#videoInfo
+{
+	border: 0px solid #EDEDED;
+	position: relative;
+}
+
+div#videoInfo div
+{
+	
+}
+
+div#videoInfo a
+{
+	font-weight: bold;
+}
+
+div#videoInfo input
+{
+	width: 250px;
+}
+
+div#fileTop
+{
+	padding: 0px;
+}
+
+div#fileTop div
+{
+	position: relative;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.fileUserInfo
+{
+}
+
+.fileTitle
+{
+	margin: 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+div#serviceInfo
+{
+	
+}
+div#serviceInfo div
+{
+	margin: 10px;
+}
+
+div#actionList
+{
+	position: relative;
+}
+div#actionList div
+{
+	position: relative;
+	float: left;
+	width: 140px;
+	margin: 10px 10px 10px 10px;
+	font-weight: bold;
+}
+
+div#actionList img
+{
+	margin: 0px 10px 0px 10px;
+}
+
+div#actionList a
+{
+	font-size: 16px;
+}
+
+/* comments */
+
+div#comments
+{
+	position: relative;
+}
+
+div#commentArea
+{
+	text-align: center;
+}
+
+.commentUnit
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	position: relative;
+}
+
+.commentMain
+{
+	position: relative;
+	float: left;
+}
+
+.commentInfo
+{
+	font-weight: bold;
+	position: relative;
+	/*float: left;*/
+}
+
+.commentText
+{
+	width: 260px;
+	margin: 10px 0px 10px 0px;
+	text-align: justify;
+	position: relative;
+	/*float: left;*/
+}
+
+div#commentNavigation
+{
+	margin: 5px 5px 5px 5px;
+	border: 0px solid navy;
+	text-align: center;
+}
+
+.commentNavUnit
+{
+	margin: 5px 5px 5px 5px;
+	position: relative;
+	float: left;
+}
+
+div#lastFiles
+{
+    margin: 10px 0px 10px 0px;
+}
+
+.lastFileUnit
+{
+    margin: 10px 0px 10px 0px;
+}
+
+.lastFilesPic
+{
+	/*position: relative;*/
+	float: left;
+	border: 1px solid #EDEDED;
+	margin-right: 10px;
+}
+
+.lastFilesLink
+{
+	margin: 10px 10px 10px 10px;
+}
+
+#gmusicbig b
+{
+	position: relative;
+}
+/* browse Video */
+
+.browseUnit
+{
+	border: 0px solid navy;
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 100px;
+	margin: 10px 0px;
+}
+.browseUnit div
+{
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* UploadVideo */
+div#uploadShareMain
+{
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#uploadShareMain div
+{
+	
+}
+
+.uploadText
+{
+	position: relative;
+	float: left;
+	width: 100px;
+}
+
+.uploadForm
+{
+	width: 182px;
+}
+
+#agreement
+{
+	
+}
+
+#agreement div
+{
+	margin: 10px;
+}

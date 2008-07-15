@@ -1,0 +1,47 @@
+	div#profile_bg_image, div#profile_bg_color, div#profile_font_color, div#profile_font_size, div#profile_font_family
+	{
+		position:relative;
+	}
+	div.customize_content
+	{
+		position:relative;
+		border:0px solid red;
+		
+	}
+	
+	div.customize_header_box
+	{
+		text-align: center;
+		width: 100%;
+		margin-bottom:20px;
+	}
+	
+	div.customize_footer_box
+	{
+		text-align: center;
+		width: 100%;
+	}
+	
+	div.customize_box
+	{
+		clear: left;
+		height: 50px;
+		width: 510px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	span.left_box
+	{
+		float: left;
+		width: 180px;
+		text-align: left;
+	}
+	
+	span.right_box
+	{
+		position:absolute;
+		top:0px;
+		right:0px;
+		text-align:right;
+	}

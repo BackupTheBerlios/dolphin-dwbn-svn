@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+	<title>__page_header__</title>
+	<base href="__site_url__" />
+	<meta http-equiv="Content-Type" content="text/html; charset=__page_charset__" />
+
+	<meta name="description" content="__meta_description__" />
+	<meta name="keywords" content="__meta_keywords__" />
+
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<link href="__css_dir__general.css" rel="stylesheet" type="text/css" />
+	<link href="__css_dir__anchor.css" rel="stylesheet" type="text/css" />
+	__styles__
+	__java_script__
+	<script src="inc/js/functions.js" type="text/javascript" language="javascript"></script>
+	<script>var urlIconLoading = '__images__loading.gif';</script>
+	<script src="plugins/jquery/jquery.js" type="text/javascript" language="javascript"></script>
+	<script src="plugins/jquery/jquery.jfeed.js" type="text/javascript" language="javascript"></script>
+	<script src="inc/js/jquery.dolTopMenu.js" type="text/javascript" language="javascript"></script>
+	<script src="inc/js/jquery.dolRSSFeed.js" type="text/javascript" language="javascript"></script>
+	<script type="text/javascript" language="javascript">
+		$(document).ready( function() { //onload
+			//apply top menu functionality
+			$( 'table.topMenu' ).dolTopMenu();
+			
+			//apply rss aggregator
+			sClockIcon = '__images__icons/clock.gif';
+			$( 'div.RSSAggrCont' ).dolRSSFeed();
+		} );
+	</script>
+	<script src="inc/js/ie7_flash_fix.js" type="text/javascript" language="javascript"></script>
+	<script src="inc/js/classes/BxDolVoting.js" type="text/javascript" language="javascript"></script>
+	<!--[if lt IE 7.]>
+	<script defer type="text/javascript">
+		var site_url = '__site_url__';
+	</script>
+	<script defer type="text/javascript" src="inc/js/pngfix.js"></script>
+	<![endif]-->
+
+	__ray_invite_js__
+
+	__extra_js__
+
+	__extra_css__
+
+<!--[if lt IE 7]>
+<![if gte IE 5.5]>
+<style type="text/css"> 
+.subMenu {
+	background-image:none;
+	background-color:#F5F5F5;
+	filter:none;
+	border-bottom:3px solid #8D8D8D;
+}
+</style>
+<![endif]>
+<![endif]-->
+
+
+
+</head>
+<body>
+	<div id="FloatDesc" style="position:absolute;display:none;z-index:100;"></div>
+
+	<div id="login_div" class="login_ajax" onclick="var t = ( event.target || event.srcElement ); if ( t == this ) $('#login_div').hide();"></div>
+

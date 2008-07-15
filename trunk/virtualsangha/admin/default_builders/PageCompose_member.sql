@@ -1,0 +1,13 @@
+INSERT INTO `PageCompose` VALUES(NULL, 'member', '960px', '', '_Site Stats', 1, 1, 'SiteStats', '', 1, 50, 'non,memb', 0);
+INSERT INTO `PageCompose` VALUES(NULL, 'member', '960px', '', '_member info', 2, 0, 'MemberInfo', '', 1, 50, 'non,memb', 0);
+INSERT INTO `PageCompose` VALUES(NULL, 'member', '960px', '', '_contacts', 2, 1, 'Contacts', '', 1, 50, 'non,memb', 0);
+INSERT INTO `PageCompose` VALUES(NULL, 'member', '960px', '', '_latest news', 2, 2, 'News', '', 1, 50, 'non,memb', 0);
+INSERT INTO `PageCompose` VALUES(NULL, 'member', '960px', '', '_BoonEx News', 0, 0, 'RSS', 'http://www.boonex.com/unity/blog/featured_posts/?rss=1#4', 1, 50, 'non,memb', 0);
+INSERT INTO `PageCompose` VALUES(NULL, 'member', '960px', 'Classifieds', '_Classifieds', 1, 0, 'Classifieds', '', 1, 50, 'non,memb', 0);
+INSERT INTO `PageCompose` VALUES(NULL, 'member', '960px', 'Events', '_Events', 1, 2, 'Events', '', 1, 50, 'non,memb', 0);
+INSERT INTO `PageCompose` VALUES(NULL, 'member', '960px', 'Groups', '_Groups', 1, 3, 'Groups', '', 1, 50, 'non,memb', 0);
+INSERT INTO `PageCompose` VALUES(NULL, 'member', '960px', '', '_Forum Posts', 2, 3, 'RSS', '{SiteUrl}orca/?action=rss_user&user={NickName}#4', 1, 50, 'non,memb', 0);
+INSERT INTO `PageCompose` VALUES(NULL, 'member', '960px', '', '_My Music Gallery', 2, 4, 'ShareMusic', '', 1, 50, 'non,memb', 0);
+INSERT INTO `PageCompose` VALUES(NULL, 'member', '960px', '', '_My Photo Gallery', 2, 5, 'SharePhotos', '', 1, 50, 'non,memb', 0);
+INSERT INTO `PageCompose` VALUES(NULL, 'member', '960px', '', '_My Video Gallery', 2, 6, 'ShareVideos', '', 1, 50, 'non,memb', 0);
+INSERT INTO `PageCompose` VALUES(NULL, 'member', '960px', 'Member Friends', '_My Friends', 1, 4, 'Friends', '', 1, 50, 'memb', 0);

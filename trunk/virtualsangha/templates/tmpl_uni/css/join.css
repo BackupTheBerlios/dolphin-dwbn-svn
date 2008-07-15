@@ -1,0 +1,201 @@
+@import url(../../../plugins/jquery/themes/ui.datepicker.css);
+
+#join_form_table {
+	/*width: 100%;*/
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+#join_form_table td,
+#join_form_table th {
+	padding: 5px;
+	border-right: 1px solid #CCCCCC;
+	vertical-align: middle;
+}
+
+#join_form_table th {
+	text-align: center;
+	font-weight: bold;
+}
+
+#join_form_table th.label {
+	text-align: right;
+	width: 200px;
+	white-space: nowrap;
+}
+
+#join_form_table th.block {
+	background-color: #DDDDDD;
+	font-size: 13px;
+}
+
+#join_form_table tr.headers {
+	background-color: #999999;
+}
+
+#join_form_table th.header {
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+#join_form_table th.bottom_controls {
+	border-top: 1px solid #cccccc;
+}
+
+.form_mandatory {
+	color: red;
+}
+
+.form_info_icon,
+.form_warn_icon {
+	cursor: help;
+	vertical-align: middle;
+}
+
+#FloatDesc {
+	border: 1px solid black;
+	padding: 3px;
+	background-color: #F2FCF9;
+	width: 300px;
+}
+
+/* * * * Inputs * * * */
+
+.input_text,
+.input_date,
+.input_area,
+.input_pass,
+.input_select,
+.input_select_couple,
+.input_select_multi
+{
+	background-image: url( ../images/body_backgr.gif );
+	border: 1px solid #999999;
+	width: 240px;
+	margin-right: 5px;
+}
+
+.counter {
+	float: left;
+	position: relative;
+}
+
+.input_num {
+	background-image: url( ../images/body_backgr.gif );
+	border: 1px solid #999999;
+	width: 40px;
+	margin-right: 5px;
+}
+
+.input_range_0,
+.input_range_1 {
+	background-image: url( ../images/body_backgr.gif );
+	border: 1px solid #999999;
+	width: 40px;
+}
+
+.input_range_1 {
+	margin-right: 5px;
+}
+
+.input_erroneus {
+	border: 1px solid red;
+}
+
+.input_area,
+.input_select_multi {
+	height: 90px;
+}
+
+.form_row_special {
+	text-align: center;
+}
+
+.form_error_cont {
+	border: 1px solid red;
+	padding: 3px;
+	color: red;
+	width: 220px;
+}
+
+label.input_radio_label {
+	margin-right: 4px;
+}
+
+
+
+
+
+
+/* * * * BoonEx ID * * * */
+/* 
+.member_login,
+.import_boonex_id {
+	background-color:#EEEEEE;
+	float:right;
+	padding-left:10px;
+	padding-top:10px;
+	position:relative;
+	width:270px;
+}
+
+.login_form_cont {
+	background-color:#EEEEEE;
+	width:260px;
+}
+
+.login_form_warning {
+	color:#000000;
+	float:left;
+	font-size:16px;
+	margin-bottom:20px;
+	position:relative;
+	text-align:left;
+}
+
+.boonex_id {
+	float:left;
+	font-size:16px;
+	position:relative;
+	width:180px;
+}
+
+.id {
+	float:left;
+	font-size:11px;
+	position:relative;
+	width:90px;
+}
+
+.login_form_row {
+	float:left;
+	padding:0px 0px 5px;
+	position:relative;
+	width:250px;
+}
+
+.login_form_row_forgot {
+	float:left;
+	font-size:11px;
+	padding-left:67px;
+	position:relative;
+}
+
+.login_form_label {
+	width:60px;
+}
+
+.login_form_val {
+	float:left;
+}
+
+.login_form_input {
+	width:160px;
+}
+
+.login_form_submit {
+	margin-top:2px;
+} */
