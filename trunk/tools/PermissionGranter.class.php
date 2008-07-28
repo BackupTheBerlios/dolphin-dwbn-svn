@@ -14,12 +14,12 @@ class PermissionGranter
     {
         foreach ($paths as $path)
         {
-            system('chmod '.$permissionLevel.' '.$this->vsDirectory($path));
+            system('chmod '.$permissionLevel.' '.$this->rootDirectory($path));
         }
     }
 
-    private function vsDirectory($path)
+    private function rootDirectory($path)
     {
-        return '../virtualsangha/'.$path;
+        return '../'.$path;
     }
 }
