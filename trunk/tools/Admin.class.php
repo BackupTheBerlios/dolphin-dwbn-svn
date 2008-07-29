@@ -1,22 +1,24 @@
 <?php
 
-require_once('PermissionGranter.class.php');
-require_once('PermissionsDAO.class.php');
-
 class Admin
 {
     private $currentDirectory;
     private $baseDirectory;
     private $permissionsDAO;
     private $permissionGranter;
+    private $mysqlAdmin;
 
-    public function __construct()
+    public function __construct(
+        PermissionsDAO    $permissionsDAO,
+        PermissionGranter $permissionGranter,
+        MysqlAdmin        $mysqlAdmin)
     {
-        $this->permissionsDAO = new PermissionsDAO();
-        $this->permissionGranter = new PermissionGranter();
-        $this->currentDirectory = getcwd();
+        $this->permissionsDAO    = $permissionsDAO;
+        $this->permissionGranter = $permissionGranter;
+        $this->mysqlAdmin        = $mysqlAdmin;
+        $this->currentDirectory  = getcwd();
         $this->assertScriptIsNotRunFromUpperDirectory();
-        $this->baseDirectory = preg_replace('/tools/', '', $this->currentDirectory).'virtualsangha';
+        $this->baseDirectory     = preg_replace('/tools/', '', $this->currentDirectory).'virtualsangha';
     }
 
     public function main()
@@ -38,8 +40,17 @@ class Admin
 
     private function install()
     {
-        echo "Setting permissions...\n";
+        echo 'Setting permissions...';
         $this->permissionGranter->grant($this->permissionsDAO->findAllAsMap());
+        echo " done\n";
+
+        echo 'Dropping database...';
+        $this->mysqlAdmin->drop('test2');
+        echo " done\n";
+
+        echo 'Recreating database...';
+        $this->mysqlAdmin->create('test2');
+        echo " done\n";
     }
 
     private function assertScriptIsNotRunFromUpperDirectory()

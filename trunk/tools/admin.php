@@ -1,8 +1,9 @@
 <?php
 
-require_once('Admin.class.php');
+require_once('../virtualsangha/IocContainer.class.php');
 
-$admin = new Admin();
+$ioc = new IocContainer();
+$admin = $ioc->getInstanceOf('Admin');
 $admin->main();
 
 ?>

@@ -16,8 +16,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/PermissionGranter.class.php" afterPath="$PROJECT_DIR$/tools/PermissionGranter.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/MysqlAdmin.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtualsangha/configuration" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/admin.php" afterPath="$PROJECT_DIR$/tools/admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualSangha-Irek.iws" afterPath="$PROJECT_DIR$/VirtualSangha-Irek.iws" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtualsangha/IocContainer.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/Admin.class.php" afterPath="$PROJECT_DIR$/tools/Admin.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtualsangha/configuration/IrekConfiguration.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtualsangha/configuration/Configuration.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/PermissionsDAO.class.php" afterPath="$PROJECT_DIR$/tools/PermissionsDAO.class.php" />
     </list>
     <ignored path="VirtualSangha-Irek.iws" />
@@ -81,19 +87,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/admin.php">
+      <file leaf-file-name="Admin.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/Admin.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="0.1322314">
+            <state line="20" column="33" selection-start="624" selection-end="624" vertical-scroll-proportion="0.4869565">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Admin.class.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tools/Admin.class.php">
+      <file leaf-file-name="MysqlAdmin.class.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tools/MysqlAdmin.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="9" selection-start="699" selection-end="699" vertical-scroll-proportion="0.8595041">
+            <state line="15" column="79" selection-start="368" selection-end="368" vertical-scroll-proportion="0.5217391">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="17" selection-start="24" selection-end="24" vertical-scroll-proportion="0.069565214">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IocContainer.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/virtualsangha/IocContainer.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="40" selection-start="639" selection-end="639" vertical-scroll-proportion="0.44347826">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IrekConfiguration.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/virtualsangha/configuration/IrekConfiguration.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="23" selection-start="191" selection-end="191" vertical-scroll-proportion="0.38260868">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Configuration.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/virtualsangha/configuration/Configuration.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="22" selection-start="82" selection-end="82" vertical-scroll-proportion="0.17391305">
               <folding />
             </state>
           </provider>
@@ -102,7 +144,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/virtualsangha/install/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="367" column="11" selection-start="12971" selection-end="12971" vertical-scroll-proportion="-11.287356">
+            <state line="367" column="11" selection-start="12971" selection-end="12971" vertical-scroll-proportion="-12.375757">
               <folding />
             </state>
           </provider>
@@ -111,7 +153,7 @@
       <file leaf-file-name="PermissionGranter.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/PermissionGranter.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="60" selection-start="368" selection-end="368" vertical-scroll-proportion="0.5289256">
+            <state line="16" column="60" selection-start="368" selection-end="368" vertical-scroll-proportion="0.5565217">
               <folding />
             </state>
           </provider>
@@ -120,7 +162,7 @@
       <file leaf-file-name="PermissionsDAO.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/PermissionsDAO.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="13" selection-start="4292" selection-end="4292" vertical-scroll-proportion="0.338843">
+            <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.034782607">
               <folding />
             </state>
           </provider>
@@ -170,6 +212,38 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="virtualsangha" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="VirtualSangha-Irek" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="virtualsangha" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="VirtualSangha-Irek" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="virtualsangha" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/configuration" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -384,7 +458,7 @@
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting boonex permissions" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating hardcoded database" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -396,6 +470,8 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="setting boonex permissions" />
+    <MESSAGE value="changed paths to match VS layout" />
+    <MESSAGE value="creating hardcoded database" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -446,37 +522,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/admin.php">
+    <entry file="file://$PROJECT_DIR$/virtualsangha/configuration/IrekConfiguration.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="0.1322314">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/virtualsangha/install/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="367" column="11" selection-start="12971" selection-end="12971" vertical-scroll-proportion="-11.287356">
+        <state line="11" column="23" selection-start="191" selection-end="191" vertical-scroll-proportion="0.38260868">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/PermissionGranter.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="60" selection-start="368" selection-end="368" vertical-scroll-proportion="0.5289256">
+        <state line="16" column="60" selection-start="368" selection-end="368" vertical-scroll-proportion="0.5565217">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/PermissionsDAO.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="13" selection-start="4292" selection-end="4292" vertical-scroll-proportion="0.338843">
+        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.034782607">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualsangha/configuration/Configuration.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="22" selection-start="82" selection-end="82" vertical-scroll-proportion="0.17391305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="24" selection-end="24" vertical-scroll-proportion="0.069565214">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualsangha/install/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="367" column="11" selection-start="12971" selection-end="12971" vertical-scroll-proportion="-12.375757">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/Admin.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="9" selection-start="699" selection-end="699" vertical-scroll-proportion="0.8595041">
+        <state line="20" column="33" selection-start="624" selection-end="624" vertical-scroll-proportion="0.4869565">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualsangha/IocContainer.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="40" selection-start="639" selection-end="639" vertical-scroll-proportion="0.44347826">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/MysqlAdmin.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="79" selection-start="368" selection-end="368" vertical-scroll-proportion="0.5217391">
           <folding />
         </state>
       </provider>
