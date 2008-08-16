@@ -1,0 +1,4 @@
+MAILTO=site@email
+0 0 * * *  /usr/bin/php -q /Library/WebServer/Documents/periodic/cmd.php
+*/10 * * * *  /usr/bin/php -q /Library/WebServer/Documents/periodic/notifies.php
+* */1 * * *  /usr/bin/php -q /Library/WebServer/Documents/periodic/cupid.php

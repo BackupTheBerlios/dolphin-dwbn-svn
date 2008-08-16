@@ -17,8 +17,7 @@
 * You should have received a copy of the Creative Commons Attribution 3.0 License along with Dolphin, 
 * see license.txt file; if not, write to marketing@boonex.com
 ***************************************************************************/
-
-require_once( '[path_to]inc/header.inc.php' );
+require_once( '/Library/WebServer/Documents/inc/header.inc.php' );
 require_once( BX_DIRECTORY_PATH_INC . 'db.inc.php' );
 require_once( BX_DIRECTORY_PATH_INC . 'profiles.inc.php' );
 require_once( BX_DIRECTORY_PATH_INC . 'admin.inc.php' );

@@ -7,7 +7,7 @@
 *
 ***************************************************************************/
 
-include("[path_to]inc/header.inc.php");
+include("/Library/WebServer/Documents/inc/header.inc.php");
 /**
  * Current version information.
  */

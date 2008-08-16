@@ -17,12 +17,12 @@ class Admin
         $this->permissionGranter = $permissionGranter;
         $this->mysqlAdmin        = $mysqlAdmin;
         $this->currentDirectory  = getcwd();
-        $this->assertScriptIsNotRunFromUpperDirectory();
         $this->baseDirectory     = preg_replace('/tools/', '', $this->currentDirectory).'virtualsangha';
     }
 
     public function main()
     {
+        $this->assertScriptIsNotRunFromUpperDirectory();
         $opts = getopt("i");
 
         if ($opts['i'] === false)
@@ -40,17 +40,21 @@ class Admin
 
     private function install()
     {
-        echo 'Setting permissions...';
+        echo "=> Setting permissions\n";
         $this->permissionGranter->grant($this->permissionsDAO->findAllAsMap());
-        echo " done\n";
+        echo "\n";
 
-        echo 'Dropping database...';
-        $this->mysqlAdmin->drop('test2');
-        echo " done\n";
+        echo "=> Dropping database\n";
+        $this->mysqlAdmin->drop();
+        echo "\n";
 
-        echo 'Recreating database...';
-        $this->mysqlAdmin->create('test2');
-        echo " done\n";
+        echo "=> Recreating database\n";
+        $this->mysqlAdmin->create();
+        echo "\n";
+
+        echo "=> Importing baseline\n";
+        $this->mysqlAdmin->importBaseline();
+        echo "\n";
     }
 
     private function assertScriptIsNotRunFromUpperDirectory()
@@ -58,8 +62,11 @@ class Admin
         // this is a really silly check to make sure relative paths will be correct
         // any ideas how to do it in a better way? --Irek
 
-        if (!preg_match('/^.*virtualsangha\/tools$/', $this->currentDirectory)) {
+        if (!preg_match('/^.*virtualsangha\/tools$/', $this->currentDirectory))
+        {
             throw new Exception("You must run this script from the directory it is in.");
         }
     }
 }
+
+?>

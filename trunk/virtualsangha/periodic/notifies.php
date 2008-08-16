@@ -18,7 +18,7 @@
 * see license.txt file; if not, write to marketing@boonex.com
 ***************************************************************************/
 
-require_once( '[path_to]inc/header.inc.php' );
+require_once( '/Library/WebServer/Documents/inc/header.inc.php' );
 require_once( BX_DIRECTORY_PATH_INC . 'db.inc.php' );
 require_once( BX_DIRECTORY_PATH_INC . 'profiles.inc.php' );
 require_once( BX_DIRECTORY_PATH_INC . 'utils.inc.php' );

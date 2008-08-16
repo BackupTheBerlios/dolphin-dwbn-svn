@@ -24,7 +24,6 @@ class PermissionsDAO
         'virtualsangha/groups/orca/js',
         'virtualsangha/groups/orca/layout',
         'virtualsangha/groups/orca/log',
-        'virtualsangha/inc',
         'virtualsangha/langs',
         'virtualsangha/media/images',
         'virtualsangha/media/images/banners',
@@ -45,7 +44,6 @@ class PermissionsDAO
         'virtualsangha/orca/js',
         'virtualsangha/orca/layout',
         'virtualsangha/orca/log',
-        'virtualsangha/periodic',
         'virtualsangha/tmp');
 
     private $dolphinWritableFiles = array(
@@ -54,10 +52,7 @@ class PermissionsDAO
         'virtualsangha/inc/db_cached/ProfileFields.inc',
         'virtualsangha/inc/db_cached/SiteStat.inc',
         'virtualsangha/inc/params.inc.php',
-        'virtualsangha/inc/prof.inc.php',
-        'virtualsangha/periodic/cmd.php',
-        'virtualsangha/periodic/cupid.php',
-        'virtualsangha/periodic/notifies.php'
+        'virtualsangha/inc/prof.inc.php'
     );
 
     private $rayWritableDirectories = array(
@@ -84,7 +79,6 @@ class PermissionsDAO
         'virtualsangha/ray/modules/desktop/xml/main.xml',
         'virtualsangha/ray/modules/desktop/xml/skins.xml',
         'virtualsangha/ray/modules/global/inc/cron.inc.php',
-        'virtualsangha/ray/modules/global/inc/header.inc.php',
         'virtualsangha/ray/modules/global/xml/config.xml',
         'virtualsangha/ray/modules/global/xml/main.xml',
         'virtualsangha/ray/modules/im/xml/config.xml',

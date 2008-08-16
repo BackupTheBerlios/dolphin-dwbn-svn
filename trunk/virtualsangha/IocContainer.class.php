@@ -11,6 +11,11 @@ class IocContainer
 {
     private $immutableSingletons = array();
 
+    public static function getInstance()
+    {
+        return new IocContainer();
+    }
+
     public function __construct()
     {
         $this->initialiseImmutableSingletonInstances();
