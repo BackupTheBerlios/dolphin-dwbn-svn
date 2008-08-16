@@ -5,7 +5,7 @@ require_once('../tools/MysqlAdmin.class.php');
 require_once('../tools/PermissionGranter.class.php');
 require_once('../tools/PermissionsDAO.class.php');
 require_once('configuration/Configuration.class.php');
-require_once('configuration/IrekConfiguration.class.php');
+require_once('configuration/VsConfiguration.class.php');
 
 class IocContainer
 {
@@ -30,7 +30,7 @@ class IocContainer
     {
         $this->immutableSingletons['PermissionsDAO'] = new PermissionsDAO();
         $this->immutableSingletons['PermissionGranter'] = new PermissionGranter();
-        $this->immutableSingletons['Configuration'] = new IrekConfiguration();
+        $this->immutableSingletons['Configuration'] = new VsConfiguration();
         $this->immutableSingletons['MysqlAdmin'] = new MysqlAdmin($this->getInstanceOf('Configuration'));
         $this->immutableSingletons['Admin'] = new Admin(
             $this->getInstanceOf('PermissionsDAO'),

@@ -1,6 +1,6 @@
 <?php
 
-class IrekConfiguration implements Configuration
+class VsConfiguration implements Configuration
 {
     public function dbName()
     {
