@@ -25,7 +25,13 @@ class MysqlAdmin
 
     public function importBaseline()
     {
-        system('mysql -u'.$this->dbUsername.' -p'.$this->dbPassword.' '.$this->dbName.' < ../virtualsangha/database/baseline/dolphin-dump.sql');
+        $this->runSqlFile('baseline/dolphin-dump.sql');
+        $this->runSqlFile('baseline/virtualsangha-specific.sql');
+    }
+
+    private function runSqlFile($filename)
+    {
+        system('mysql -u'.$this->dbUsername.' -p'.$this->dbPassword.' '.$this->dbName.' < ../virtualsangha/database/'.$filename);
     }
 }
 
