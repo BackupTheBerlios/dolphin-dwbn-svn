@@ -17,8 +17,12 @@
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualSangha-Irek.iws" afterPath="$PROJECT_DIR$/VirtualSangha-Irek.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/Admin.class.php" afterPath="$PROJECT_DIR$/tools/Admin.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/MysqlAdmin.class.php" afterPath="$PROJECT_DIR$/tools/MysqlAdmin.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtualsangha/database/baseline/virtualsangha-specific.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtualsangha/database/deltas/000001" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/DeltaDirectory.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtualsangha/IocContainer.class.php" afterPath="$PROJECT_DIR$/virtualsangha/IocContainer.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/DatabaseVersion.class.php" />
     </list>
     <ignored path="VirtualSangha-Irek.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,7 +88,7 @@
       <file leaf-file-name="IocContainer.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/virtualsangha/IocContainer.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.1781076">
+            <state line="40" column="48" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.6660482">
               <folding />
             </state>
           </provider>
@@ -117,7 +121,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="virtualsangha-specific.sql" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="virtualsangha-specific.sql" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/virtualsangha/database/baseline/virtualsangha-specific.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state line="15" column="0" selection-start="594" selection-end="594" vertical-scroll-proportion="0.3243243">
@@ -129,7 +133,34 @@
       <file leaf-file-name="MysqlAdmin.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/MysqlAdmin.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="16" selection-start="872" selection-end="872" vertical-scroll-proportion="0.7557252">
+            <state line="43" column="9" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.66412216">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeltaDirectory.class.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tools/DeltaDirectory.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="34" selection-start="106" selection-end="106" vertical-scroll-proportion="0.1335807">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseVersion.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/DatabaseVersion.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="26" selection-start="112" selection-end="112" vertical-scroll-proportion="0.1335807">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Admin.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/Admin.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="38" selection-start="1565" selection-end="1565" vertical-scroll-proportion="0.5102041">
               <folding />
             </state>
           </provider>
@@ -139,33 +170,6 @@
         <entry file="file://$PROJECT_DIR$/virtualsangha/database/baseline/dolphin-dump.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1350" column="0" selection-start="263241" selection-end="263241" vertical-scroll-proportion="31.45631">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Configuration.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/virtualsangha/configuration/Configuration.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="23" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0445269">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PermissionGranter.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/PermissionGranter.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="60" selection-start="368" selection-end="368" vertical-scroll-proportion="0.3562152">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PermissionsDAO.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/PermissionsDAO.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="12" selection-start="571" selection-end="571" vertical-scroll-proportion="0.02226345">
               <folding />
             </state>
           </provider>
@@ -228,6 +232,28 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="VirtualSangha-Irek" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="virtualsangha" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/database" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/database/deltas" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -517,13 +543,6 @@
     </GetOptions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/VirtualSangha-Irek.iws">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="20" selection-start="501" selection-end="501" vertical-scroll-proportion="0.12307692">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VirtualSangha-Irek.ipr">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -534,13 +553,6 @@
     <entry file="file://$PROJECT_DIR$/tools/admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="17" selection-start="24" selection-end="24" vertical-scroll-proportion="0.04308797">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/Admin.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="736" selection-end="736" vertical-scroll-proportion="0.021543985">
           <folding />
         </state>
       </provider>
@@ -573,13 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/virtualsangha/IocContainer.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.1781076">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/virtualsangha/configuration/VsConfiguration.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="326" selection-end="326" vertical-scroll-proportion="0.02226345">
@@ -601,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/MysqlAdmin.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="16" selection-start="872" selection-end="872" vertical-scroll-proportion="0.7557252">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/virtualsangha/database/baseline/dolphin-dump.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1350" column="0" selection-start="263241" selection-end="263241" vertical-scroll-proportion="31.45631">
@@ -618,6 +616,41 @@
     <entry file="file://$PROJECT_DIR$/virtualsangha/database/baseline/virtualsangha-specific.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="594" selection-end="594" vertical-scroll-proportion="0.3243243">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualsangha/IocContainer.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="48" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.6660482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/Admin.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="38" selection-start="1565" selection-end="1565" vertical-scroll-proportion="0.5102041">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/MysqlAdmin.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="9" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.66412216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/DatabaseVersion.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="26" selection-start="112" selection-end="112" vertical-scroll-proportion="0.1335807">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/DeltaDirectory.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="34" selection-start="106" selection-end="106" vertical-scroll-proportion="0.1335807">
           <folding />
         </state>
       </provider>

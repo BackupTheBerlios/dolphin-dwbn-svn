@@ -55,6 +55,10 @@ class Admin
         echo "=> Importing baseline\n";
         $this->mysqlAdmin->importBaseline();
         echo "\n";
+
+        echo "=> Applying database deltas\n";
+        $this->mysqlAdmin->applyDeltas();
+        echo "\n";
     }
 
     private function assertScriptIsNotRunFromUpperDirectory()
