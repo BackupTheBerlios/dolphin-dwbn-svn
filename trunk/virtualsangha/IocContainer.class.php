@@ -1,6 +1,5 @@
 <?php
 
-require_once('inc/db.inc.php');
 
 require_once('../tools/Admin.class.php');
 require_once('../tools/DatabaseVersion.class.php');
