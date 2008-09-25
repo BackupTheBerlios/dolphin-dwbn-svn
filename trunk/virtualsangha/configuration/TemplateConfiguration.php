@@ -1,5 +1,7 @@
 <?php
 
+require_once('Configuration.class.php');
+
 class VsConfiguration implements Configuration
 {
     public function dbName()
