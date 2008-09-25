@@ -7,7 +7,7 @@
 *
 ***************************************************************************/
 
-include("/Library/WebServer/Documents/inc/header.inc.php");
+include($configuration->siteRoot()."inc/header.inc.php");
 /**
  * Current version information.
  */

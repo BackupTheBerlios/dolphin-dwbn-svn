@@ -17,8 +17,7 @@
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualSangha-Irek.iws" afterPath="$PROJECT_DIR$/VirtualSangha-Irek.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtualsangha/IocContainer.class.php" afterPath="$PROJECT_DIR$/virtualsangha/IocContainer.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/DatabaseVersion.class.php" afterPath="$PROJECT_DIR$/tools/DatabaseVersion.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtualsangha/ray/modules/global/inc/header.inc.php" afterPath="$PROJECT_DIR$/virtualsangha/ray/modules/global/inc/header.inc.php" />
     </list>
     <ignored path="VirtualSangha-Irek.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,15 +89,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upgrade.sql" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/virtualsangha/database/deltas/000001/upgrade.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="43" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DeltaDirectory.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/DeltaDirectory.class.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -108,7 +98,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseVersion.class.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DatabaseVersion.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/DatabaseVersion.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.034782607">
@@ -129,7 +119,7 @@
       <file leaf-file-name="VsConfiguration.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/virtualsangha/configuration/VsConfiguration.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="34" selection-start="629" selection-end="629" vertical-scroll-proportion="0.4173913">
+            <state line="46" column="41" selection-start="729" selection-end="729" vertical-scroll-proportion="0.59130436">
               <folding />
             </state>
           </provider>
@@ -138,7 +128,16 @@
       <file leaf-file-name="header.inc.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/virtualsangha/inc/header.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="39" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.78688526">
+            <state line="20" column="39" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.078688525">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.inc.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/virtualsangha/ray/modules/global/inc/header.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="30" selection-start="526" selection-end="526" vertical-scroll-proportion="0.4">
               <folding />
             </state>
           </provider>
@@ -245,7 +244,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/inc" />
+          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/ray" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -263,15 +262,11 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/database" />
+          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/ray" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/database/deltas" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/database/deltas/000001" />
+          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/ray/modules" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -289,7 +284,15 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/database" />
+          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/ray" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/ray/modules" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/ray/modules/global" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -307,7 +310,19 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/configuration" />
+          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/ray" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/ray/modules" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/ray/modules/global" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/air/Projects/virtualsangha/virtualsangha/ray/modules/global/inc" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -493,14 +508,14 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24876441" order="0" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" order="1" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" order="8" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329582" order="8" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
       <window_info id="Maven projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329582" order="8" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" order="8" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="2" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
@@ -581,13 +596,6 @@
     </GetOptions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/virtualsangha/configuration/TemplateConfiguration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="16" selection-start="343" selection-end="343" vertical-scroll-proportion="0.51705563">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/virtualsangha/database/baseline/dolphin-dump.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1350" column="0" selection-start="263241" selection-end="263241" vertical-scroll-proportion="30.393997">
@@ -651,23 +659,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/virtualsangha/configuration/VsConfiguration.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="34" selection-start="629" selection-end="629" vertical-scroll-proportion="0.4173913">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tools/admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="14" selection-start="100" selection-end="100" vertical-scroll-proportion="0.13913043">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/virtualsangha/inc/header.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="39" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.78688526">
           <folding />
         </state>
       </provider>
@@ -689,6 +683,27 @@
     <entry file="file://$PROJECT_DIR$/tools/DatabaseVersion.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.034782607">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualsangha/configuration/VsConfiguration.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="41" selection-start="729" selection-end="729" vertical-scroll-proportion="0.59130436">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualsangha/inc/header.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="39" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.078688525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualsangha/ray/modules/global/inc/header.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="30" selection-start="526" selection-end="526" vertical-scroll-proportion="0.4">
           <folding />
         </state>
       </provider>
