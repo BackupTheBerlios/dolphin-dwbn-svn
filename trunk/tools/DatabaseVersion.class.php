@@ -12,8 +12,9 @@ class DatabaseVersion
 
     public function currentVersion()
     {
-        db_res('select max(number) from versions');
-        return 0;
+        $res = db_res('select max(number) as latest from versions');
+        $values = mysql_fetch_array($res);
+        return (int) $values['latest'];
     }
 }
 
