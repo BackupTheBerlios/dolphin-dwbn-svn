@@ -66,7 +66,7 @@ class Admin
         // this is a really silly check to make sure relative paths will be correct
         // any ideas how to do it in a better way? --Irek
 
-        if (!preg_match('/^.*virtualsangha\/tools$/', $this->currentDirectory))
+        if (!preg_match('/^.*tools$/', $this->currentDirectory))
         {
             throw new Exception("You must run this script from the directory it is in.");
         }
