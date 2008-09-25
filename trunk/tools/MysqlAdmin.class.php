@@ -49,7 +49,11 @@ class MysqlAdmin
 
     public function runSqlFile( $filename )
     {
-        system('mysql -u'.$this->dbUsername.' -p'.$this->dbPassword.' '.$this->dbName.' < ../virtualsangha/database/'.$filename);
+        system('mysql -u'.$this->dbUsername.' -p'.$this->dbPassword.' '.$this->dbName.' < ../virtualsangha/database/'.$filename, &$returnValue);
+    	if ((int)$returnValue != 0) 
+    	{
+    		throw new Exception("Could not run SQL file: " . $filename);
+    	}
     }
 }
 

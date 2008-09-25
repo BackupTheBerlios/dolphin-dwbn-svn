@@ -23,11 +23,15 @@ class Admin
     public function main()
     {
         $this->assertScriptIsNotRunFromUpperDirectory();
-        $opts = getopt("i");
+        $opts = getopt("iu");
 
         if ($opts['i'] === false)
         {
             $this->install();
+        }
+        elseif ($opts['u'] === false)
+        {
+            $this->update();
         } else {
             $this->usage();
         }
@@ -56,7 +60,11 @@ class Admin
         $this->mysqlAdmin->importBaseline();
         echo "\n";
 
-        echo "=> Applying database deltas\n";
+		$this->update();
+    }
+    
+    private function update() {
+    	echo "=> Applying database deltas\n";
         $this->mysqlAdmin->applyDeltas();
         echo "\n";
     }
