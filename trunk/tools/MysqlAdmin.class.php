@@ -1,5 +1,7 @@
 <?php
 
+require_once('Delta.class.php');
+
 class MysqlAdmin
 {
     private $dbName;
@@ -22,29 +24,30 @@ class MysqlAdmin
 
     public function drop()
     {
-        system('mysqladmin -u'.$this->dbUsername.' -p'.$this->dbPassword.' --force drop '.$this->dbName);
+        system( 'mysqladmin -u'.$this->dbUsername.' -p'.$this->dbPassword.' --force drop '.$this->dbName );
     }
 
     public function create()
     {
-        system('mysqladmin -u'.$this->dbUsername.' -p'.$this->dbPassword.' --force create '.$this->dbName);
+        system( 'mysqladmin -u'.$this->dbUsername.' -p'.$this->dbPassword.' --force create '.$this->dbName );
     }
 
     public function importBaseline()
     {
-        $this->runSqlFile('baseline/dolphin-dump.sql');
-        $this->runSqlFile('baseline/virtualsangha-specific.sql');
+        $this->runSqlFile( 'baseline/dolphin-dump.sql' );
+        $this->runSqlFile( 'baseline/virtualsangha-specific.sql' );
     }
 
     public function applyDeltas()
     {
-        if ($this->dbVersion->isNotLessThan($this->deltaDirectory->latestVersion())) {
-            echo "The database is up to date\n";
-            return;
-        }        
+        while ( $this->dbVersion->isLessThan( $this->deltaDirectory->latestVersion() ) ) 
+        {
+            $delta = new Delta( $this->dbVersion->currentVersion() + 1 );
+            $delta->apply( $this );
+        }
     }
 
-    private function runSqlFile($filename)
+    public function runSqlFile( $filename )
     {
         system('mysql -u'.$this->dbUsername.' -p'.$this->dbPassword.' '.$this->dbName.' < ../virtualsangha/database/'.$filename);
     }

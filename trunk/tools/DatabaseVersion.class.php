@@ -2,14 +2,16 @@
 
 class DatabaseVersion
 {
-    public function isNotLessThan($givenVersion)
+    
+    public function isLessThan($givenVersion)
     {
-        return !($this->currentVersion() < $givenVersion);
+        return $this->currentVersion() < $givenVersion;
     }
 
-    private function currentVersion()
+    public function currentVersion()
     {
-        return 0;   
+        db_res('select max(number) from versions');
+        return 0;
     }
 }
 
