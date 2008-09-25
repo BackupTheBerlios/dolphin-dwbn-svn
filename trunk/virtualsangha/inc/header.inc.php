@@ -18,10 +18,9 @@
 * see license.txt file; if not, write to marketing@boonex.com
 ***************************************************************************/
 
-require_once('IocContainer.class.php');
+require_once('configuration/VsConfiguration.class.php');
 
-$iocContainer = IocContainer::getInstance();
-$configuration = $iocContainer->getInstanceOf('Configuration');
+$configuration = new VsConfiguration();
 
 $site['ver']               = '6.1';
 $site['build']             = '2';
